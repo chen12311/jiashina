@@ -1,0 +1,11 @@
+transaction_id:0
+<xml><return_code><![CDATA[FAIL]]></return_code>
+<return_msg><![CDATA[transaction_id and out_trade_no is empty]]></return_msg>
+</xml>
+
+transaction_id:0
+<xml><return_code><![CDATA[FAIL]]></return_code>
+<return_msg><![CDATA[transaction_id and out_trade_no is empty]]></return_msg>
+</xml>
+
+

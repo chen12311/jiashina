@@ -1,0 +1,42 @@
+transaction_id:0
+<xml><return_code><![CDATA[FAIL]]></return_code>
+<return_msg><![CDATA[transaction_id and out_trade_no is empty]]></return_msg>
+</xml>
+
+transaction_id:4200001546202208131648659997
+<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wxcd685d02ba1ce202]]></appid>
+<mch_id><![CDATA[1550831061]]></mch_id>
+<nonce_str><![CDATA[mG8oK53Ag8vXd4Kj]]></nonce_str>
+<sign><![CDATA[2601227602E6C8847CB8D08158B68C21]]></sign>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<transaction_id><![CDATA[4200001546202208131648659997]]></transaction_id>
+<out_trade_no><![CDATA[2208132002589297]]></out_trade_no>
+<out_refund_no><![CDATA[601807689172]]></out_refund_no>
+<refund_id><![CDATA[50300302712022081323727392249]]></refund_id>
+<refund_channel><![CDATA[]]></refund_channel>
+<refund_fee>80000</refund_fee>
+<coupon_refund_fee>0</coupon_refund_fee>
+<total_fee>80000</total_fee>
+<cash_fee>80000</cash_fee>
+<coupon_refund_count>0</coupon_refund_count>
+<cash_refund_fee>80000</cash_refund_fee>
+</xml>
+
+transaction_id:0
+<xml><return_code><![CDATA[FAIL]]></return_code>
+<return_msg><![CDATA[transaction_id and out_trade_no is empty]]></return_msg>
+</xml>
+
+transaction_id:0
+<xml><return_code><![CDATA[FAIL]]></return_code>
+<return_msg><![CDATA[transaction_id and out_trade_no is empty]]></return_msg>
+</xml>
+
+transaction_id:0
+<xml><return_code><![CDATA[FAIL]]></return_code>
+<return_msg><![CDATA[transaction_id and out_trade_no is empty]]></return_msg>
+</xml>
+
+

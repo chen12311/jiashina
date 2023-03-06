@@ -1,0 +1,13 @@
+transaction_id:4200001563202209159501239181
+<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wxcd685d02ba1ce202]]></appid>
+<mch_id><![CDATA[1550831061]]></mch_id>
+<nonce_str><![CDATA[VpVc2gLWlr4gjCL0]]></nonce_str>
+<sign><![CDATA[DBFB9B7F095E56C0C943A445E6E9DE7C]]></sign>
+<result_code><![CDATA[FAIL]]></result_code>
+<err_code><![CDATA[NOTENOUGH]]></err_code>
+<err_code_des><![CDATA[基本账户余额不足，请充值后重新发起]]></err_code_des>
+</xml>
+
+

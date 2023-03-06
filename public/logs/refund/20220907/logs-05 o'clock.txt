@@ -1,0 +1,13 @@
+transaction_id:4200001575202209079897473293
+<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wxcd685d02ba1ce202]]></appid>
+<mch_id><![CDATA[1550831061]]></mch_id>
+<nonce_str><![CDATA[D3VagkM0XZVu061h]]></nonce_str>
+<sign><![CDATA[C8B69BAF1C1E16D88A3D37EAE6266BB9]]></sign>
+<result_code><![CDATA[FAIL]]></result_code>
+<err_code><![CDATA[INVALID_REQUEST]]></err_code>
+<err_code_des><![CDATA[订单已全额退款]]></err_code_des>
+</xml>
+
+
