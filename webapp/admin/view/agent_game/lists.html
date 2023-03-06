@@ -1,0 +1,125 @@
+<div class="page-bar margin-bottom-20">
+    <ul class="page-breadcrumb">
+        <li>
+            <span>游戏代理商管理</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>游戏代理商会员列表</span>
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light bordered">
+
+            <div class="portlet-title">
+                <div class="caption">
+					<span class="caption-subject bold uppercase">
+            		会员列表
+          			</span>
+                </div>
+                <div class="actions">
+<!--                    <a href="{:url('lists','state=0')}" class="btn {if $state == 0}yellow{else}blue{/if}">-->
+<!--                        普通会员-->
+<!--                    </a>-->
+                    <a href="{:url('lists','state=-1')}" class="btn {if $state == -1}yellow{else}blue{/if}">
+                        代理商申请中
+                    </a>
+                    <a href="{:url('lists','state=2')}" class="btn {if $state == 2}yellow{else}blue{/if}">
+                        代理商已驳回
+                    </a>
+                    <a href="{:url('lists','state=1')}" class="btn {if $state == 1}yellow{else}blue{/if}">
+                        代理商会员
+                    </a>
+                </div>
+            </div>
+
+            <div class="search">
+                <form method="POST"  style="float: left;">
+                    会员昵称：<input type="text" class="form-control input-inline" value="{$nickname}" name="nickname">
+                    &nbsp;&nbsp;&nbsp;
+                    <input class="btn" name="search" type="submit" value="搜索" style="color:#fff;background:#217EBD;">
+                </form>
+            </div>
+            <div style="clear:both;"></div>
+
+            <div class="portlet-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th width="80"> ID </th>
+                            <th width="100"> 会员昵称 </th>
+                            <th width="100"> 金额 </th>
+                            <th width="200"> 申请时间 </th>
+                            <th width="300"> 管理操作 </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {volist name="$lists" id="r" key="i"}
+                        <tr class='del{$r.id}'>
+                            <td> {$i} </td>
+                            <td> {$r.nickname} </td>
+                            <td> {:xiaoshu($r.agent_game_money)} </td>
+                            <td> {$r.agent_game_ctime} </td>
+                            <td>
+                                {if $r.agent_game == 1}
+<!--                                <a href="{:url('content_lists','uid='.$r.id)}" class="btn btn-xs yellow">商品列表</a>-->
+                                <a href="{:url('shop','id='.$r.id)}" class="btn btn-xs blue">代理商信息</a>
+                                <a href="{:url('record','id='.$r.id)}" class="btn btn-xs purple">资金流水</a>
+<!--                                <a href="{:url('ewm','id='.$r.id)}" class="btn btn-xs red">查看二维码</a>-->
+                                {else}
+                                {if $r.agent_game == 0}
+                                <a href="{:url('shop','id='.$r.id)}" class="btn btn-xs purple">成为代理商</a>
+                                {elseif $r.agent_game == -1}
+                                <a href="{:url('shop','id='.$r.id)}" class="btn btn-xs white">代理商申请中</a>
+                                {else}
+                                <a href="{:url('shop','id='.$r.id)}" class="btn btn-xs blue">已驳回</a>
+                                {/if}
+                                {/if}
+                            </td>
+                        </tr>
+                        {/volist}
+                        </tbody>
+                    </table>
+                </div>
+                {$pages}
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function del(id){
+        if(confirm("确认要删除？")){
+            $.ajax({
+                url: "{:url('order_del')}",
+                type: 'post',
+                data:{
+                    id:id
+                },
+                success: function (x) {
+                    if(x == "succ"){
+                        $(".del"+id).fadeOut(500);
+                    }
+                }
+            })
+        }
+    }
+    function fx(id,fx){
+        var title = (fx == 1) ? '关闭返现' : '开启返现';
+        if(confirm("确认要"+title+"？")) {
+            $.ajax({
+                url: "{:url('fxChange')}",
+                type: 'post',
+                data: {
+                    id: id,
+                    fx: fx
+                },
+                success: function (x) {
+                    location.reload();
+                }
+            })
+        }
+    }
+</script>

@@ -1,0 +1,346 @@
+<div class="page-bar margin-bottom-20">
+    <ul class="page-breadcrumb">
+        <li>
+            <span>会员管理</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>会员列表</span>
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light bordered">
+            <script>
+                function tixian (id,num) {
+                    $.post("{:url('tixian')}",{id:id,num:num},function(res){
+                        location.reload();
+                    })
+                }
+                function tixian_all (num) {
+                    $.post("{:url('tixian_all')}",{num:num},function(res){
+                        location.reload();
+                    })
+                }
+                function money_all (num) {
+                    $.post("{:url('money_all')}",{num:num},function(res){
+                        location.reload();
+                    })
+                }
+            </script>
+
+            <div class="portlet-title">
+                <div class="caption">
+					<span class="caption-subject bold uppercase">
+            		会员列表
+          			</span>
+                </div>
+                <div class="actions">
+                    <a href="{:url('lists','state=0')}" class="btn {if $state == 0}yellow{else}blue{/if}">
+                        普通会员
+                    </a>
+                    <a href="{:url('lists','state=-1')}" class="btn {if $state == -1}yellow{else}blue{/if}">
+                        店铺申请中
+                    </a>
+                    <a href="{:url('lists','state=2')}" class="btn {if $state == 2}yellow{else}blue{/if}">
+                        店铺已驳回
+                    </a>
+                    <a href="{:url('lists','state=1')}" class="btn {if $state == 1}yellow{else}blue{/if}">
+                        店铺会员
+                    </a>
+                </div>
+            </div>
+
+            {php}
+                $tixian = db("website")->where("id",1)->value("tixian");
+                $lists_a = db("collage_many_money")->where("money_reduce",">",0)->order("money_reduce desc")->select();
+                $data_a = db("collage_many_money")->field("sum(money_reduce) as money_reduce,sum(state) as state")->where("money_reduce",">",0)->order("money_reduce desc")->find();
+
+                $arr_a = db("collage_money_mony_news")->field("openid")->group("openid")->select();
+            {/php}
+
+            {if $tixian}
+            <span onclick="tixian_all(0)" class="btn red">关闭提现</span>
+            {else}
+            <span onclick="tixian_all(1)" class="btn yellow">开启提现</span>
+            {/if}
+
+            <div class="search">
+                <form method="POST"  style="float: left;">
+                    会员昵称：<input type="text" class="form-control input-inline" value="{$nickname}" name="nickname">
+                    &nbsp;&nbsp;&nbsp;
+                    <input class="btn" name="search" type="submit" value="搜索" style="color:#fff;background:#217EBD;">
+                </form>
+
+                <div style="line-height:35px;margin-left:50px;margin-bottom:10px;">
+                    {php}
+                        $money_all_a = db("member")->sum("money");
+                        $money_all_b = db("member")->sum("collage_money");
+						$money_all_c = db("member")->where(["collage_money"=>[">",0]])->sum("collage_money");
+						$money_all_d = db("member")->where(["collage_money"=>["<",0]])->sum("collage_money");
+						
+						$money_all_e = (db("collage_money_mony_news")->sum("zong")*0.5)*100;
+						
+						
+
+
+                    {/php}
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    会员余额：{:xiaoshu($money_all_a)}
+					  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    拼团余额正：{:xiaoshu($money_all_c)}
+					
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    拼团余额负：{:xiaoshu($money_all_d - $money_all_e)}
+					
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    拼团余额：{:xiaoshu($money_all_b)}
+					
+					
+                </div>
+            </div>
+            <div style="clear:both;"></div>
+
+            <div class="portlet-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th> 用户ID </th>
+                            {if $state == 1}
+                            <th> 店铺名称 </th>
+                            {/if}
+                            <th> 会员昵称 </th>
+							<th> 会员等级 </th>
+
+                            <th> 会员余额 </th>
+                            <th> 拼团余额 </th>
+							
+							 <th> 拼团成功 </th>
+							 
+							  <th> 拼团失败 </th>
+							  <th> 退款金额 </th>
+
+                            <th> 注册时间 </th>
+                            <th> 管理操作 </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {volist name="$lists" id="r" key="i"}
+                        <tr class='del{$r.id}'>
+                            <td> {$r.id} </td>
+                            {if $state == 1}
+                            <td> {$r.shopname} </td>
+                            {/if}
+                            <td> {$r.nickname} </td>
+							{if $r.level == 1}
+							                            <td>团长 </td>
+														{elseif $r.level == 2}
+														<td>合伙人 </td>
+														{else}
+														<td>普通会员 </td>
+														{/if}
+
+
+                            <td> {:xiaoshu($r.money)} </td>
+                            <td> {:xiaoshu($r.collage_money)} </td>
+							{php}
+							  $chenggonga = db("order")->where(["openid"=>$r["openid"],"collage"=>2,"status"=>4])->sum('ggmoney');
+								$shibaia = db("record_pay")->where(["openid"=>$r["openid"],"state"=>18])->sum('money');
+							  
+							   $chenggongb = db("order_collage_item")->where(["openid"=>$r["openid"],"collage_state"=>2])->sum('gg_money') *100;
+								$shibaib = db("record_collage")->where(["openid"=>$r["openid"],"state"=>4])->sum('money')*100;
+								
+								
+								
+							  $tuikuana = db("order")->where(["openid"=>$r["openid"],"collage"=>['>',4],"status"=>4])->sum('ggmoney');
+							  $tuikuanb = db("order_collage_item")->where(["openid"=>$r["openid"],"collage_state"=>['>',4]])->sum('gg_money') *100;
+
+
+							{/php}
+							 <th>  {:xiaoshu($chenggonga+$chenggongb)} </th>
+							  <th> {:xiaoshu($shibaia+$shibaib)} </th>
+							  
+							  
+							    <th> {:xiaoshu($tuikuana+$tuikuanb)} </th>
+                            <td> {$r.intime|date='Y-m-d H:i',###} </td>
+                            <td>
+                                {if $r.tixian}
+                                <span onclick="tixian({$r.id},0)" class="btn btn-xs red">关闭提现</span>
+                                {else}
+                                <span onclick="tixian({$r.id},1)" class="btn btn-xs yellow">开启提现</span>
+                                {/if}
+
+                                {if $state == 1}
+                                <a href="{:url('close','id='.$r.id.'&dic=0')}" class="btn btn-xs yellow">闭店</a>
+                                <a href="{:url('shop','id='.$r.id)}" class="btn btn-xs blue">店铺信息</a>
+                                <a href="{:url('pay','id='.$r.id)}" class="btn btn-xs purple">交易记录</a>
+                                <a href="{:url('ewm','id='.$r.id)}" class="btn btn-xs red">查看二维码</a>
+                                {else}
+                                    {if $r.state == 0}
+                                    <a href="{:url('shop','id='.$r.id)}" class="btn btn-xs purple">成为店铺</a>
+                                    {elseif $r.state == -1}
+                                    <a href="{:url('shop','id='.$r.id)}" class="btn btn-xs white">店铺申请中</a>
+                                    {else}
+                                    <a href="{:url('shop','id='.$r.id)}" class="btn btn-xs blue">已驳回</a>
+                                    {/if}
+                                {/if}
+                                {if $r.fx == 0}
+                                <span class="btn btn-xs grey" onclick="fx({$r.id},1)">关闭返现</span>
+                                {if $state == 1}
+                                <a href="{:url('fd','id='.$r.id)}" class="btn btn-xs white">返点设置</a>
+                                {/if}
+                                {else}
+                                <span class="btn btn-xs grey" onclick="fx({$r.id},0)">开启返现</span>
+                                {/if}
+
+                                <a href="{:url('level_lists','id='.$r.id)}" class="btn btn-xs red">查看级别</a>
+
+                                <a href="{:url('money_edit','id='.$r.id)}" class="btn btn-xs purple">修改余额</a>
+								<a href="{:url('level_edit','id='.$r.id)}" class="btn btn-xs purple">修改上级</a>
+
+
+                                <a href="{:url('collage_order','id='.$r.id)}" class="btn btn-xs grey">拼团订单</a>
+								                                <a href="{:url('collage_orders','id='.$r.id)}" class="btn btn-xs grey">拼团订单新</a>
+
+
+                                <a href="{:url('collage_order_error','id='.$r.id)}" class="btn btn-xs red">拼团失败</a>
+
+<!--                                <a href="{:url('level_lists','id='.$r.id)}" class="btn btn-xs yellow">会员等级</a>-->
+                            </td>
+                        </tr>
+                        {/volist}
+                        </tbody>
+                    </table>
+                </div>
+                {$pages}
+            </div>
+
+            <p></p>
+            <p></p>
+            <p></p>
+
+            {if !$data_a.state}
+            <span onclick="money_all(0)" class="btn red">返回</span>
+            {else}
+            <span onclick="money_all(1)" class="btn yellow">扣除</span>
+            {/if}
+            <p></p>
+            <span>总额：{$data_a.state ? 0 : $data_a.money_reduce}</span>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th> ID </th>
+                    <th> 会员昵称 </th>
+                    <th> 扣除金额 </th>
+<!--                    <th> 管理操作 </th>-->
+                </tr>
+                </thead>
+                <tbody>
+                {volist name="$lists_a" id="r" key="i"}
+                {php}$nickname = db("member")->where("openid",$r["openid"])->value("nickname"){/php}
+                <tr class='del{$r.id}'>
+                    <td> {$i} </td>
+                    <td> {$nickname} </td>
+                    <td> {$r.money_reduce} </td>
+<!--                    <td></td>-->
+                </tr>
+                {/volist}
+                </tbody>
+            </table>
+
+            <br>
+            <br>
+            <br>
+            <div class="portlet-title">
+                <div class="caption">
+					<span class="caption-subject bold uppercase">
+            		订单多给金额
+          			</span>
+                </div>
+            </div>
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th> ID </th>
+                    <th> openid </th>
+                    <th> 会员昵称 </th>
+                    <th> （ID：80）匠柯盾智能门锁DH772 </th>
+                    <th> （ID：96）匠柯盾智能锁 全自动款型号DH776S 自带门铃 </th>
+                    <th> （ID：101）欧佩玻尿酸活性肽复颜七件套 </th>
+                    <th> （ID：110）欧佩遮瑕修颜隔离BB霜妆前乳打底隔离遮瑕霜修颜CC【柔皙紫】 </th>
+                    <th> （ID：125）欧佩防晒霜SPF30+PA+++素颜提亮隔离防护乳套装男女士学生清爽保湿外出军训防水防汗紫外线护肤品 防晒霜50g SPF29 50g </th>
+                    <th> （ID：132）测试勿拍不退款不发货（啤酒）</th>
+                    <th> （ID：133）佳润云飞太赫兹、负离子防臭鞋垫【购买请备注尺码】 </th>
+                    <th> （ID：136）【正心莲】手串非物质文化遗产 </th>
+                    <!--                    <th> 管理操作 </th>-->
+                </tr>
+                </thead>
+                <tbody>
+                {volist name="$arr_a" id="r" key="i"}
+                {php}
+                $nickname = db("member")->where("openid",$r["openid"])->value("nickname");
+                $money_a = db("collage_money_mony_news")->where("openid",$r["openid"])->sum("goods_a");
+                $money_b = db("collage_money_mony_news")->where("openid",$r["openid"])->sum("goods_b");
+                $money_c = db("collage_money_mony_news")->where("openid",$r["openid"])->sum("goods_c");
+                $money_d = db("collage_money_mony_news")->where("openid",$r["openid"])->sum("goods_d");
+                $money_e = db("collage_money_mony_news")->where("openid",$r["openid"])->sum("goods_e");
+                $money_f = db("collage_money_mony_news")->where("openid",$r["openid"])->sum("goods_f");
+                $money_g = db("collage_money_mony_news")->where("openid",$r["openid"])->sum("goods_g");
+                $money_h = db("collage_money_mony_news")->where("openid",$r["openid"])->sum("goods_h");
+                {/php}
+                <tr class='del'>
+                    <td style="width:50px;"> {$i} </td>
+                    <td style="width:250px;"> {$r.openid} </td>
+                    <td style="width:280px;"> {$nickname} </td>
+                    <td style="width:150px;"> {$money_a} </td>
+                    <td style="width:150px;"> {$money_b} </td>
+                    <td style="width:150px;"> {$money_c} </td>
+                    <td style="width:150px;"> {$money_d} </td>
+                    <td style="width:150px;"> {$money_e} </td>
+                    <td style="width:150px;"> {$money_f} </td>
+                    <td style="width:150px;"> {$money_g} </td>
+                    <td style="width:150px;"> {$money_h} </td>
+                    <!--                    <td></td>-->
+                </tr>
+                {/volist}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script>
+    function del(id){
+        if(confirm("确认要删除？")){
+            $.ajax({
+                url: "{:url('order_del')}",
+                type: 'post',
+                data:{
+                    id:id
+                },
+                success: function (x) {
+                    if(x == "succ"){
+                        $(".del"+id).fadeOut(500);
+                    }
+                }
+            })
+        }
+    }
+    function fx(id,fx){
+        var title = (fx == 1) ? '关闭返现' : '开启返现';
+        if(confirm("确认要"+title+"？")) {
+            $.ajax({
+                url: "{:url('fxChange')}",
+                type: 'post',
+                data: {
+                    id: id,
+                    fx: fx
+                },
+                success: function (x) {
+                    location.reload();
+                }
+            })
+        }
+    }
+</script>

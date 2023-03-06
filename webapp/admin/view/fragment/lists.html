@@ -1,0 +1,68 @@
+<div class="page-bar margin-bottom-20">
+    <ul class="page-breadcrumb">
+        <li>
+            <span>图片管理</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>图片列表</span>
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light bordered">
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold uppercase">图片列表</span>
+                </div>
+                <div class="actions">
+                    <div class="btn-group btn-group-devided">
+                        <a href="{:url('add','catid='.$catid.'&state='.$state)}" class="btn btn-transparent blue btn-outline btn-sm active">
+                            <i class="fa fa-plus-circle"></i> 添加
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="portlet-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th width="50px;"> ID </th>
+                            <th width="100px;"> 图片 </th>
+                            <th width="120px;">	添加日期 </th>
+                            <th width="120px;"> 管理操作 </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {volist name="lists" id="v" key="i"}
+                        <tr id="del{$v.id}">
+                            <td> {$i} </td>
+                            <td> <img src="{$v.thumb}" style="width:auto;height:120px;"> </td>
+                            <td> {$v.intime|date="Y-m-d H:i",###} </td>
+                            <td>
+                                <a class="btn btn-xs blue" href="{$v.thumb}" target="_block">查看图片</a>
+                                <a class="btn btn-xs green" href="{:url('edit','catid='.$catid.'&state='.$state.'&id='.$v.id)}">修改</a>
+                                <a class="btn btn-xs red" onclick="del({$v.id})">删除</a>
+                            </td>
+                        </tr>
+                        {/volist}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function del(id) {
+            if(confirm("确定删除")){
+                $.post("{:url('del')}",{id:id},function(res){
+                    if(res){
+                        $("#del"+id).fadeOut();
+                    }
+                });
+            }
+        }
+    </script>
+</div>

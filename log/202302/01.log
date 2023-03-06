@@ -1,0 +1,2992 @@
+---------------------------------------------------------------
+[ 2023-02-01T14:40:11+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：9.185732s][吞吐率：0.11req/s] [内存消耗：3,840.39kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T14:50:10+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.070962s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T14:55:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.114796s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T15:00:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.474627s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T15:05:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.160924s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T15:15:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.217940s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T15:20:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.094644s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T15:25:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.155774s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T15:35:10+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.161048s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T15:40:10+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.084042s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T15:45:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.213020s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T15:47:45+08:00 ] 172.17.142.12 203.119.241.116 HEAD /
+[ info ] www.jiajiazxgg.com/ [运行时间：0.021968s][吞吐率：45.52req/s] [内存消耗：1,719.39kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'Jakarta Commons-HttpClient/3.1',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T15:50:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.228589s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T16:00:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.428062s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T16:05:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.189617s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T16:10:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.096732s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T16:15:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.119819s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T16:20:10+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.205560s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T16:25:10+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.112883s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T16:30:10+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.040350s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T16:35:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.291028s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T16:40:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.438140s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T16:45:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.628306s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T16:50:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.415967s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T16:51:23+08:00 ] 172.17.142.12 172.104.61.86 GET /
+[ info ] 39.106.3.107/ [运行时间：0.018799s][吞吐率：53.19req/s] [内存消耗：1,720.14kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) Chrome/98.0.4758.132 Safari/537.36',
+  'host' => '39.106.3.107',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T16:55:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.082860s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T17:00:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.232335s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T17:05:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.081179s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T17:15:10+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.267844s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T17:20:10+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.529220s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T17:25:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.595067s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T17:30:06+08:00 ] 172.17.142.12 185.180.143.7 GET /
+[ info ] 39.106.3.107/ [运行时间：0.027816s][吞吐率：35.95req/s] [内存消耗：1,720.14kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'host' => '39.106.3.107',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T17:30:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.681299s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T17:35:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.598073s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T17:40:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.395384s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T17:45:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.482700s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T17:55:10+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.477077s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T18:00:10+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.545079s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T18:03:11+08:00 ] 172.17.142.12 117.132.183.17 GET /
+[ info ] www.jiajiazxgg.com/ [运行时间：0.018227s][吞吐率：54.86req/s] [内存消耗：1,721.18kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'www.jiajiazxgg.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T18:10:10+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.539245s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T18:15:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.698294s][吞吐率：0.11req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T18:20:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.637980s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T18:25:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.535868s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T18:30:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.600270s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T18:35:10+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.571326s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T18:40:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.423341s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T18:45:10+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.413479s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T18:46:41+08:00 ] 172.17.142.12 180.122.182.225 GET /
+[ info ] www.jiajiazxgg.com/ [运行时间：0.018843s][吞吐率：53.07req/s] [内存消耗：1,720.25kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36',
+  'host' => 'www.jiajiazxgg.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T18:50:10+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.621986s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T18:55:10+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.416602s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T19:00:10+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.350550s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T19:05:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.815411s][吞吐率：0.11req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T19:10:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.518041s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T19:15:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.249985s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T19:20:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.082237s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T19:30:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.187811s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T19:32:38+08:00 ] 172.17.142.12 52.167.144.48 GET /
+[ info ] www.jiajiazxgg.com/ [运行时间：0.018037s][吞吐率：55.44req/s] [内存消耗：1,721.04kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/103.0.5060.134 Safari/537.36',
+  'host' => 'www.jiajiazxgg.com',
+  'from' => 'bingbot(at)microsoft.com',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'pragma' => 'no-cache',
+  'connection' => 'Keep-Alive',
+  'cache-control' => 'no-cache',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T19:32:40+08:00 ] 172.17.142.12 20.99.210.64 GET /
+[ info ] www.jiajiazxgg.com/ [运行时间：0.019681s][吞吐率：50.81req/s] [内存消耗：1,720.12kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36 Edge/96.0.1054.34',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T19:35:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.216039s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T19:40:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.119309s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T19:45:10+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.256391s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T19:50:10+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.066796s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T19:55:10+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.160478s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T20:00:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.265291s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T20:05:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.297070s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T20:10:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.299933s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T20:15:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.302312s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T20:20:10+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.440999s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T20:25:10+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.353854s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T20:30:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.197475s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T20:35:10+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.192340s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T20:40:10+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.061400s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T20:45:10+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.367534s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T20:50:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.650846s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T20:55:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.391158s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T21:00:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.331941s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T21:05:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.135179s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T21:10:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.262307s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T21:15:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.141201s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T21:20:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.173620s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T21:25:10+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.180287s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T21:30:10+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.148080s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T21:35:10+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.178495s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T21:40:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.166099s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T21:45:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.222006s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T21:55:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.229818s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T22:00:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.235701s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T22:01:22+08:00 ] 172.17.142.12 183.136.225.32 GET /
+[ info ] 39.106.3.107:443/ [运行时间：0.017939s][吞吐率：55.74req/s] [内存消耗：1,720.15kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0',
+  'host' => '39.106.3.107:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T22:05:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.076832s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T22:07:25+08:00 ] 172.17.142.12 183.136.225.32 GET /
+[ info ] 39.106.3.107:443/ [运行时间：0.018266s][吞吐率：54.75req/s] [内存消耗：1,720.25kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36 QIHU 360SE',
+  'host' => '39.106.3.107:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T22:10:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.077264s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T22:15:10+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.211517s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T22:20:10+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.175001s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T22:25:10+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.269781s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T22:30:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.203005s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T22:35:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.131195s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T22:40:10+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：9.609237s][吞吐率：0.10req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T22:50:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.229814s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T22:55:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.107521s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T22:58:21+08:00 ] 172.17.142.12 185.180.143.136 GET /
+[ info ] 39.106.3.107/ [运行时间：0.019275s][吞吐率：51.88req/s] [内存消耗：1,720.14kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  'host' => '39.106.3.107',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T23:00:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.159328s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T23:05:10+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.245557s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T23:20:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.474034s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T23:25:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.212103s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T23:30:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.492597s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T23:35:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.216695s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T23:40:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.204718s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T23:45:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.336834s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T23:48:43+08:00 ] 172.17.142.12 162.14.69.148 GET /
+[ info ] www.jiajiazxgg.com/ [运行时间：0.017948s][吞吐率：55.72req/s] [内存消耗：1,720.51kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'accept-charset' => 'utf-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 11; moto g(40) fusion) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.41 Mobile Safari/537.36',
+  'host' => 'www.jiajiazxgg.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T23:50:09+08:00 ] 172.17.142.12 58.49.150.182 GET /index.php/handle/server/level
+[ info ] www.jiajiazxgg.com/index.php/handle/server/level [运行时间：8.138353s][吞吐率：0.12req/s] [内存消耗：3,840.38kb] [文件加载：50]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'handle',
+    1 => 'server',
+    2 => 'level',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'host' => 'www.jiajiazxgg.com',
+  'user-agent' => 'curl/7.29.0',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\handle\controller\Server->level[ /www/wwwroot/www.jiajiazxgg.com/webapp/handle/controller/Server.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-02-01T23:52:59+08:00 ] 172.17.142.12 45.83.65.101 GET /
+[ info ] 39.106.3.107/ [运行时间：0.018666s][吞吐率：53.57req/s] [内存消耗：1,720.98kb] [文件加载：45]
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/yado/lang/zh-cn.php
+[ info ] [ LANG ] /www/wwwroot/www.jiajiazxgg.com/public/../webapp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'cache-control' => 'no-cache',
+  'accept-language' => 'en;q=0.7,en-US;q=0.3',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:65.0) Gecko/20100101 Firefox/65.0',
+  'host' => '39.106.3.107',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File

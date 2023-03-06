@@ -1,0 +1,113 @@
+<link type="text/css" rel="stylesheet" href="__JS__/bootstrap-fileinput/fileinput.css" />
+<script type="text/javascript" src="__JS__/bootstrap-fileinput/fileinput.js"></script>
+<script type="text/javascript" src="__JS__/bootstrap-fileinput/fileinput_locale_zh.js"></script>
+
+<style>
+    .form-horizontal .control-label{width:86px;text-align: left;}
+    .col-md-offset-3{margin-left: 5%;}
+    .page-breadcrumb li:last-child i{display: none;}
+    .close{display: none;}
+</style>
+
+<div class="page-bar margin-bottom-20">
+    <ul class="page-breadcrumb">
+        <li>
+            <span>banner图下导航</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>添加</span>
+            <i class="fa fa-circle"></i>
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light bordered">
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold uppercase">添加栏目</span>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <form method="post" action="" id="myform" class="form-horizontal" enctype="multipart/form-data">
+                    <div class="form-body">
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">类型</label>
+                            <div class="col-md-9">
+                                <select name="state" class="form-control input-medium" onchange="stateChange(this)" id="state">
+                                    <option value="1">栏目</option>
+                                    <option value="2">商品</option>
+                                    <option value="3">外链</option>
+                                    <option value="4">团购</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group href_1" style="display: none;">
+                            <label class="col-md-3 control-label">连接</label>
+                            <div class="col-md-9">
+                                <select name="href_1" class="form-control input-medium"></select>
+                            </div>
+                        </div>
+                        <div class="form-group href_2" style="display: none;">
+                            <label class="col-md-3 control-label">连接</label>
+                            <div class="col-md-9">
+                                <input type="text" name="href_2" value="" class="form-control input-medium">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">栏目名称</label>
+                            <div class="col-md-9">
+                                <input type="text" name="name" id="name" value="" class="form-control input-medium">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">栏目图片</label>
+                            <div class="col-md-9">
+                                <input type="file" name="thumb" id="thumb">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <div class="row">
+                            <div class="col-md-offset-3 col-md-9">
+                                <button type="submit" class="btn blue">添加</button>
+                                <a href="{:url('lists')}" class="btn red">返回</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+    stateChange($("#state"));
+    function stateChange(_this){
+        const state = $(_this).val();
+
+        if(state == 3){
+            $(".href_1").hide();
+            $(".href_2").show();
+        } else {
+            $.post("{:url('new_lists')}",{state:state,id:0},function(ret){
+                $(".href_1 select").html(ret);
+                $(".href_2").hide();
+                $(".href_1").show();
+            });
+
+        }
+    }
+
+    $('#thumb').fileinput({
+        showUpload : false,
+        showRemove : false,
+        language : 'zh',
+        maxFileCount: 1,
+        showCaption: false,
+        allowedFileExtensions:[ 'jpg', 'png', 'gif', 'jpeg'],
+        maxFileSize : 261120,
+        previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
+    });
+</script>

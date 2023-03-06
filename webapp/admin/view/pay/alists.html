@@ -1,0 +1,302 @@
+@<script type="text/javascript" src="__JS__/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="__JS__/bootstrap-datetimepicker/js/bootstrap-datetimepicker.zh-CN.js"></script>
+<link href="__JS__/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet"/>
+
+<div class="page-bar margin-bottom-20">
+    <ul class="page-breadcrumb">
+        <li>
+            <a href="{:url('admin/index/index')}">后台首页</a>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>资金流水</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>流水列表</span>
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light bordered">
+
+            <div class="portlet-title">
+                <div class="caption">
+					<span class="caption-subject bold uppercase">
+            		流水列表
+          			</span>
+                </div>
+				
+				</br></br></br>
+				            <div class="search">
+                <form method="POST"  style="float: left;">
+                    时间：<input type="text" class="form-control input-inline" id="time" name="time" value="{$time}" readonly>
+                    &nbsp;&nbsp;&nbsp;
+                    <input class="btn" name="search" type="submit" value="搜索" style="color:#fff;background:#217EBD;">
+                    <input class="btn" name="dc" type="submit" value="导出" style="color:#fff;background:#217EBD;">
+                </form>
+            </div>
+				<div style="line-height:35px;margin-left:50px;margin-bottom:10px;">
+				</br>
+                    {php}
+						if(strtotime($time) < strtotime('2022-07-08')){
+							$money_all_a = db("record_pay")->where('state=12')->where(["intime"=>["between", [strtotime($time . '00:00:00'), strtotime($time . '23:59:59')]]])->sum("money");
+							$money_all_b = db("record_pay")->where('state=13')->where(["intime"=>["between", [strtotime($time . '00:00:00'), strtotime($time . '23:59:59')]]])->sum("money");
+							$money_all_c = db("record_pay")->where('state=15')->where(["intime"=>["between", [strtotime($time . '00:00:00'), strtotime($time . '23:59:59')]]])->sum("money");
+							$money_all_d = db("record_pay")->where('state=18')->where(["intime"=>["between", [strtotime($time . '00:00:00'), strtotime($time . '23:59:59')]]])->sum("money");
+							$money_all_e = db("record_pay")->where(['state'=>['>',11],'type'=>'-'])->where(["intime"=>["between", [strtotime($time . '00:00:00'), strtotime($time . '23:59:59')]]])->sum("money");
+							$money_all_f = db("record_pay")->where(['state'=>['>',11],'type'=>'+'])->where(["intime"=>["between", [strtotime($time . '00:00:00'), strtotime($time . '23:59:59')]]])->sum("money");
+							$money_all_g = db("order")->where(['status'=>4,'out_refund_no'=>['neq','']])->where(["intime"=>["between", [strtotime($time . '00:00:00'), strtotime($time . '23:59:59')]]])->sum("ggmoney");
+							$money_all_h = xiaoshu($money_all_e)-xiaoshu($money_all_f)-xiaoshu($money_all_g);
+						}else{      
+						
+							$zongshouru = db("record_collage")->where(['state'=>['>',0],'type'=>'-'])->whereTime('ctime', 'between', [strtotime($time . '00:00:00'), strtotime($time . '23:59:59')])->sum("money")*100;
+							$tuikuan = db("order_collage_item")->where(['collage_state'=>['>=',3]])->whereTime('ctime', 'between', [strtotime($time . '00:00:00'), strtotime($time . '23:59:59')])->sum("gg_money")*100;
+							if(strtotime($time) == strtotime('2022-07-12')) {
+							    $tuikuan = $tuikuan - 10808*100;
+							}
+							$money_all_a = db("record_collage")->where('state=1')->whereTime('ctime', 'between', [strtotime($time . '00:00:00'), strtotime($time . '23:59:59')])->sum("money") * 100;
+							$chenggongtuiguangjin = db("record_collage")->where('state=2')->whereTime('ctime', 'between', [strtotime($time . '00:00:00'), strtotime($time . '23:59:59')])->sum("money")*100;
+							$shibaituiguangjin = db("record_collage")->where('state=3')->whereTime('ctime', 'between', [strtotime($time . '00:00:00'), strtotime($time . '23:59:59')])->sum("money")*100;
+							$shibaigulijin = db("record_collage")->where('state=4')->whereTime('ctime', 'between', [strtotime($time . '00:00:00'), strtotime($time . '23:59:59')])->sum("money")*100;
+							//echo 	$shibaigulijin;die;
+							$zongzhichu = db("record_collage")->where(['state'=>['>',0],'type'=>'+','state'=>['<',6]])->whereTime('ctime', 'between', [strtotime($time . '00:00:00'), strtotime($time . '23:59:59')])->sum("money")*100;
+							$yzfwct=db("order_collage_item")->where(['collage_state'=>1])->whereTime('ctime', 'between', [strtotime($time . '00:00:00'), strtotime($time . '23:59:59')])->sum("gg_money")*100;
+						
+						
+													$tuanzhangshouyi = db("record_collage")->where('state=9')->whereTime('ctime', 'between', [strtotime($time . '00:00:00'), strtotime($time . '23:59:59')])->sum("money")*100;
+													$hehuorenshouyi = db("record_collage")->where('state=10')->whereTime('ctime', 'between', [strtotime($time . '00:00:00'), strtotime($time . '23:59:59')])->sum("money")*100;
+
+							$zhuanmai=db("record_zhuanmai")->where(['type'=>1])->whereTime('intime', 'between', [strtotime($time . '00:00:00'), strtotime($time . '23:59:59')])->sum("money");
+
+
+
+							
+							$jinritixian=db("record_tixian")->where(['type'=>3])->whereTime('intime', 'between', [strtotime($time . '00:00:00'), strtotime($time . '23:59:59')])->sum("money");
+							$shanghutixian=db("record_tixian")->where(['type'=>1])->whereTime('intime', 'between', [strtotime($time . '00:00:00'), strtotime($time . '23:59:59')])->sum("money");
+						
+							$lirun=db("order_collage_item")->where(['collage_win'=>1,'collage_state'=>2])->whereTime('ctime', 'between', [strtotime($time . '00:00:00'), strtotime($time . '23:59:59')])->sum("collage_red_bag")*100;
+							$syyhye = db("member")->sum("collage_money");
+	
+							$yingflj=db("order_collage_item")->where(['collage_win'=>0,'collage_state'=>3])->whereTime('ctime', 'between', [strtotime($time . '00:00:00'), strtotime($time . '23:59:59')])->sum("collage_red_bag")*100;
+
+							$pintuanchenggong=db("order_collage_item")->where(['collage_win'=>1,'collage_state'=>2])->whereTime('ctime', 'between', [strtotime($time . '00:00:00'), strtotime($time . '23:59:59')])->sum("gg_money")*100;
+								
+								
+							$money_all_h = xiaoshu($zongshouru)-xiaoshu($zongzhichu)-xiaoshu($tuikuan)-xiaoshu($yzfwct)-xiaoshu($tuanzhangshouyi)-xiaoshu($hehuorenshouyi)-xiaoshu(($zongshouru-$tuikuan)* 0.01)-xiaoshu($shanghutixian)-xiaoshu($zhuanmai);
+
+														$aaaaa=$money_all_h* 100 +$chenggongtuiguangjin +$shibaituiguangjin;
+
+						}
+
+                    {/php}
+					{if strtotime($time) < strtotime('2022-07-08')}
+					总收入：{:xiaoshu($money_all_e)}
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					退款金额：{:xiaoshu($money_all_g)}
+					    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					总支出：{:xiaoshu($money_all_f)}
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					利润：{:xiaoshu(($money_all_e-$money_all_g)*0.25)}
+					</br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					拼团失败鼓励金：{:xiaoshu($money_all_d)}
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    拼团成功推广金：{:xiaoshu($money_all_b)}
+					                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					拼团失败推广金：{:xiaoshu($money_all_c)}
+					</br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					支付手续费：{:xiaoshu(($money_all_a-$money_all_g)* 0.01)}
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					
+					净利润：{:xiaoshu(($money_all_h* 100 - (($money_all_a-$money_all_g)* 0.01)))}
+					
+			{else}
+			
+								总&nbsp;&nbsp;收&nbsp;入：{:xiaoshu($zongshouru)}
+
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								总&nbsp;&nbsp;支&nbsp;出：{:xiaoshu($zongzhichu)}
+<br>
+					拼团成功：{:xiaoshu($pintuanchenggong)}
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+					退款金额(+已支付未成团金额)：{:xiaoshu($tuikuan +xiaoshu($yzfwct) )}
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+					已支付未成团：{:xiaoshu($yzfwct)}
+					</br>
+					利&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;润：{:xiaoshu($lirun)}
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					拼团失败鼓励金：{:xiaoshu($shibaigulijin)} （应鼓励金：{:xiaoshu($yingflj)}）
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					
+					
+					
+					<br>
+
+					团长收益：{:xiaoshu($tuanzhangshouyi)}
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+										合伙人收益：{:xiaoshu($hehuorenshouyi)}
+
+					
+					</br>
+					当日提现：{:xiaoshu($jinritixian)}									
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					商户提现：{:xiaoshu($shanghutixian)}								
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<br>
+					手&nbsp;&nbsp;续&nbsp;费：{:xiaoshu(($zongshouru-$tuikuan)* 0.01)}
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+					当日转卖：{:xiaoshu($zhuanmai)}
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								<br>
+								            成功推广金：{:xiaoshu($chenggongtuiguangjin)}
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					失败推广金：{:xiaoshu($shibaituiguangjin)}
+					<br>	
+						
+					当前所有用户拼团余额:{:xiaoshu($syyhye)}
+					
+					
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	净利润：{:xiaoshu($money_all_h* 100)}({:xiaoshu($aaaaa)}),({:xiaoshu($lirun-$aaaaa)})
+
+					
+			{/if}
+					
+					
+                </div>
+				
+            </div>
+
+            <div class="portlet-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th> ID </th>
+                            <th> 变动人 </th>
+                            <th> 金额 </th>
+                            <th> 类型 </th>
+                            <th> 下单时间 </th>
+                            <!--<th> 管理操作 </th>-->
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {volist name="$lists" id="r" key="i"}
+
+                        <tr class='del{$r.id}'>
+                            <td>{$i}</td>
+                            <td>{:getData("member",['openid'=>$r.openid],'nickname')}---{$r.openid}</td>
+                            <td>
+							
+								{if strtotime($time) < strtotime('2022-07-08')}
+								
+
+                               
+									{if $r.state == 2 && $r.type == '+'}
+										{:xiaoshu($r.money)}
+									{else}
+										{:xiaoshu($r.money)}
+									 {/if}
+								{else}
+								
+										{if $r.state == 2 && $r.type == '+'}
+										{$r.money}
+									{else}
+										{$r.money}
+									 {/if}
+								
+								{/if}
+                            </td>
+                            <td>
+							{$r.msg}
+							
+                               <!-- {if $r.state == 1}
+                                线上订单支付
+                                {elseif $r.state == 2}
+                                {if $r.type == '-'}线下订单支付{else}商铺收款{/if}
+                                {elseif $r.state == 5}
+                                分享满三人返现
+                                {else}
+                                提现
+                                {/if}-->
+                            </td>
+                            <td>
+							{if (strtotime($time) < strtotime('2022-07-08'))}
+							{$r.intime|date="Y-m-d H:i:s",###}
+							{else}
+														{$r.ctime}
+
+							{/if}
+							</td>
+                            <!--<td>-->
+
+                            <!--</td>-->
+                        </tr>
+                        {/volist}
+                        </tbody>
+                    </table>
+                </div>
+                {$pages}
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $("#starttime").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'year',
+        language: 'zh-CN',
+        autoclose:true,
+        todayBtn: true,
+    }).on("click",function(){
+        $("#starttime").datetimepicker("setEndDate",$("#endtime").val())
+    });
+
+    $("#endtime").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'year',
+        language: 'zh-CN',
+        autoclose:true,
+        todayBtn: true,
+        startDate:$("#starttime").val()
+    }).on("click",function(){
+        $("#endtime").datetimepicker("setStartDate",$("#starttime").val())
+    });
+
+    function del(id){
+        if(confirm("确认要删除？")){
+            $.ajax({
+                url: "{:url('order_del')}",
+                type: 'post',
+                data:{
+                    id:id
+                },
+                success: function (x) {
+                    if(x == "succ"){
+                        $(".del"+id).fadeOut(500);
+                    }
+                }
+            })
+        }
+    }
+</script>
+
+<script type="application/javascript">
+    $("#time").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'year',
+        language: 'zh-CN',
+        autoclose:true,
+        todayBtn: true,
+    });
+	
+	setTimeout(function (){
+		window.location.reload();
+	}, 500000000);
+</script>

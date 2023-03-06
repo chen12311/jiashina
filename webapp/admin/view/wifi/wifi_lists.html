@@ -1,0 +1,71 @@
+<style>
+    .page-breadcrumb li:last-child i{display: none;}
+</style>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light bordered">
+
+            <div class="portlet-title">
+                <div class="caption">
+					<span class="caption-subject bold uppercase">
+            			wifi列表
+          			</span>
+                </div>
+
+            </div>
+            <div class="portlet-body">
+                <form action="" method="post">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th width="60"> ID </th>
+								<th width="80"> 店铺名称 </th>
+								<th width="80"> wifi地址 </th>
+								<th width="80"> wifi名称 </th>
+
+                                <th width="100"> 二维码 </th>
+                                <th width="120"> 添加时间 </th>
+<!--                                 <th width="120"> 管理操作 </th>
+ -->                            </tr>
+                            </thead>
+                            <tbody>
+                            {volist name="$lists" id="r" key="i"}
+                            <tr class='del{$r.id}'>
+                                <td>{$r.id}</td>
+								 <td>{$r.name}</td>
+								 <td>{$r.weizhi}</td>
+								 <td>{$r.ssid}</td>
+
+                                <td>
+                                    <a href="{$r.ewm}" target="_blank"><img src="{$r.ewm}" width="80px"></a>
+                                </td>
+                                <td>
+                                    {$r.intime|date="Y-m-d H:i",###}
+                                </td>
+                                <!-- <td>
+                                    <a href="{:url('wifi_edit','id='.$r.id)}" class="btn btn-xs yellow">修改</a>
+                                    <a onclick="del({$r.id})" class="btn btn-xs red">删除</a>
+                                </td> -->
+                            </tr>
+                            {/volist}
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function del(id){
+        if(confirm("确认要删除？")){
+            $.post("{:url('wifi_del')}",{id:id},function(res){
+                if(res){
+                    $(".del"+id).fadeOut(800);
+                }
+            })
+        }
+    }
+</script>

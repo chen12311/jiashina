@@ -1,0 +1,124 @@
+<script type="text/javascript" src="__JS__/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="__JS__/bootstrap-datetimepicker/js/bootstrap-datetimepicker.zh-CN.js"></script>
+<link href="__JS__/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet"/>
+
+<div class="page-bar margin-bottom-20">
+    <ul class="page-breadcrumb">
+        <li>
+            <a href="{:url('admin/index/index')}">后台首页</a>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>资金流水</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>流水列表</span>
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light bordered">
+
+            <div class="portlet-title">
+                <div class="caption">
+					<span class="caption-subject bold uppercase">
+            		流水列表
+          			</span>
+                </div>
+            </div>
+
+				
+            </div>
+
+            <div class="portlet-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th> ID </th>
+                            <th> 变动人 </th>
+                            <th> openid </th>
+                            <th> 金额 </th>
+							<th> 订单号 </th>
+                            <th> 提现时间 </th>
+                            <!--<th> 管理操作 </th>-->
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {volist name="$lists" id="r" key="i"}
+                        <tr class='del{$r.id}'>
+                            <td>{$i}</td>
+                            <td>{:getData("member",['openid'=>$r.openid],'nickname')}</td>
+							                            <td>{$r.openid}</td>
+
+
+                            <td>{:xiaoshu($r.money)}</td>
+														                            <td>{$r.orderNo}</td>
+                            <td>
+							{$r.intime|date="Y-m-d H:i:s",###}
+							</td>
+                        </tr>
+                        {/volist}
+                        </tbody>
+                    </table>
+                </div>
+                {$pages}
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $("#starttime").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'year',
+        language: 'zh-CN',
+        autoclose:true,
+        todayBtn: true,
+    }).on("click",function(){
+        $("#starttime").datetimepicker("setEndDate",$("#endtime").val())
+    });
+
+    $("#endtime").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'year',
+        language: 'zh-CN',
+        autoclose:true,
+        todayBtn: true,
+        startDate:$("#starttime").val()
+    }).on("click",function(){
+        $("#endtime").datetimepicker("setStartDate",$("#starttime").val())
+    });
+
+    function del(id){
+        if(confirm("确认要删除？")){
+            $.ajax({
+                url: "{:url('order_del')}",
+                type: 'post',
+                data:{
+                    id:id
+                },
+                success: function (x) {
+                    if(x == "succ"){
+                        $(".del"+id).fadeOut(500);
+                    }
+                }
+            })
+        }
+    }
+</script>
+
+<script type="application/javascript">
+    $("#time").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'year',
+        language: 'zh-CN',
+        autoclose:true,
+        todayBtn: true,
+    });
+	
+	setTimeout(function (){
+		window.location.reload();
+	}, 500000000);
+</script>

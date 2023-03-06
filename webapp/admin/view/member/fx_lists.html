@@ -1,0 +1,178 @@
+<script type="text/javascript" src="__JS__/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="__JS__/bootstrap-datetimepicker/js/bootstrap-datetimepicker.zh-CN.js"></script>
+<link href="__JS__/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet"/>
+
+
+<div class="page-bar margin-bottom-20">
+    <ul class="page-breadcrumb">
+        <li>
+            <span>会员管理</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>交易记录</span>
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light bordered">
+
+            <div class="portlet-title">
+                <div class="caption">
+					<span class="caption-subject bold uppercase">
+            		交易记录
+          			</span>
+                </div>
+
+                <div class="actions">
+                    <a href="javascript:history.back(-1);" class="btn red">返回</a>
+                </div>
+            </div>
+
+            <div class="search">
+                <form method="POST"  style="float: left;">
+                    类型： <select name="dic" class="form-control input-inline">
+                            <option value="0" {if $dic == 0}selected{/if}>线下订单</option>
+                            <option value="1" {if $dic == 1}selected{/if}>线上订单</option>
+                            </select>
+                    &nbsp;&nbsp;&nbsp;
+                    店铺：<input type="text" class="form-control input-inline" value="{$shopname}" name="shopname">
+                    &nbsp;&nbsp;&nbsp;
+                    订单号：<input type="text" class="form-control input-inline" value="{$orderNo}" name="orderNo">
+                    &nbsp;&nbsp;&nbsp;
+                    开始时间：<input type="text" class="form-control input-inline" id="starttime" name="starttime" value="{$starttime}" readonly>
+                    &nbsp;&nbsp;&nbsp;
+                    结束时间：<input type="text" class="form-control input-inline" id="endtime" name="endtime" value="{$endtime}" readonly>
+                    &nbsp;&nbsp;&nbsp;
+                    <input class="btn" name="search" type="submit" value="搜索" style="color:#fff;background:#217EBD;">
+                </form>
+            </div>
+            <div style="clear:both;"></div>
+
+            <div class="portlet-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th> ID </th>
+                            <th> 店铺 </th>
+                            <th> 订单号 </th>
+                            <th> 下单人 </th>
+                            <th> 支付金额 </th>
+                            <th> 返现 </th>
+                            <th> 被返现 </th>
+                            <th> 服务费 </th>
+                            <th> 支付时间 </th>
+                            <!--                            <th width="300"> 管理操作 </th>-->
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {volist name="$lists" id="r" key="i"}
+                        {php}
+                        $data = db("member")->where("openid",$r['openid'])->find();
+                        $member = db("member")->where("id",$r['cid'])->find();
+                        $orderid_v = db("record_fx")->where("orderid",$r['id'])->value('orderid_v');
+                        $cid = db("order")->where("id",$orderid_v)->value("cid");
+                        {/php}
+                        <tr class='del{$r.id}'>
+
+                            <td> {$i} </td>
+                            <td> {if $r.ggid > 0}线上刷单订单{else}{$member.shopname}{/if} </td>
+                            <td> {$r.orderNo} </td>
+                            <td>
+                                {$data.nickname}
+<!--                                {$r.id},{$orderid_v},{$r.cid},{$cid}-->
+                            </td>
+                            <td> {:xiaoshu($r.ggmoney*$r.number)} </td>
+                            <td>
+                                {if $r.fx_b == 0 && $r.money_b == 0}
+                                    未返现
+                                {else}
+                                    已返现
+                                    {if $r.status == 1}
+                                        {:xiaoshu($r.money_b)}
+                                        {if $r.scale - $r.money_b > 0}
+                                        剩余 {:xiaoshu($r.scale - $r.money_b)} 未反
+                                        {/if}
+                                    {else}
+                                        {if !$r.money_b}
+                                        {:xiaoshu($r.ggmoney*$r.number*$r.scale)}
+                                        {else}
+                                        {:xiaoshu($r.money_b)}
+                                        {/if}
+
+<!--                                        if $r.money_b == 0}-->
+<!--                                            {:xiaoshu($r.ggmoney*$r.number*$r.scale)}-->
+<!--                                        else}-->
+<!--                                            -->
+<!--                                        /if}-->
+                                    {/if}
+                                {/if}
+                            </td>
+                            <td>
+                                {if $r.id <= 1091 && $r.cid == 5}
+                                已全部返现
+                                {else}
+                                {if $r.fx_a == 0}已被返现 {:xiaoshu($r.fxmoney)}{else}已全部返现{/if}
+                                {/if}
+                            </td>
+                            <td>
+                                {if $r.status == 1}
+                                    {:xiaoshu($r.fwf)}
+                                {else}
+                                {php}$aa = xiaoshu($r['ggmoney']*$r['number']*$r['fwf']);{/php}
+                                {php}echo $aa <= 0.01 ? 0.01 : $aa;{/php}
+                                {/if}
+                            </td>
+                            <td> {$r.paytime|date="Y-m-d H:i:s",###} </td>
+                            <!--                            <td></td>-->
+                        </tr>
+                        {/volist}
+                        </tbody>
+                    </table>
+                </div>
+                {$pages}
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $("#starttime").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'year',
+        language: 'zh-CN',
+        autoclose:true,
+        todayBtn: true,
+    }).on("click",function(){
+        $("#starttime").datetimepicker("setEndDate",$("#endtime").val())
+    });
+
+    $("#endtime").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'year',
+        language: 'zh-CN',
+        autoclose:true,
+        todayBtn: true,
+        startDate:$("#starttime").val()
+    }).on("click",function(){
+        $("#endtime").datetimepicker("setStartDate",$("#starttime").val())
+    });
+
+    function del(id){
+        if(confirm("确认要删除？")){
+            $.ajax({
+                url: "{:url('order_del')}",
+                type: 'post',
+                data:{
+                    id:id
+                },
+                success: function (x) {
+                    if(x == "succ"){
+                        $(".del"+id).fadeOut(500);
+                    }
+                }
+            })
+        }
+    }
+</script>

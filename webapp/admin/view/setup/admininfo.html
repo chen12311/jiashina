@@ -1,0 +1,65 @@
+<div class="page-bar margin-bottom-20">
+    <ul class="page-breadcrumb">
+        <li>
+            <a href="{:url('admin/index/index')}">后台首页</a>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>网站设置</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>修改登录密码</span>
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="col-md-12 ">
+        <div class="portlet light bordered">
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject font-dark sbold uppercase">修改登录密码</span>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <form method="post" action="" class="form-horizontal" id="myform">
+                    <div class="form-body">
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">用户名</label>
+                            <div class="col-md-9">
+                            {$username}
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">密码</label>
+                            <div class="col-md-9">
+                                <input type="text" id="password" name="password" class="form-control input-inline input-medium" placeholder="请输入密码">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">确认密码</label>
+                            <div class="col-md-9">
+                                <input type="text" id="pwdconfirm" class="form-control input-inline input-medium" placeholder="请重复输入密码">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <div class="row">
+                            <div class="col-md-offset-3 col-md-9">
+                                <button type="submit" class="btn green">确认修改</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">  
+$(function(){
+	$.formValidator.initConfig({autotip:true,formid:"myform",onerror:function(msg){}});
+	$("#password").formValidator({onshow:"请输入密码",onfocus:"密码应该为6-20位之间"}).inputValidator({min:6,max:20,onerror:"密码应该为6-20位之间"});
+	$("#pwdconfirm").formValidator({onshow:"请输入确认密码",onfocus:"两次密码不同。",oncorrect:"密码输入一致"}).compareValidator({desid:"password",operateor:"=",onerror:"两次密码不同。"});
+
+})
+</script>  

@@ -1,0 +1,65 @@
+<style>
+    .form-horizontal .control-label {
+        width: 100px;
+        text-align: left;
+    }
+    .col-md-offset-3 {
+        margin-left: 5%;
+    }
+</style>
+
+<div class="page-bar margin-bottom-20">
+    <ul class="page-breadcrumb">
+        <li>
+            <a href="{:url('admin/index/index')}">后台首页</a>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>管理员设置</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>快递费设置</span>
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light bordered">
+            <div class="portlet-title">
+                <div class="caption">
+					<span class="caption-subject bold uppercase">
+						快递费设置
+					</span>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <form method="post" action="" class="form-horizontal" enctype="multipart/form-data">
+                    <div class="form-body">
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">地区</label>
+                            <div class="col-md-9">
+                                <input type="text" name="title" id="title" value="{$data.name}" class="form-control input-inline" readonly>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">快递费</label>
+                            <div class="col-md-9">
+                                <input type="number" name="money" id="money" value="{:xiaoshu($data.money)}" step="0.01" onchange="if(this.value < 0){this.value = 0}" onclick="if(this.value < 0){this.value = 0}" class="form-control" style="width:100px;display:unset;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <div class="row">
+                            <div class="col-md-offset-3 col-md-9">
+                                <button type="submit" class="btn green">保存</button>
+                                <a href="javascript:history.go(-1)" class="btn red">返回</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

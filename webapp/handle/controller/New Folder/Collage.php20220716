@@ -1,0 +1,239 @@
+<?php
+
+namespace app\handle\controller;
+use think\Controller;
+use think\Request;
+use think\Loader;
+use think\db\Query;
+use index\Temp;
+
+class Collage extends Controller
+{
+    private $db,$o_t_db;
+    private $m_db;
+    public function __construct()
+    {
+        parent::__construct();
+
+        $this->db = db("order_collage");
+        $this->o_t_db = db("order_collage_item");
+        $this->m_db = db("member");
+    }
+
+    public function index (int $goods_id = 0, string $openid = "")
+    {
+        $lists = $this->db->field("id,openid,collageNo,collage_number")->where(["goods_id"=>$goods_id,"collage_state"=>0])->order("id asc")->select();
+
+        $state = 0;
+        foreach ($lists as $k => $v) {
+            $arr = $this->o_t_db->field("openid")->where(["pid"=>$v["id"],"collage_state"=>1])->order("pay_time asc")->select();
+            if(!count($arr) || count($arr) >= 4) {
+                unset($lists[$k]);
+                continue;
+            } else {
+                $v["openid"] = $arr[0]["openid"];
+            }
+
+            $seconds = strtotime(date("Y-m-d 23:00:00",time())) - time();
+            if ($seconds <= 0) {
+                unset($lists[$k]);
+                continue;
+            }
+
+            $lists[$k]["time"] = "";
+            $lists[$k]["seconds"] = $seconds;
+            $lists[$k]["count"] = 4 - min(count($arr), 3);
+            $lists[$k]["member"] = $this->m_db->field("usertx,nickname")->where("openid", $v["openid"])->find();
+
+            if (!$state && $openid == $v["openid"]) $state = 1;
+
+            if (!$state) {
+                $count = $this->o_t_db->where(["pid"=>$v["id"],"openid"=>$openid,"collage_state"=>1])->count("id");
+                if ($count) $state = 1;
+            }
+        }
+
+        $data = [];
+        $data["lists"] = array_values($lists);
+        $data["state"] = $state;
+
+        return json_encode($data);
+    }
+
+    public function get_address (int $goods_id = 0,string $openid = "")
+    {
+        $address = db("address")->where("openid",$openid)->find();
+
+        $lists = db("content")->where("id",$goods_id)->select();
+        foreach ($lists as $k => $v) {
+            $lists[$k]["money"] = xiaoshu($v["money"]);
+        }
+
+        $data = [];
+        $data['lists'] = $lists;
+        $data["address"] = $address;
+        $data['kdMoney'] = 0;
+
+        return json_encode($data);
+    }
+
+    public function collage_add ()
+    {
+        $info = input();
+
+        $count = $this->o_t_db->alias("a")
+                    ->join("yado_order_collage b","a.pid = b.id")
+                    ->where(["b.collage_state"=>0,"b.goods_id"=>$info["goods_id"],"a.openid"=>$info["openid"],"a.collage_state"=>1])
+                    ->count("a.id");
+        if ($count) return "有进行中的拼团";
+
+        $start_time = strtotime(date("Y-m-d 09:00:00",time()));
+        $end_time = strtotime(date("Y-m-d 23:00:00",time()));
+
+        if ($start_time > time() || $end_time < time()) return "error1";
+        
+        $member = db("member")->field("collage_count, collage_success, collage_error")->where("openid", $info["openid"])->find();
+        $arr_a = $member["collage_count"] ? string2array($member["collage_count"]) : [];
+        $arr_b = $member["collage_success"] ? string2array($member["collage_success"]) : [];
+        $arr_c = $member["collage_error"] ? string2array($member["collage_error"]) : [];
+
+        $a = $arr_a[$info["goods_id"]] ?? 0;
+        $b = $arr_b[$info["goods_id"]] ?? 0;
+        $c = $arr_c[$info["goods_id"]] ?? 0; 
+
+//      判断是否中过奖 1有，不能在中奖 0没有，可以中奖  $c后台设置必须失败
+        $win = $a ? ($a == 4 ? 1 : $b) : 0;
+        $win = $c ? 1 : $win;
+		
+// 		$win =1;
+		
+		$id = 0;
+        $lists = $this->db->field("id")->where(["goods_id"=>$info["goods_id"],"collage_state"=>0])->select();
+        
+        foreach ($lists as $v) {
+            $arr = $this->o_t_db->field("collage_win")->where(["pid"=>$v["id"],"collage_state"=>1])->order("pay_time asc")->select();
+
+            $number = 0;
+            $success = 0;
+            foreach ($arr as $r) {
+                $number = $number + 1;
+                if ($r["collage_win"]) $success = 1;
+            }
+
+            if ($number) {
+                // 有成功人，只有失败人可以进团
+                // 没有成功人，次团人数少于三人不限制人进团，大于等于三人只有成功人可以进团
+                if ($success) {
+                    if ($win) {
+                        $id = $v["id"];
+                    } else {
+                        if (!isset($arr_a[$info["goods_id"]])) {
+                            $id = $v["id"];
+                            $win = 1;
+                        }
+                    }
+                } else {
+                    if ($number >= 3) {
+                        if (!$win) $id = $v["id"];
+                    } else {
+                        $id = $v["id"];
+                    }
+                }
+            }
+
+            if ($id) break;
+        }
+
+
+        if (!$id) {
+            $id = $this->db->insertGetid([
+                "openid"=>$info["openid"],
+                "goods_id"=>$info["goods_id"],
+                "collageNo"=>$this->collage_no(),
+                "collage_win"=>$win ? 0 : 1
+            ]);
+        }
+
+        $orderNo = $this->orderNo();
+        $this->o_t_db->insert([
+            "pid"=>$id,
+            "openid"=>$info["openid"],
+            "orderNo"=>$orderNo,
+            "out_trade_no"=>$orderNo,
+            "title"=>$info["title"],
+            "thumb"=>$info["thumb"],
+            "gg_id"=>0,
+            "gg_title"=>"",
+            "gg_money"=>$info["gg_money"],
+            "number"=>1,
+            "name"=>$info["name"],
+            "phone"=>$info["phone"],
+            "address"=>$info["address"],
+            "content"=>$info["content"],
+            "collage_win"=>$win ? 0 : 1,
+            "collage_error"=>$c,
+            "collage_red_bag"=>$info["collage_red_bag"]
+        ]);
+
+        return $orderNo;
+    }
+
+    public function pay ()
+    {
+        $openid = input("openid");
+        $orderNo = input("orderNo");
+
+        $data = $this->o_t_db->field("pid,gg_money")->where("out_trade_no",$orderNo)->find();
+        $money = $data["gg_money"] * 100;
+        // if($openid == "oXgpTt727lSF2pPbMFzWduYppfUg") $money = 1;
+		
+		$collage_state = $this->db->where("id",$data["pid"])->value("collage_state");
+		if($collage_state != 0) return "次团已结束";
+		
+		$member = db("member")->where("openid",$openid)->find();
+		
+		//if($member['collage_money']>=$money){
+		//	$jsApiParameters = yuepay($openid, '购买商品', $orderNo, $money, "collage_a");
+			//$type='yue';
+	///	}else{
+
+			$jsApiParameters = wxpay($openid, '购买商品', $orderNo, $money, "collage_a");
+			$type='weixin';
+		///}
+
+
+
+
+        //$jsApiParameters = wxpay($openid, '购买商品', $orderNo, $money, "collage_a");
+
+        $data = array();
+        $data['money'] = $money;
+        $data['orderNo'] = $orderNo;
+        $data['data'] = $jsApiParameters;
+		$data['type'] = $type;
+
+        return json_encode($data);
+    }
+
+    private function orderNo (): string
+    {
+        $chars = array("0", "1", "2", "3", "4", "5", "6", "7", "8", "9" );
+        $charsLen = count($chars) - 1;
+        shuffle($chars);
+        $str = "";
+        for ($i=1; $i<=4; $i++){
+            $str .= $chars[mt_rand(0, $charsLen)];
+        }
+        return date("ymdHis").trim($str);
+    }
+
+    private function collage_no (): string
+    {
+        $str = date("YmdHis").orderNo(6);
+
+        $count = $this->db->where("collageNo",$str)->count("id");
+        if ($count) $str = $this->collage_no();
+
+        return $str;
+    }
+}

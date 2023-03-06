@@ -1,0 +1,84 @@
+<style>
+    .form-horizontal .control-label {
+        width: 100px;
+        text-align: left;
+    }
+    .col-md-offset-3 {
+        margin-left: 5%;
+    }
+    .close{display: none;}
+</style>
+
+<div class="page-bar margin-bottom-20">
+    <ul class="page-breadcrumb">
+        <li>
+            <a href="{:url('admin/index/index')}">后台首页</a>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>压单率计算</span>
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light bordered">
+            <div class="portlet-title">
+                <div class="caption">
+					<span class="caption-subject bold uppercase">
+						压单率计算
+					</span>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <form method="post" action="" class="form-horizontal" enctype="multipart/form-data">
+                    <div class="form-body">
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">总金额</label>
+                            <div class="col-md-9">
+                                <input type="number" id="numMoney" class="form-control input-medium">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">返佣金额</label>
+                            <div class="col-md-9">
+                                <input type="number" id="money" class="form-control input-medium">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">订单数量</label>
+                            <div class="col-md-9">
+                                <input type="number" id="num" class="form-control input-medium">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="content" style="max-height:200px;overflow:auto;"></div>
+                        <div id="a" style="margin-top: 10px;"></div>
+                    </div>
+                    <div class="form-actions">
+                        <div class="row">
+                            <div class="col-md-offset-3 col-md-9">
+                                <span id="submit" class="btn green">计算</span>
+                                <span id="hide" style="display:none;">计算中</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+    $("#submit").click(function(){
+        $("#hide").show();
+        $.post("{:url('ajax_index')}",{numMoney:$("#numMoney").val(),money:$("#money").val(),num:$("#num").val()},function(res){
+            let _num = $("#num").val() - res.a,
+                _scale = _num/$("#num").val();
+            $("#a").html('共：'+$("#num").val()+'单'+'，返现完成'+res.a+'单，压单'+_num+'单，压单率：'+_scale*100+'%');
+            $("#hide").hide();
+            $("#content").html(res.content);
+        })
+    });
+</script>

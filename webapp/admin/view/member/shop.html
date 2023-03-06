@@ -1,0 +1,149 @@
+<link type="text/css" rel="stylesheet" href="__JS__/bootstrap-fileinput/fileinput.css" />
+<script type="text/javascript" src="__JS__/bootstrap-fileinput/fileinput.js"></script>
+<script type="text/javascript" src="__JS__/bootstrap-fileinput/fileinput_locale_zh.js"></script>
+
+<style>
+    .form-horizontal .control-label {
+        width: 100px;
+        text-align: left;
+    }
+    .col-md-offset-3 {
+        margin-left: 5%;
+    }
+    .close{display: none;}
+</style>
+
+<div class="page-bar margin-bottom-20">
+    <ul class="page-breadcrumb">
+        <li>
+            <span>会员管理</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>成为店铺</span>
+        </li>
+    </ul>
+</div>
+
+<div class="row">
+    <div class="col-md-12 ">
+        <div class="portlet light bordered">
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject font-dark sbold uppercase">成为店铺</span>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <form method="post" action="" enctype="multipart/form-data" class="form-horizontal" id="myform" method="post">
+                    <div class="form-body">
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">店铺名称</label>
+                            <div class="col-md-3">
+                                <input type="text" name="shopname" class="form-control" value="{$data.shopname}" required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">店铺图片</label>
+                            <div class="col-md-9">
+                                <input type="file" id="shopimg" name="shopimg" accept="image/png,image/jpg,image/gif,image/JPEG">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">身份证正面</label>
+                            <div class="col-md-9">
+                                <input type="file" id="sfza" name="sfza" accept="image/png,image/jpg,image/gif,image/JPEG">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">身份证反面</label>
+                            <div class="col-md-9">
+                                <input type="file" id="sfzb" name="sfzb" accept="image/png,image/jpg,image/gif,image/JPEG">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">营业执照</label>
+                            <div class="col-md-9">
+                                <input type="file" id="yyzz" name="yyzz" accept="image/png,image/jpg,image/gif,image/JPEG">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">驳回理由</label>
+                            <div class="col-md-9">
+                                <textarea id="content" name="content" class="form-control" style="width: 500px;height:100px;" {if $data.state == 2}readonly{/if}>{$data.content}</textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <div class="row">
+                            <div class="col-md-offset-3 col-md-9">
+                                <button type="submit" name="state" value="1" class="btn green">通过</button>
+                                {if $data.state != 2}
+                                <button type="submit" name="state" value="2" class="btn yellow">驳回</button>
+                                {/if}
+                                <a href="javascript:history.back(-1);" class="btn red">返回</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('#shopimg').fileinput({
+        showUpload: false,
+        showRemove: false,
+        language: 'zh',
+        maxFileCount: 1,
+        showCaption: false,
+        allowedFileExtensions: ['jpg', 'png', 'gif', 'jpeg'],
+        maxFileSize: 261120,
+        {if $data.shopimg}
+        initialPreview:['<a href="{$data.shopimg}" target="_blank"><img src="{$data.shopimg}" style="width: 160px;"></a>'],
+        {/if}
+        previewFileIcon: "<i class='glyphicon glyphicon-king'></i>"
+    });
+
+    $('#sfza').fileinput({
+        showUpload: false,
+        showRemove: false,
+        language: 'zh',
+        maxFileCount: 1,
+        showCaption: false,
+        allowedFileExtensions: ['jpg', 'png', 'gif', 'jpeg'],
+        maxFileSize: 261120,
+    {if $data.sfza}
+    initialPreview:['<a href="{$data.sfza}" target="_blank"><img src="{$data.sfza}" style="width:200px;"></a>'],
+        {/if}
+    previewFileIcon: "<i class='glyphicon glyphicon-king'></i>"
+    });
+
+    $('#sfzb').fileinput({
+        showUpload: false,
+        showRemove: false,
+        language: 'zh',
+        maxFileCount: 1,
+        showCaption: false,
+        allowedFileExtensions: ['jpg', 'png', 'gif', 'jpeg'],
+        maxFileSize: 261120,
+    {if $data.sfzb}
+    initialPreview:['<a href="{$data.sfzb}" target="_blank"><img src="{$data.sfzb}" style="width:200px;"></a>'],
+        {/if}
+    previewFileIcon: "<i class='glyphicon glyphicon-king'></i>"
+    });
+
+    $('#yyzz').fileinput({
+        showUpload: false,
+        showRemove: false,
+        language: 'zh',
+        maxFileCount: 1,
+        showCaption: false,
+        allowedFileExtensions: ['jpg', 'png', 'gif', 'jpeg'],
+        maxFileSize: 261120,
+    {if $data.yyzz}
+    initialPreview:['<a href="{$data.yyzz}" target="_blank"><img src="{$data.yyzz}" style="width:200px;"></a>'],
+        {/if}
+    previewFileIcon: "<i class='glyphicon glyphicon-king'></i>"
+    });
+</script>

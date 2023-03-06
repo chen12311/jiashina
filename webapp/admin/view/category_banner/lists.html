@@ -1,0 +1,91 @@
+<style>
+    .page-breadcrumb li:last-child i{display: none;}
+</style>
+
+<div class="page-bar margin-bottom-20">
+    <ul class="page-breadcrumb">
+        <li>
+            <span>banner图下导航</span>
+            <i class="fa fa-circle"></i>
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light bordered">
+
+            <div class="portlet-title">
+                <div class="caption">
+					<span class="caption-subject bold uppercase">
+            			栏目列表
+          			</span>
+                </div>
+                <div class="actions">
+                    <div class="btn-group btn-group-devided">
+                        <a href="{:url('add')}" class="btn btn-transparent blue btn-outline btn-sm active">
+                            <i class="fa fa-plus-circle"></i> 添加栏目
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="portlet-body">
+                <form action="" method="post">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th width="60"> ID </th>
+                                <th width="100"> 缩略图 </th>
+                                <th width="80"> 栏目名称 </th>
+                                <th width="120"> 连接 </th>
+                                <th width="120"> 添加时间 </th>
+                                <th width="120"> 管理操作 </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {volist name="$lists" id="r" key="i"}
+                            <tr class='del{$r.id}'>
+                                <td>{$r.id}</td>
+                                <td>
+                                    <a href="{$r.thumb}" target="_blank"><img src="{$r.thumb}" width="80px"></a>
+                                </td>
+                                <td>{$r.name}</td>
+                                <td>
+                                    {if $r.state == 1}
+                                    栏目 {:getData("category",['id'=>$r.href],"name")}
+                                    {elseif $r.state == 2}
+                                    商品 {:getData("content",['id'=>$r.href],"title")}
+                                    {elseif $r.state == 3}
+                                    外链 {$r.href}
+                                    {elseif $r.state == 4}
+                                    团购 {:getData("category",['id'=>$r.href],"name")}
+                                    {/if}
+                                </td>
+                                <td>
+                                    {$r.intime|date="Y-m-d H:i",###}
+                                </td>
+                                <td>
+                                    <a href="{:url('edit','id='.$r.id)}" class="btn btn-xs yellow">修改</a>
+                                    <a onclick="del({$r.id})" class="btn btn-xs red">删除</a>
+                                </td>
+                            </tr>
+                            {/volist}
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function del(id){
+        if(confirm("确认要删除？")){
+            $.post("{:url('del')}",{id:id},function(res){
+                if(res){
+                    $(".del"+id).fadeOut(800);
+                }
+            })
+        }
+    }
+</script>

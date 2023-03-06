@@ -1,0 +1,68 @@
+<link type="text/css" rel="stylesheet" href="__JS__/bootstrap-fileinput/fileinput.css" />
+<script type="text/javascript" src="__JS__/bootstrap-fileinput/fileinput.js"></script>
+<script type="text/javascript" src="__JS__/bootstrap-fileinput/fileinput_locale_zh.js"></script>
+
+<style>
+.form-horizontal .control-label{width:86px;text-align: left;}
+.col-md-offset-3{margin-left: 5%;}
+.page-breadcrumb li:last-child i{display: none;}
+.close{display: none;}
+</style>
+
+<div class="page-bar margin-bottom-20">
+    <ul class="page-breadcrumb">
+		{$cateNav.html}
+    </ul>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<div class="portlet light bordered">
+			<div class="portlet-title">
+				<div class="caption">
+					<span class="caption-subject bold uppercase">修改栏目</span>
+				</div>
+			</div>
+			<div class="portlet-body form">
+				<form method="post" action="" id="myform" class="form-horizontal" enctype="multipart/form-data">
+					<div class="form-body">
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">栏目名称</label>
+                            <div class="col-md-9">
+                                <input type="text" name="name" id="name" value="{$data.name}" class="form-control input-medium">
+                            </div>
+                        </div>
+						<div class="form-group bb">
+							<label class="col-md-3 control-label">栏目图片</label>
+							<div class="col-md-9">
+								<input type="file" name="thumb" id="thumb">
+							</div>
+						</div>
+					</div>
+					<div class="form-actions">
+						<div class="row">
+							<div class="col-md-offset-3 col-md-9">
+                				<button type="submit" class="btn blue">保存</button>
+								<a href="{:url('lists','id='.$data.pid)}" class="btn red">返回</a>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+    $('#thumb').fileinput({
+        showUpload : false,
+        showRemove : false,
+        language : 'zh',
+        maxFileCount: 1,
+        showCaption: false,
+        allowedFileExtensions:[ 'jpg', 'png', 'gif', 'jpeg'],
+        maxFileSize : 261120,
+    	{if $data.thumb}
+		initialPreview:['<img src="__ROOT__{$data.thumb}" style="width:auto;height:100px;" />'],
+		{/if}
+        previewFileIcon: "<i class='glyphicon glyphicon-king'></i>",
+    });
+</script>

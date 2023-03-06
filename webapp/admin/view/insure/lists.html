@@ -1,0 +1,108 @@
+<div class="page-bar margin-bottom-20">
+    <ul class="page-breadcrumb">
+        <li>
+            <span>保险管理</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>保险记录</span>
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light bordered">
+
+            <div class="portlet-title">
+                <div class="caption">
+					<span class="caption-subject bold uppercase">
+            		保险记录
+          			</span>
+                </div>
+            </div>
+
+            <div class="search">
+                <form method="POST"  style="float: left;">
+                    会员昵称：<input type="text" class="form-control input-inline" value="{$nickname}" name="nickname">
+                    &nbsp;&nbsp;&nbsp;
+                    <input class="btn" name="search" type="submit" value="搜索" style="color:#fff;background:#217EBD;">
+                </form>
+            </div>
+            <div style="clear:both;"></div>
+
+            <div class="portlet-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th width="80"> ID </th>
+                            <th width="80"> 投保报人 </th>
+                            <th width="120"> 被保人 </th>
+                            <th width="80"> 健康金 </th>
+                            <th width="120"> 到期时间 </th>
+                            <th width="100"> 管理操作 </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {volist name="$lists" id="r" key="k"}
+                        {php}
+                        $lists = db("insure_lists")->field("`id`,`status`")->where("insure_id",$r['id'])->order("id asc")->select();
+                        $health = db("insure_health")->where("id",$r['insure_health_id'])->find();
+                        {/php}
+                        <tr class='del{$r.id}'>
+                            <td> {$k} </td>
+                            <td> {$r.nickname} </td>
+                            <td>
+                                {volist name="$lists" id="lr"}
+                                <a href="{:url('insure_lists','id='.$lr.id)}" class="btn btn-xs yellow">{$lr.status}</a>
+                                {/volist}
+                            </td>
+                            <td>
+                                {if !$health}
+                                <span class="btn btn-xs white">未支付健康金</span>
+                                {else}
+                                {:xiaoshu($health.money)}
+                                {/if}
+                            </td>
+                            <td>
+                                {if !$health}
+                                <span class="btn btn-xs white">未支付健康金</span>
+                                {else}
+                                {$health.intime} - {$health.duetime}
+                                {/if}
+                            </td>
+                            <td>
+                                {if $r.insure_health_id}
+                                <a href="{:url('health_lists','id='.$r.insure_health_id)}" class="btn btn-xs purple">健康金支付记录</a>
+                                {else}
+                                <span class="btn btn-xs white">未支付健康金</span>
+                                {/if}
+                            </td>
+                        </tr>
+                        {/volist}
+                        </tbody>
+                    </table>
+                </div>
+                {$pages}
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function del(id){
+        if(confirm("确认要删除？")){
+            $.ajax({
+                url: "{:url('order_del')}",
+                type: 'post',
+                data:{
+                    id:id
+                },
+                success: function (x) {
+                    if(x == "succ"){
+                        $(".del"+id).fadeOut(500);
+                    }
+                }
+            })
+        }
+    }
+</script>

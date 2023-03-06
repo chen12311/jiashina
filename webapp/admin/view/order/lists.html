@@ -1,0 +1,186 @@
+<script type="text/javascript" src="__JS__/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="__JS__/bootstrap-datetimepicker/js/bootstrap-datetimepicker.zh-CN.js"></script>
+<link href="__JS__/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet"/>
+
+
+<div class="page-bar margin-bottom-20">
+    <ul class="page-breadcrumb">
+        <li>
+            <a href="{:url('admin/index/index')}">后台首页</a>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>订单管理</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>订单列表</span>
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light bordered">
+
+            <div class="portlet-title">
+                <div class="caption">
+					<span class="caption-subject bold uppercase">
+            		订单列表
+          			</span>
+                </div>
+                <div class="actions">
+                    <a href="{:url('lists','state=1')}" class="btn {if $state == 1}yellow{else}blue{/if}">
+                        未支付
+                    </a>
+                    <a href="{:url('lists','state=2')}" class="btn {if $state == 2}yellow{else}blue{/if}">
+                        待发货
+                    </a>
+                    <a href="{:url('lists','state=3')}" class="btn {if $state == 3}yellow{else}blue{/if}">
+                        待收货
+                    </a>
+                    <a href="{:url('lists','state=4')}" class="btn {if $state == 4}yellow{else}blue{/if}">
+                        待评价
+                    </a>
+                    <a href="{:url('lists','state=6')}" class="btn {if $state == 6}yellow{else}blue{/if}">
+                        售后退款
+                    </a>
+                    <a href="{:url('lists','state=7')}" class="btn {if $state == 7}yellow{else}blue{/if}">
+                        已完成
+                    </a>
+                </div>
+            </div>
+
+            <div class="search">
+                <form method="POST"  style="float: left;">
+                    订单号：<input type="text" class="form-control input-inline" value="{$orderNo}" name="orderNo">
+                    &nbsp;&nbsp;&nbsp;
+                    开始时间：<input type="text" class="form-control input-inline" id="starttime" name="starttime" value="{$starttime}" readonly>
+                    &nbsp;&nbsp;&nbsp;
+                    结束时间：<input type="text" class="form-control input-inline" id="endtime" name="endtime" value="{$endtime}" readonly>
+                    &nbsp;&nbsp;&nbsp;
+                    <input class="btn" name="search" type="submit" value="搜索" style="color:#fff;background:#217EBD;">
+
+                    <input class="btn yellow" name="submit" type="submit" value="全部导出" style="margin-left:10px;">
+                </form>
+
+
+            </div>
+            <div style="clear:both;"></div>
+
+            <div class="portlet-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th style="width:50px"> ID </th>
+                            <th style="width:80px"> 订单号 </th>
+                            <th style="width:80px"> 微信商户订单 </th>
+                            <th style="width:80px"> 下单人 </th>
+                            <th style="width:120px"> 商品名称 </th>
+                            <th style="width:80px"> 价格 </th>
+                            <th style="width:50px"> 数量 </th>
+                            <th style="width:50px"> 总价 </th>
+                            <th style="width:80px"> 订单状态 </th>
+                            <th style="width:100px"> 下单时间 </th>
+                            <th style="width:100px"> 管理操作 </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {volist name="$lists" id="r" key="i"}
+                        {php}$nickname = db("member")->where("openid",$r['openid'])->value("nickname");{/php}
+                        <tr class='del{$r.id}'>
+                            <td>{$i}</td>
+                            <td>{$r.orderNo}</td>
+                            <td>{$r.transaction_id}</td>
+                            <td>{$nickname}</td>
+                            <td>{$r.title}-{$r.ggtitle}</td>
+                            <td>
+                                ￥{:xiaoshu($r.ggmoney)}
+                            </td>
+                            <td>{$r.number}</td>
+                            <td>￥{:xiaoshu($r.ggmoney*$r.number)}</td>
+                            <td>
+                                {if $r.state == 1}
+                                未支付
+                                {elseif $r.state == 2}
+                                已支付,待发货
+                                {elseif $r.state == 3}
+                                已发货，待收货
+                                {elseif $r.state == 4}
+                                已收货，未评价
+                                {elseif $r.state == 5}
+                                已收货，已评价
+                                {elseif $r.state == 6}
+                                {php}$data = db("order_refund")->where("orderid",$r['id'])->find();{/php}
+                                    {if $data.state == 0}
+                                    待审核
+                                    {elseif $data.state == 1}
+                                    审核成功
+                                    {else}
+                                    审核失败
+                                    {/if}
+                                {elseif $r.state == 7}
+                                已完成
+                                {/if}
+                            </td>
+                            <td>{$r.intime|date="Y-m-d H:i",###}</td>
+                            <td>
+                                <a href="{:url('show','id='.$r.id)}" class="btn btn-xs blue">查看信息</a>
+                                {if ($r.status != 4 && $r.state == 2) || ($r.status == 4 && $r.state == 3)}
+                                <a href="{:url('fh','id='.$r.id)}" class="btn btn-xs yellow">发货</a>
+                                {/if}
+
+                                {if $r.close == 0}
+                                <span onclick="close_order({$r.id})" class="btn btn-xs red">关闭订单</span>
+                                {else}
+                                <span class="btn btn-xs green">已关闭</span>
+                                {/if}
+                            </td>
+                        </tr>
+                        {/volist}
+                        </tbody>
+                    </table>
+                </div>
+                {$pages}
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="application/javascript">
+    $("#starttime").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'year',
+        language: 'zh-CN',
+        autoclose:true,
+        todayBtn: true,
+    }).on("click",function(){
+        $("#starttime").datetimepicker("setEndDate",$("#endtime").val())
+    });
+
+    $("#endtime").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'year',
+        language: 'zh-CN',
+        autoclose:true,
+        todayBtn: true,
+        startDate:$("#starttime").val()
+    }).on("click",function(){
+        $("#endtime").datetimepicker("setStartDate",$("#starttime").val())
+    });
+
+    function close_order(id){
+        if(confirm("确认要关闭？")){
+            $.ajax({
+                url: "{:url('close_order')}",
+                type: 'post',
+                data:{id:id},
+                success: function (res) {
+                    if(res == "success"){
+                        location.reload();
+                    }
+                }
+            })
+        }
+    }
+</script>

@@ -1,0 +1,436 @@
+<div class="page-sidebar-wrapper">
+   <div class="page-sidebar navbar-collapse collapse">
+		<ul class="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="false" data-slide-speed="200">
+			<li class="sidebar-toggler-wrapper hide">
+				<div class="sidebar-toggler">
+					<span></span>
+				</div>
+			</li>
+			<li class="sidebar-search-wrapper">
+				<form class="sidebar-search  " action="#" method="POST">
+					<a href="javascript:;" class="remove">
+						<i class="icon-close"></i>
+					</a>
+					<div class="input-group" style="display:none;">
+						<input type="text" class="form-control" placeholder="搜索...">
+						<span class="input-group-btn">
+							<a href="javascript:;" class="btn submit">
+								<i class="icon-magnifier"></i>
+							</a>
+						</span>
+					</div>
+				</form>
+			</li>
+			<li class="nav-item {if $cur.controller == 'Index'}start active open{/if}">
+				<a href="#" class="nav-link nav-toggle">
+					<i class="icon-home"></i>
+					<span class="title">后台首页</span>
+					<span class="selected"></span>
+					<span class="arrow {if $cur.controller == 'Index'}start active open{/if}"></span>
+				</a>
+			</li>
+			<li class="heading">
+				<h3 class="uppercase">管理员设置</h3>
+			</li>
+			<li class="nav-item {if $cur.controller == 'Member'}start active open{/if}">
+				<a href="#" class="nav-link nav-toggle">
+					<i class="icon-user"></i>
+					<span class="title">会员管理</span>
+					<span class="arrow {if $cur.controller == 'Member'}open{/if}"></span>
+				</a>
+				<ul class="sub-menu">
+					<li class="nav-item {if $cur.controller == 'Member' && $cur.action != 'fx_lists' && $cur.action != 'pay_lists' && $cur.action != 'tx_lists'}start active open{/if}">
+						<a href="{:url('admin/member/lists')}" class="nav-link">
+							<span class="title">会员列表</span>
+						</a>
+					</li>
+					<li class="nav-item {if $cur.controller == 'Member' && $cur.action == 'tx_lists'}start active open{/if}">
+						<a href="{:url('admin/member/tx_lists')}" class="nav-link">
+							<span class="title">提现列表</span>
+						</a>
+					</li>
+					<li class="nav-item {if $cur.controller == 'Member' && $cur.action == 'sjtx_lists'}start active open{/if}">
+						<a href="{:url('admin/member/sjtx_lists')}" class="nav-link">
+							<span class="title">商家提现列表</span>
+						</a>
+					</li>
+<!-- 					<li class="nav-item {if $cur.controller == 'Member' && $cur.action == 'fx_lists'}start active open{/if}">
+						<a href="{:url('admin/member/fx_lists')}" class="nav-link">
+							<span class="title">返现列表</span>
+						</a>
+					</li>
+					<li class="nav-item {if $cur.controller == 'Member' && $cur.action == 'pay_lists'}start active open{/if}">
+						<a href="{:url('admin/member/pay_lists')}" class="nav-link">
+							<span class="title">线下支付记录</span>
+						</a>
+					</li> -->
+				</ul>
+			</li>
+			<li class="nav-item {if $cur.controller == 'Agent'}start active open{/if}">
+				<a href="#" class="nav-link nav-toggle">
+					<i class="icon-user"></i>
+					<span class="title">代理商管理</span>
+					<span class="arrow {if $cur.controller == 'Agent'}open{/if}"></span>
+				</a>
+				<ul class="sub-menu">
+					<li class="nav-item {if $cur.controller == 'Agent' && $cur.action != 'setup'}start active open{/if}">
+						<a href="{:url('admin/agent/lists')}" class="nav-link">
+							<span class="title">代理商列表</span>
+						</a>
+					</li>
+				</ul>
+			</li>
+
+			<li class="nav-item {if $cur.controller == 'AgentGame'}start active open{/if}">
+				<a href="#" class="nav-link nav-toggle">
+					<i class="icon-user"></i>
+					<span class="title">游戏代理商管理</span>
+					<span class="arrow {if $cur.controller == 'AgentGame'}open{/if}"></span>
+				</a>
+				<ul class="sub-menu">
+					<li class="nav-item {if $cur.controller == 'AgentGame' && $cur.action == 'lists'}start active open{/if}">
+						<a href="{:url('admin/agentGame/lists')}" class="nav-link">
+							<span class="title">游戏代理商列表</span>
+						</a>
+					</li>
+					<li class="nav-item {if $cur.controller == 'AgentGame' && $cur.action == 'setup'}start active open{/if}">
+						<a href="{:url('admin/AgentGame/setup')}" class="nav-link">
+							<span class="title">游戏代理商设置</span>
+						</a>
+					</li>
+				</ul>
+			</li>
+
+			<li class="nav-item {if $cur.controller == 'Order'}start active open{/if}">
+				<a href="javascript:;" class="nav-link nav-toggle">
+					<i class="icon-list"></i>
+					<span class="title">订单管理</span>
+					<span class="arrow {if $cur.controller == 'Order'}open{/if}"></span>
+				</a>
+				<ul class="sub-menu">
+					<li class="nav-item {if $cur.action == 'lists'}active{/if}">
+						<a href="{:url('admin/order/lists')}" class="nav-link ">
+							<span class="title">订单列表</span>
+						</a>
+					</li>
+					<li class="nav-item {if $cur.action == 'collage_order'}active{/if}">
+						<a href="{:url('admin/order/collage_order')}" class="nav-link ">
+							<span class="title">拼团订单</span>
+						</a>
+					</li>
+					<li class="nav-item {if $cur.action == 'collage_order_a'}active{/if}">
+						<a href="{:url('admin/order/collage_order_a')}" class="nav-link ">
+							<span class="title">拼团订单新</span>
+						</a>
+					</li>
+					<li class="nav-item {if $cur.action == 'collage_order_c'}active{/if}">
+						<a href="{:url('admin/order/collage_order_c')}" class="nav-link ">
+							<span class="title">拼团订单2</span>
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="nav-item {if $cur.controller == 'Category' || $cur.controller == 'CategoryBanner'}start active open{/if}">
+				<a href="javascript:;" class="nav-link nav-toggle">
+					<i class="icon-list"></i>
+					<span class="title">栏目管理</span>
+					<span class="arrow {if $cur.controller == 'Category' || $cur.controller == 'CategoryBanner'}open{/if}"></span>
+				</a>
+				<ul class="sub-menu">
+					<li class="nav-item {if $cur.controller == 'Category'}active{/if}">
+						<a href="{:url('admin/category/lists')}" class="nav-link ">
+							<span class="title">栏目列表</span>
+						</a>
+					</li>
+					<li class="nav-item {if $cur.controller == 'CategoryBanner'}active{/if}">
+						<a href="{:url('admin/category_banner/lists')}" class="nav-link ">
+							<span class="title">banner图下导航</span>
+						</a>
+					</li>
+				</ul>
+			</li>
+            <li class="nav-item {if $cur['controller'] == 'Content' || $cur['controller'] == 'Notice'}start active open{/if}">
+                <a href="javascript:;" class="nav-link nav-toggle">
+                    <i class="icon-note"></i>
+                    <span class="title">内容管理</span>
+                    <span class="arrow {if $cur['controller'] == 'Content' || $cur['controller'] == 'Notice'}open{/if}"></span>
+                </a>
+                {php}$oneList = db("category")->where("pid",0)->order("id ASC")->select();{/php}
+                <ul class="sub-menu">
+                    {volist name="$oneList" id="r"}
+                    <li class="nav-item {if $cur['controller'] == 'Content' && $cur['oid'] == $r.id}start active open{/if}">
+                        <a class="nav-link nav-toggle">
+                            <i class="icon-folder-alt"></i>
+                            <span class="title">{$r.name}</span>
+                            <span class="arrow  {if $cur['controller'] == 'Content' && $cur['oid'] == $r.id}open{/if}"></span>
+                        </a>
+                        <ul class="sub-menu">
+                            {php}$twoList = db("category")->where("pid",$r['id'])->order("id ASC")->select();{/php}
+                            {volist name="$twoList" id="v"}
+                            <li class="nav-item {if $cur['controller'] == 'Content' && $cur['tid'] == $v.id}start active open{/if}">
+                                <a class="nav-link nav-toggle">
+                                    <i class="icon-folder-alt"></i>
+                                    <span class="title">{$v.name}</span>
+                                    <span class="arrow  {if $cur['controller'] == 'Content' && $cur['tid'] == $v.id}open{/if}"></span>
+                                </a>
+                                <ul class="sub-menu">
+                                    {php}$threeList = db("category")->where("pid",$v['id'])->order("id ASC")->select();{/php}
+                                    {volist name="$threeList" id="a"}
+                                    <li class="nav-item {if $cur['controller'] == 'Content' && $cur['id'] == $a.id}open{/if}">
+                                        <a href="{:url('admin/content/lists','catid='.$a.id)}" class="nav-link nav-toggle">
+                                            <span class="title">{$a.name}</span>
+                                        </a>
+                                    </li>
+                                    {/volist}
+                                </ul>
+                            </li>
+                            {/volist}
+                        </ul>
+                    </li>
+                    {/volist}
+<!--					<li class="nav-item {if $cur['controller'] == 'Content' && input('catid') == 0}open{/if}">-->
+<!--						<a href="{:url('admin/content/lists','catid=0')}" class="nav-link nav-toggle">-->
+<!--							<span class="title">保险商品</span>-->
+<!--						</a>-->
+<!--					</li>-->
+					<li class="nav-item {if $cur['controller'] == 'Notice'}open{/if}">
+						<a href="{:url('admin/notice/lists')}" class="nav-link nav-toggle">
+							<span class="title">通知公告</span>
+						</a>
+					</li>
+                </ul>
+            </li>
+			<li class="nav-item {if $cur.controller == 'Position'}start active open{/if}">
+				<a href="javascript:;" class="nav-link nav-toggle">
+					<i class="icon-list"></i>
+					<span class="title">推荐管理</span>
+					<span class="arrow {if $cur.controller == 'Position'}open{/if}"></span>
+				</a>
+				<ul class="sub-menu">
+					<li class="nav-item {if $cur.controller == 'Position' && input('state') == 1}active{/if}">
+						<a href="{:url('admin/Position/lists','state=1')}" class="nav-link ">
+							<span class="title">首页人气推荐</span>
+						</a>
+					</li>
+					<li class="nav-item {if $cur.controller == 'Position' && input('state') == 2}active{/if}">
+						<a href="{:url('admin/Position/lists','state=2')}" class="nav-link ">
+							<span class="title">购物车为你推荐</span>
+						</a>
+					</li>
+					<li class="nav-item {if $cur.controller == 'Position' && input('state') == 3}active{/if}">
+						<a href="{:url('admin/Position/lists','state=3')}" class="nav-link ">
+							<span class="title">首页导航下推荐</span>
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="nav-item {if $cur.controller == 'Fragment'}start active open{/if}">
+				<a href="#" class="nav-link nav-toggle">
+					<i class="icon-note"></i>
+					<span class="title">图片管理</span>
+					<span class="arrow"></span>
+				</a>
+				<ul class="sub-menu">
+					<li class="nav-item {if $cur['controller'] == 'Fragment' && input('catid') == 0}open{/if}">
+						<a href="{:url('admin/Fragment/index','catid=0')}" class="nav-link nav-toggle">
+							<span class="title">推荐</span>
+						</a>
+					</li>
+					{volist name="$oneList" id="v"}
+					<li class="nav-item {if $cur['controller'] == 'Fragment' && input('catid') == $v.id}open{/if}">
+						<a href="{:url('admin/Fragment/index','catid='.$v.id)}" class="nav-link nav-toggle">
+							<span class="title">{$v.name}</span>
+						</a>
+					</li>
+					{/volist}
+					<li class="nav-item {if $cur['controller'] == 'Fragment' && input('catid') == -1}open{/if}">
+						<a href="{:url('admin/Fragment/index','catid=-1')}" class="nav-link nav-toggle">
+							<span class="title">嘉诗娜保险</span>
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="nav-item {if $cur.controller == 'Pay'}start active open{/if}">
+				<a href="javascript:;" class="nav-link nav-toggle">
+					<i class="icon-list"></i>
+					<span class="title">资金流水</span>
+					<span class="arrow {if $cur['controller'] == 'Pay'}open{/if}"></span>
+				</a>
+				<ul class="sub-menu">
+<!-- 					<li class="nav-item {if $cur.controller == 'Pay' && $cur.action == 'lists'}active open{/if}">
+						<a href="{:url('admin/Pay/lists')}" class="nav-link ">
+							<span class="title">资金流水</span>
+						</a>
+					</li> -->
+					<li class="nav-item {if $cur.controller == 'Pay' && $cur.action == 'alists'}active open{/if}">
+						<a href="{:url('admin/Pay/alists')}" class="nav-link ">
+							<span class="title">资金流水新</span>
+						</a>
+					</li>
+					<li class="nav-item {if $cur.controller == 'Pay' && $cur.action == 'zmlists'}active open{/if}">
+						<a href="{:url('admin/Pay/zmlists')}" class="nav-link ">
+							<span class="title">转卖记录</span>
+						</a>
+					</li>
+					
+				</ul>
+
+			</li>
+			<li class="nav-item {if $cur.controller == 'Insure'}start active open{/if}">
+				<a href="javascript:;" class="nav-link nav-toggle">
+					<i class="icon-list"></i>
+					<span class="title">保险管理</span>
+					<span class="arrow {if $cur['controller'] == 'Insure'}open{/if}"></span>
+				</a>
+				<ul class="sub-menu">
+					<li class="nav-item {if $cur.controller == 'Insure' && $cur.action == 'lists' }active open{/if}">
+						<a href="{:url('admin/Insure/lists')}" class="nav-link ">
+							<span class="title">保险记录</span>
+						</a>
+					</li>
+					
+					
+					<li class="nav-item {if $cur.controller == 'Insure' && $cur.action == 'shenqing'}active open{/if}">
+						<a href="{:url('admin/Insure/shenqing')}" class="nav-link ">
+							<span class="title">健康金申请</span>
+						</a>
+					</li>
+					
+					
+				</ul>
+				
+				
+				
+			</li>
+            <li class="nav-item {if $cur.controller == 'Setup' || $cur.controller == 'Express' || $cur.controller == 'Agree'}start active open{/if}">
+                <a href="" class="nav-link nav-toggle">
+                    <i class="icon-users"></i>
+                    <span class="title">管理员设置</span>
+                    <span class="arrow {if $cur.controller == 'Setup' || $cur.controller == 'Express' || $cur.controller == 'Agree'}start active open{/if}"></span>
+                </a>
+                <ul class="sub-menu">
+                    <li class="nav-item {if $cur.controller == 'Setup' && $cur.action == 'basic'}start active open{/if}">
+                        <a href="{:url('admin/Setup/basic')}" class="nav-link ">
+                            <span class="title">网站设置</span>
+                        </a>
+                    </li>
+					
+					                    <li class="nav-item {if $cur.controller == 'Setup' && $cur.action == 'gg'}start active open{/if}">
+                        <a href="{:url('admin/Setup/gg')}" class="nav-link ">
+                            <span class="title">提现广告设置</span>
+                        </a>
+                    </li>
+					<li class="nav-item {if $cur.controller == 'Setup' && $cur.action == 'website'}start active open{/if}">
+						<a href="{:url('admin/Setup/website')}" class="nav-link ">
+							<span class="title">返现设置</span>
+						</a>
+					</li>
+
+<!--					<li class="nav-item {if $cur.controller == 'Setup' && $cur.action == 'collage'}start active open{/if}">-->
+<!--						<a href="{:url('admin/Setup/collage')}" class="nav-link ">-->
+<!--							<span class="title">拼团 返现设置</span>-->
+<!--						</a>-->
+<!--					</li>-->
+
+					<li class="nav-item {if $cur.controller == 'Express' && ($cur.action == 'lists' || $cur.action == 'edit')}start active open{/if}">
+						<a href="{:url('admin/Express/lists')}" class="nav-link ">
+							<span class="title">快递费设置</span>
+						</a>
+					</li>
+					<li class="nav-item {if $cur.controller == 'Agree'}start active open{/if}">
+						<a href="" class="nav-link nav-toggle">
+							<span class="title">协议设置</span>
+							<span class="arrow {if $cur.controller == 'Agree'}start active open{/if}"></span>
+						</a>
+						<ul class="sub-menu">
+							<li class="nav-item {if $cur.controller == 'Agree' && input('id') == 1}start active open{/if}">
+								<a href="{:url('admin/agree/page?id=1')}" class="nav-link ">
+									<span class="title">店铺协议</span>
+								</a>
+							</li>
+							<li class="nav-item {if $cur.controller == 'Agree' && input('id') == 2}start active open{/if}">
+								<a href="{:url('admin/agree/page?id=2')}" class="nav-link ">
+									<span class="title">代理商协议</span>
+								</a>
+							</li>
+							<li class="nav-item {if $cur.controller == 'Agree' && input('id') == 4}start active open{/if}">
+								<a href="{:url('admin/agree/page?id=4')}" class="nav-link ">
+									<span class="title">游戏代理商协议</span>
+								</a>
+							</li>
+							<li class="nav-item {if $cur.controller == 'Agree' && input('id') == 3}start active open{/if}">
+								<a href="{:url('admin/agree/page?id=3')}" class="nav-link ">
+									<span class="title">分销协议</span>
+								</a>
+							</li>							
+							
+							<li class="nav-item {if $cur.controller == 'Agree' && input('id') == 100}start active open{/if}">
+								<a href="{:url('admin/agree/page?id=100')}" class="nav-link ">
+									<span class="title">wifi用户服务协议</span>
+								</a>
+							</li>
+							<li class="nav-item {if $cur.controller == 'Agree' && input('id') == 101}start active open{/if}">
+								<a href="{:url('admin/agree/page?id=101')}" class="nav-link ">
+									<span class="title">wifi隐私协议</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+                    <li class="nav-item {if $cur.controller == 'Setup' && $cur.action == 'admininfo'}start active open{/if}">
+                        <a href="{:url('admin/Setup/admininfo')}" class="nav-link ">
+                            <span class="title">修改登录密码</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+			<li class="nav-item {if $cur.controller == 'Calculation'}start active open{/if}">
+				<a href="{:url('admin/Calculation/index')}" class="nav-link ">
+					<i class="icon-settings"></i>
+					<span class="title">压单率计算</span>
+				</a>
+			</li>
+			
+			
+						<li class="nav-item {if $cur.controller == 'Wifi'}start active open{/if}">
+				<a href="javascript:;" class="nav-link nav-toggle">
+					<i class="icon-list"></i>
+					<span class="title">WIFI设置</span>
+					<span class="arrow {if $cur['controller'] == 'wifi'}open{/if}"></span>
+				</a>
+				<ul class="sub-menu">
+					<li class="nav-item {if $cur.controller == 'Wifi' && $cur.action == 'category_lists' }active open{/if}">
+						<a href="{:url('admin/wifi/category_lists')}" class="nav-link ">
+							<span class="title">商家分类</span>
+						</a>
+					</li>
+					
+					
+					<li class="nav-item {if $cur.controller == 'Wifi' && $cur.action == 'wifi_lists'}active open{/if}">
+						<a href="{:url('admin/Wifi/wifi_lists')}" class="nav-link ">
+							<span class="title">wiif信息</span>
+						</a>
+					</li>				
+					
+					<li class="nav-item {if $cur.controller == 'Wifi' && $cur.action == 'shangjia_lists'}active open{/if}">
+						<a href="{:url('admin/Wifi/shangjia_lists')}" class="nav-link ">
+							<span class="title">店铺信息</span>
+						</a>
+					</li>					
+					
+					
+				</ul>
+				
+				
+				
+			</li>
+			
+			
+			<li class="nav-item">
+				<a href="{:url('admin/index/logout')}" class="nav-link nav-toggle">
+					<i class="icon-settings"></i>
+					<span class="title">退出登录</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>

@@ -1,0 +1,90 @@
+<script type="text/javascript" src="__JS__/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="__JS__/bootstrap-datetimepicker/js/bootstrap-datetimepicker.zh-CN.js"></script>
+<link href="__JS__/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet"/>
+
+<style>
+    .form-horizontal .control-label {
+        width: 100px;
+        text-align: left;
+    }
+
+    .box p {
+        width: auto;
+        float: left;
+        margin: 0 10px 0 0;
+    }
+</style>
+
+<div class="page-bar margin-bottom-20">
+    <ul class="page-breadcrumb">
+        <li>
+            <span>会员管理</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>会员列表</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>拼团失败</span>
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="col-md-12 ">
+        <!-- BEGIN SAMPLE FORM PORTLET-->
+        <div class="portlet light bordered">
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject font-dark sbold uppercase">拼团失败</span>
+                </div>
+            </div>
+
+            <div class="search">
+                <form method="POST"  style="float: left;">
+                    时间：<input type="text" class="form-control input-inline" id="time" name="time" value="{$time}" readonly>
+                    &nbsp;&nbsp;&nbsp;
+                    <input class="btn" name="search" type="submit" value="搜索" style="color:#fff;background:#217EBD;">
+                </form>
+            </div>
+            <div style="clear:both;"></div>
+
+            <div class="portlet-body form">
+                <form method="post" action="" enctype="multipart/form-data" class="form-horizontal" id="myform" method="post">
+                    <div class="form-body">
+                        {volist name="$lists" id="r"}
+                        <div class="form-group">
+                            <label class="col-md-4" style="text-align:right;">{$r.title}</label>
+                            <div class="col-md-8 box">
+
+                                <p><span>总数量：</span>{$r.count_all ?? 0}</p>
+                                <p><span>成功数量：</span>{$r.count_success ?? 0}</p>
+                                <p><span>失败数量：</span>{$r.count_error ?? 0}</p>
+                                <p><span>到期自动退款数量：</span>{$r.count_error_time ?? 0}</p>
+                                <p><span>库存不足退款数量：</span>{$r.count_error_stock ?? 0}</p>
+                                <p><span>总金额：</span>{:xiaoshu($r.money_all ?? 0)}</p>
+                                <p><span>成功金额：</span>{:xiaoshu($r.money_success ?? 0)}</p>
+                                <p><span>失败金额：</span>{:xiaoshu($r.money_error ?? 0)}</p>
+                                <p><span>到期自动退款金额：</span>{:xiaoshu($r.money_error_time ?? 0)}</p>
+                                <p><span>库存不足退款金额：</span>{:xiaoshu($r.money_error_stock ?? 0)}</p>
+                                <p><span>拼团红包金额：</span>{:xiaoshu($r.money_red_bag ?? 0)}</p>
+                                <p><span>下级返现金额：</span>{:xiaoshu($r.money_fx ?? 0)}</p>
+                            </div>
+                        </div>
+                        {/volist}
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="application/javascript">
+    $("#time").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'year',
+        language: 'zh-CN',
+        autoclose:true,
+        todayBtn: true,
+    });
+</script>

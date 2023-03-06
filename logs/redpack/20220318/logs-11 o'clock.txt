@@ -1,0 +1,14 @@
+<xml>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[你的商户号未开通该产品权限，请联系管理员到产品中心开通。开通路径：产品中心-产品大全-现金红包-申请开通]]></return_msg>
+<result_code><![CDATA[FAIL]]></result_code>
+<err_code><![CDATA[PRODUCT_AUTHORITY_UNOPEN]]></err_code>
+<err_code_des><![CDATA[你的商户号未开通该产品权限，请联系管理员到产品中心开通。开通路径：产品中心-产品大全-现金红包-申请开通]]></err_code_des>
+<mch_billno><![CDATA[134612706539]]></mch_billno>
+<mch_id><![CDATA[1550831061]]></mch_id>
+<wxappid><![CDATA[wxcd685d02ba1ce202]]></wxappid>
+<re_openid><![CDATA[oXgpTt727lSF2pPbMFzWduYppfUg]]></re_openid>
+<total_amount>100</total_amount>
+</xml>
+
+

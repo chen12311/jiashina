@@ -1,0 +1,149 @@
+@<script type="text/javascript" src="__JS__/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="__JS__/bootstrap-datetimepicker/js/bootstrap-datetimepicker.zh-CN.js"></script>
+<link href="__JS__/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet"/>
+
+<div class="page-bar margin-bottom-20">
+    <ul class="page-breadcrumb">
+        <li>
+            <a href="{:url('admin/index/index')}">后台首页</a>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>资金流水</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>流水列表</span>
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light bordered">
+
+            <div class="portlet-title">
+                <div class="caption">
+					<span class="caption-subject bold uppercase">
+            		流水列表
+          			</span>
+                </div>
+				
+				</br></br></br>
+				            <div class="search">
+
+            </div>
+				<div style="line-height:35px;margin-left:50px;margin-bottom:10px;">
+				</br>
+                    
+					
+                </div>
+				
+            </div>
+
+            <div class="portlet-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th> ID </th>
+                            <th> 变动人 </th>
+                            <th> 金额 </th>
+                            <th> 类型 </th>
+                            <th> 下单时间 </th>
+                            <!--<th> 管理操作 </th>-->
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {volist name="$lists" id="r" key="i"}
+
+                        <tr class='del{$r.id}'>
+                            <td>{$i}</td>
+                            <td>{:getData("member",['openid'=>$r.openid],'nickname')}---{$r.openid}</td>
+                            <td>
+							{$r.money}
+                            </td>
+                            <td>
+							{$r.msg}
+							
+                               <!-- {if $r.state == 1}
+                                线上订单支付
+                                {elseif $r.state == 2}
+                                {if $r.type == '-'}线下订单支付{else}商铺收款{/if}
+                                {elseif $r.state == 5}
+                                分享满三人返现
+                                {else}
+                                提现
+                                {/if}-->
+                            </td>
+                            <td>
+							{$r.ctime}
+							</td>
+                            <!--<td>-->
+		<td>
+							<span onclick="del({$r.id})" class="btn btn-xs red">删除记录</span>
+							</td>
+                            <!--</td>-->
+                        </tr>
+                        {/volist}
+                        </tbody>
+                    </table>
+                </div>
+                {$pages}
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $("#starttime").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'year',
+        language: 'zh-CN',
+        autoclose:true,
+        todayBtn: true,
+    }).on("click",function(){
+        $("#starttime").datetimepicker("setEndDate",$("#endtime").val())
+    });
+
+    $("#endtime").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'year',
+        language: 'zh-CN',
+        autoclose:true,
+        todayBtn: true,
+        startDate:$("#starttime").val()
+    }).on("click",function(){
+        $("#endtime").datetimepicker("setStartDate",$("#starttime").val())
+    });
+
+    function del(id){
+        if(confirm("删除后不可恢复！！！！确认要删除？")){
+            $.ajax({
+                url: "{:url('order_del_liuhsui')}",
+                type: 'post',
+                data:{
+                    id:id
+                },
+                success: function (x) {
+                    if(x == "success"){
+                        alert("删除成功")
+                        location.reload();
+                    }
+                }
+            })
+        }
+    }
+</script>
+
+<script type="application/javascript">
+    $("#time").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'year',
+        language: 'zh-CN',
+        autoclose:true,
+        todayBtn: true,
+    });
+	
+	setTimeout(function (){
+		window.location.reload();
+	}, 500000000);
+</script>

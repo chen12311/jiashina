@@ -1,0 +1,103 @@
+<div class="page-bar margin-bottom-20">
+    <ul class="page-breadcrumb">
+        <li>
+            <span>会员管理</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>{$data.nickname} 下一级</span>
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light bordered">
+
+
+
+            <div class="portlet-body">
+                <div class="table-responsive">
+
+                    <div class="portlet-title">
+                        <div class="caption">
+                            <span class="caption-subject bold uppercase">{$data.nickname} 上级</span>
+                        </div>
+                    </div>
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th> ID </th>
+                            <th> 会员昵称 </th>
+                            <th> 注册时间 </th>
+                            <th> 管理操作 </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {php}$arr = db("member")->field("id,nickname,intime")->where("id",$data["fx_top_a"])->find();{/php}
+                        <tr class='del{$data.id}' style="margin-bottom:100px;">
+                            <td> 0 </td>
+                            <td> {$data.fx_top_a ? $arr.nickname : '无上一级'} </td>
+                            <td> {$data.fx_top_a ? date("Y-m-d H:i",$arr.intime) : '无上一级'} </td>
+                            <td>
+                                {if $data.fx_top_a}
+                                <span class="btn btn-xs red" onclick="level_del({$data.id},1)">删除</span>
+                                {else}
+                                无上一级
+                                {/if}
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="portlet-title">
+                        <div class="caption">
+                            <span class="caption-subject bold uppercase">{$data.nickname} 下级</span>
+                        </div>
+                    </div>
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th> ID </th>
+                            <th> 会员昵称 </th>
+                            <th> 注册时间 </th>
+                            <th> 管理操作 </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {volist name="$lists" id="r" key="i"}
+                        <tr class='del{$r.id}'>
+                            <td> {$i} </td>
+                            <td> {$r.nickname} </td>
+                            <td> {$r.intime|date='Y-m-d H:i',###} </td>
+                            <td>
+                                <span class="btn btn-xs red" onclick="level_del({$r.id},0)">删除</span>
+								<a class="btn btn-xs red" href="{:url('level_edit','id='.$r.id)}">修改</a>
+
+                            </td>
+                        </tr>
+                        {/volist}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function level_del (id,state) {
+        if(confirm("确认要删除？")){
+            $.ajax({
+                url: "{:url('level_del')}",
+                type: 'post',
+                data:{
+                    id:id,
+                    state:state
+                },
+                success: function (res) {
+                    if(res == "success") location.reload();
+                }
+            })
+        }
+    }
+</script>

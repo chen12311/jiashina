@@ -1,0 +1,161 @@
+<script type="text/javascript" src="__JS__/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="__JS__/bootstrap-datetimepicker/js/bootstrap-datetimepicker.zh-CN.js"></script>
+<link href="__JS__/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet"/>
+
+
+<div class="page-bar margin-bottom-20">
+    <ul class="page-breadcrumb">
+        <li>
+            <span>会员管理</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>交易记录</span>
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light bordered">
+
+            <div class="portlet-title">
+                <div class="caption">
+					<span class="caption-subject bold uppercase">
+            		交易记录
+          			</span>
+                </div>
+
+                <div class="actions">
+                    <a href="javascript:history.back(-1);" class="btn red">返回</a>
+                </div>
+            </div>
+
+            <div class="search">
+                <form method="POST"  style="float: left;">
+                    店铺：<input type="text" class="form-control input-inline" value="{$shopname}" name="shopname">
+                    &nbsp;&nbsp;&nbsp;
+                    订单号：<input type="text" class="form-control input-inline" value="{$orderNo}" name="orderNo">
+                    &nbsp;&nbsp;&nbsp;
+                    开始时间：<input type="text" class="form-control input-inline" id="starttime" name="starttime" value="{$starttime}" readonly>
+                    &nbsp;&nbsp;&nbsp;
+                    结束时间：<input type="text" class="form-control input-inline" id="endtime" name="endtime" value="{$endtime}" readonly>
+                    &nbsp;&nbsp;&nbsp;
+                    <input class="btn" name="search" type="submit" value="搜索" style="color:#fff;background:#217EBD;">
+                    &nbsp;&nbsp;&nbsp;
+                    <input class="btn yellow" name="submit" type="submit" value="全部导出" style="margin-left:20px;">
+                    <br/><br/>
+                    订单数量：{$all}个
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    已支付总金额：{:xiaoshu($allMoney)}元
+                </form>
+            </div>
+            <div style="clear:both;"></div>
+
+            <div class="portlet-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th> ID </th>
+                            <th> 店铺 </th>
+                            <th> 订单号 </th>
+                            <th> 下单人 </th>
+                            <th> 支付金额 </th>
+                            <th> 支付状态 </th>
+                            <th> 下单时间 </th>
+                            <th> 管理操作 </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {volist name="$lists" id="r" key="i"}
+                        {php}
+                        $data = db("member")->where("openid",$r['openid'])->find();
+                        $member = db("member")->where("id",$r['cid'])->find();
+                        {/php}
+                        <tr class='del{$r.id}'>
+                            <td> {$i} </td>
+                            <td> {$member.shopname} </td>
+                            <td> {$r.orderNo} </td>
+                            <td> {$data.nickname} </td>
+                            <td> {:xiaoshu($r.ggmoney)} </td>
+                            <td>
+                                {if $r.state == 7}
+                                支付成功
+                                {else}
+                                未支付
+                                {/if}
+                            </td>
+                            <td> {$r.intime|date="Y-m-d H:i:s",###} </td>
+                            <td>
+                                {if $r.state != 7}
+                                <span class="btn btn-xs yellow" onclick="pay_succ({$r.id})">支付成功</span>
+                                {/if}
+                                {if $r.close == 0}
+                                <span onclick="close_order({$r.id})" class="btn btn-xs red">关闭订单</span>
+                                {else}
+                                <span class="btn btn-xs green">已关闭</span>
+                                {/if}
+                            </td>
+                        </tr>
+                        {/volist}
+                        </tbody>
+                    </table>
+                </div>
+                {$pages}
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $("#starttime").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'year',
+        language: 'zh-CN',
+        autoclose:true,
+        todayBtn: true,
+    }).on("click",function(){
+        $("#starttime").datetimepicker("setEndDate",$("#endtime").val())
+    });
+
+    $("#endtime").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'year',
+        language: 'zh-CN',
+        autoclose:true,
+        todayBtn: true,
+        startDate:$("#starttime").val()
+    }).on("click",function(){
+        $("#endtime").datetimepicker("setStartDate",$("#starttime").val())
+    });
+
+    function pay_succ(id){
+        if(confirm("支付成功？")){
+            $.ajax({
+                url: "{:url('pay_succ')}",
+                type: 'post',
+                data:{
+                    id:id
+                },
+                success: function (x) {
+                    if(x){
+                        location.reload();
+                    }
+                }
+            })
+        }
+    }
+    function close_order(id){
+        if(confirm("确认要关闭？")){
+            $.ajax({
+                url: "{:url('close_order')}",
+                type: 'post',
+                data:{id:id},
+                success: function (res) {
+                    if(res == "success"){
+                        location.reload();
+                    }
+                }
+            })
+        }
+    }
+</script>

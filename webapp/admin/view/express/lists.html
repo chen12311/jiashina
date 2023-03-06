@@ -1,0 +1,62 @@
+<style>
+    input.paixu {
+        width: 15px;
+        height: 15px;
+        text-align: center;
+    }
+</style>
+<div class="page-bar margin-bottom-20">
+    <ul class="page-breadcrumb">
+        <li>
+            <span>管理员设置</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>
+                快递费设置
+            </span>
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light bordered">
+            <div class="portlet-title">
+                <div class="caption">
+					<span class="caption-subject bold uppercase">
+                        快递费设置
+          			</span>
+                </div>
+            </div>
+            
+            <form action="" method="post">
+                <div class="portlet-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th> ID </th>
+                                <th> 省 </th>
+                                <th> 快递费 </th>
+                                <th width="180"> 管理操作 </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {volist name="$list" id="r" key="i"}
+                            <tr class='del{$r.id}'>
+                                <td>{$i}</td>
+                                <td>{$r.name}</td>
+                                <td>{:xiaoshu($r.money)}</td>
+                                <td>
+                                    <a href="{:url('edit','id='.$r.id)}" class="btn btn-xs yellow">修改</a>
+                                </td>
+                            </tr>
+                            {/volist}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

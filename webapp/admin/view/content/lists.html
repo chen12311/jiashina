@@ -1,0 +1,158 @@
+<style>
+    input.paixu {
+        width: 15px;
+        height: 15px;
+        text-align: center;
+    }
+</style>
+<div class="page-bar margin-bottom-20">
+    <ul class="page-breadcrumb">
+        <li>
+            <a href="{:url('admin/index/index')}">后台首页</a>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>内容管理</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>商城商品</span>
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light bordered">
+
+            <div class="portlet-title">
+                <div class="caption">
+					<span class="caption-subject bold uppercase">
+                        商城商品
+          			</span>
+                </div>
+                {if $catid}
+                <div class="actions">
+                    <div class="btn-group btn-group-devided">
+                        <a href="{:url('add','catid='.$catid)}" class="btn btn-transparent blue btn-outline btn-sm active">
+                            <i class="fa fa-plus-circle"></i> 添加商品
+                        </a>
+                    </div>
+                </div>
+                {/if}
+            </div>
+
+            <div>
+<!--                <a href="{:url('lists','catid='.$catid.'&order_type=0')}" class="btn blue {if $order_type == 0}active{/if}">正常商品</a>-->
+<!--                <a href="{:url('lists','catid='.$catid.'&order_type=1')}" class="btn blue {if $order_type == 1}active{/if}">刷单商品</a>-->
+            </div>
+
+            <form action="" method="post">
+                <div class="portlet-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th width="50px">  </th>
+                                <th width="50px"> ID </th>
+                                <th width="150px"> 标题 </th>
+                                <th width="80px"> 缩略图 </th>
+                                <th width="60px"> 商品价格 </th>
+                                <th width="100px"> 添加时间 </th>
+                                {if $order_type == 1}
+                                <th width="60px"> 下单数量 </th>
+                                <th width="60px"> 下单返利 </th>
+                                {/if}
+                                <th width="120px"> 管理操作 </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {volist name="$lists" id="r" key="i"}
+                            <tr class='del{$r.id}'>
+                                <td>
+                                    <input type="checkbox" name="ids[]" value="{$r.id}">
+                                </td>
+                                <td>{$i}</td>
+                                <td>{$r.title} {if $r.collage}<span style="color:darkblue;">（{$r.collage_number}人团）</span>{/if}</td>
+                                <td><img src="{$r.thumb}" style="height: 100px;"></td>
+                                <td>{:xiaoshu($r.money)}</td>
+                                <td>{$r.intime|date="Y-m-d H:i",###}</td>
+                                {if $order_type == 1}
+                                <td>{$r.order_num}</td>
+                                <td>{:xiaoshu($r.order_money)}</td>
+                                {/if}
+                                <td>
+                                    {if !$r.collage}
+                                    <a href="{:url('sub_lists','catid='.$catid.'&id='.$r.id)}" class="btn btn-xs yellow">规格管理</a>
+                                    {/if}
+									
+									
+                                {if $r.status}
+                                <span onclick="status({$r.id},0)" class="btn btn-xs red">下架</span>
+                                {else}
+                                <span onclick="status({$r.id},1)" class="btn btn-xs yellow">上架</span>
+                                {/if}
+
+									
+                                    <a href="{:url('edit','catid='.$catid.'&id='.$r.id)}" class="btn btn-xs blue">修改</a>
+
+<!--                                    <a href="{:url('set_order','catid='.$catid.'&id='.$r.id)}" class="btn btn-xs purple">刷单设置</a>-->
+                                    {if $catid}
+                                    <span onclick="del({$r.id})" class="btn btn-xs red">删除</span>
+                                    {if !$r.collage}
+                                    <a href="{:url('fxSet','catid='.$catid.'&id='.$r.id)}" class="btn btn-xs purple">分销设置</a>
+                                    {/if}
+                                    {/if}
+
+                                    <a href="{:url('collage_record_a','id='.$r.id)}" class="btn btn-xs">拼团统计</a>
+                                </td>
+                            </tr>
+                            {/volist}
+                            </tbody>
+                        </table>
+                    </div>
+                    {if $order_type != 1 && $catid}
+                    <div>
+                        <p style="float: left;margin-right: 20px;">
+                            <input type="checkbox" name="position[]" value="1" class="form-control paixu" style="float:left;margin-right:5px;">首页人气推荐
+                        </p>
+                        <p style="float: left;margin-right: 20px;">
+                            <input type="checkbox" name="position[]" value="2" class="form-control paixu" style="float:left;margin-right:5px;">购物车为你推荐
+                        </p>
+                        <p style="float: left;margin-right: 20px;">
+                            <input type="checkbox" name="position[]" value="3" class="form-control paixu" style="float:left;margin-right:5px;">首页导航下为你推荐
+                        </p>
+                        <div style="clear:both;"></div>
+                        <input type="submit" name="submit" class="btn blue" value="推荐">
+                    </div>
+                    {/if}
+                    {$pages}
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    function del(id){
+        if(confirm("确认要删除？")){
+            $.ajax({
+                url: "{:url('del')}",
+                type: 'post',
+                data:{
+                    id:id
+                },
+                success: function (res) {
+                    if(res == "succ"){
+                        $(".del"+id).fadeOut(500);
+                    }
+                }
+            })
+        }
+    }
+	
+	                function status (id,num) {
+                    $.post("{:url('status')}",{id:id,num:num},function(res){
+                        location.reload();
+                    })
+                }
+				
+</script>

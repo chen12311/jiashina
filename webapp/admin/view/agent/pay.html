@@ -1,0 +1,167 @@
+<script type="text/javascript" src="__JS__/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="__JS__/bootstrap-datetimepicker/js/bootstrap-datetimepicker.zh-CN.js"></script>
+<link href="__JS__/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet"/>
+
+<div class="page-bar margin-bottom-20">
+    <ul class="page-breadcrumb">
+        <li>
+            <span>会员管理</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>交易记录</span>
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light bordered">
+
+            <div class="portlet-title">
+                <div class="caption">
+					<span class="caption-subject bold uppercase">
+            		交易记录
+          			</span>
+                </div>
+
+                <div class="actions">
+                    <a href="javascript:history.back(-1);" class="btn red">返回</a>
+                </div>
+            </div>
+
+            <div class="search">
+                <form method="POST"  style="float: left;">
+                    订单号：<input type="text" class="form-control input-inline" value="{$orderNo}" name="orderNo">
+                    &nbsp;&nbsp;&nbsp;
+                    开始时间：<input type="text" class="form-control input-inline" id="starttime" name="starttime" value="{$starttime}" readonly>
+                    &nbsp;&nbsp;&nbsp;
+                    结束时间：<input type="text" class="form-control input-inline" id="endtime" name="endtime" value="{$endtime}" readonly>
+                    &nbsp;&nbsp;&nbsp;
+                    <input class="btn" name="search" type="submit" value="搜索" style="color:#fff;background:#217EBD;">
+                    &nbsp;
+                    <input class="btn yellow" name="submit" type="submit" value="全部导出" style="">
+                </form>
+
+                &nbsp;&nbsp;&nbsp;
+                订单数：{$num}
+                &nbsp;&nbsp;&nbsp;
+                总额：{:xiaoshu($money)}
+                &nbsp;&nbsp;&nbsp;
+                服务费：{:xiaoshu($fwf)}
+                &nbsp;&nbsp;&nbsp;
+            </div>
+            <div style="clear:both;"></div>
+
+            <div class="portlet-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th> ID </th>
+                            <th> 店铺 </th>
+                            <th> 订单号 </th>
+                            <th> 下单人 </th>
+                            <th> 支付金额 </th>
+                            <th> 返现 </th>
+                            <th> 被返现 </th>
+                            <th> 服务费 </th>
+                            <th> 下单时间 </th>
+<!--                            <th width="300"> 管理操作 </th>-->
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {volist name="$lists" id="r" key="i"}
+                        {php}$data = db("member")->where("openid",$r['openid'])->find();{/php}
+                        <tr class='del{$r.id}'>
+                            <td> {$i} </td>
+                            <td> {$member.shopname} </td>
+                            <td> {$r.orderNo} </td>
+                            <td> {$data.nickname} {if $r.status == 1} |  线上反单{/if} </td>
+                            <td> {:xiaoshu($r.ggmoney)} </td>
+                            <td>
+                                {if $r.fx_b == 0 && $r.money_b == 0}
+                                未返现
+                                {else}
+                                已返现
+                                {if $r.status == 1}
+                                    {:xiaoshu($r.money_b)}
+                                    {if $r.scale - $r.money_b > 0}
+                                    剩余 {:xiaoshu($r.scale - $r.money_b)} 未反
+                                    {/if}
+                                {else}
+                                    {if $r.money_b == 0}
+                                    {:xiaoshu($r.ggmoney*$r.number*$r.scale)}
+                                    {else}
+                                    {:xiaoshu($r.money_b)}
+                                    {/if}
+
+                                    {if $r.id > 2860}
+                                        {php}
+                                            $price = intval($r['ggmoney']*$r['number']*$r['scale']) - intval($r['money_b']);
+                                            if($price > 0){
+                                                echo ' 剩余 '.xiaoshu($price).' 未反';
+                                            }
+                                        {/php}
+                                    {/if}
+                                {/if}
+                                {/if}
+                            </td>
+                            <td> {if $r.fx_a == 0}已被返现 {:xiaoshu($r.fxmoney)}{else}已全部返现{/if} </td>
+                            <td>
+                                {if $r.status == 1}
+                                {:xiaoshu($r.fwf)}
+                                {else}
+                                {php}$aa = xiaoshu($r['ggmoney']*$r['fwf']);{/php}
+                                {php}echo $aa <= 0.01 ? 0.01 : $aa;{/php}
+                                {/if}
+                            </td>
+                            <td> {$r.paytime|date="Y-m-d H:i:s",###} </td>
+<!--                            <td></td>-->
+                        </tr>
+                        {/volist}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $("#starttime").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'year',
+        language: 'zh-CN',
+        autoclose:true,
+        todayBtn: true,
+    }).on("click",function(){
+        $("#starttime").datetimepicker("setEndDate",$("#endtime").val())
+    });
+
+    $("#endtime").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'year',
+        language: 'zh-CN',
+        autoclose:true,
+        todayBtn: true,
+        startDate:$("#starttime").val()
+    }).on("click",function(){
+        $("#endtime").datetimepicker("setStartDate",$("#starttime").val())
+    });
+
+    function del(id){
+        if(confirm("确认要删除？")){
+            $.ajax({
+                url: "{:url('order_del')}",
+                type: 'post',
+                data:{
+                    id:id
+                },
+                success: function (x) {
+                    if(x == "succ"){
+                        $(".del"+id).fadeOut(500);
+                    }
+                }
+            })
+        }
+    }
+</script>

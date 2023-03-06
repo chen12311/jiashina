@@ -1,0 +1,269 @@
+<script type="text/javascript" src="__JS__/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="__JS__/bootstrap-datetimepicker/js/bootstrap-datetimepicker.zh-CN.js"></script>
+<link href="__JS__/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet"/>
+
+<style>
+    .table>tbody>tr>td{
+        line-height: 12px;
+        vertical-align: middle;
+    }
+    .portlet>.portlet-body p {
+        margin: 3px 0;
+        padding: 3px 0;
+    }
+</style>
+
+<div class="page-bar margin-bottom-20">
+    <ul class="page-breadcrumb">
+        <li>
+            <a href="{:url('admin/index/index')}">后台首页</a>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>订单管理</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>拼团订单</span>
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light bordered">
+
+            <div class="portlet-title">
+                <div class="caption">
+					<span class="caption-subject bold uppercase">
+            		拼团订单
+          			</span>
+                </div>
+                <div class="actions">
+                    <a href="{:url('collage_order_c','state=1')}" class="btn {if $state == 1}yellow{else}blue{/if}">
+                        支付成功，未拼团
+                    </a>
+                    <a href="{:url('collage_order_c','state=2')}" class="btn {if $state == 2}yellow{else}blue{/if}">
+                        拼团成功
+                    </a>
+                    <a href="{:url('collage_order_c','state=3')}" class="btn {if $state == 3}yellow{else}blue{/if}">
+                        拼团失败
+                    </a>
+                    <a href="{:url('collage_order_c','state=5')}" class="btn {if $state == 5}yellow{else}blue{/if}">
+                        拼团订单
+                    </a>
+                    <a href="{:url('collage_order_c','state=4')}" class="btn {if $state == 4}yellow{else}blue{/if}">
+                        其它退款
+                    </a>
+                </div>
+            </div>
+
+            <div style="line-height:35px;margin-left:50px;margin-bottom:10px;">
+                {php}$info = collage_data($starttime,$endtime);
+
+                {/php}
+                已支付，未拼团单数：{$info[0]}
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                已支付，未拼团金额：{$info[1] ?? 0} 元
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                拼团成功单数：{$info[2]}
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                拼团成功金额：{$info[3]} 元
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                拼团失败单数：{$info[4]}
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                拼团失败金额：{$info[5]} 元
+            </div>
+
+            <div class="search">
+                <form method="POST"  style="float: left;">
+                    下单人：<input type="text" class="form-control input-inline" value="{$nickname}" name="nickname">
+                    &nbsp;&nbsp;&nbsp;
+                    订单号：<input type="text" class="form-control input-inline" value="{$orderNo}" name="orderNo">
+                    &nbsp;&nbsp;&nbsp;
+                    开始时间：<input type="text" class="form-control input-inline" id="starttime" name="starttime" value="{$starttime}" readonly>
+                    &nbsp;&nbsp;&nbsp;
+                    结束时间：<input type="text" class="form-control input-inline" id="endtime" name="endtime" value="{$endtime}" readonly>
+                    &nbsp;&nbsp;&nbsp;
+                    <input class="btn" name="search" type="submit" value="搜索" style="color:#fff;background:#217EBD;">
+					{if $state== 2}
+                    <input class="btn yellow" name="submit" type="submit" value="全部导出" style="margin-left:10px;">
+					
+					{/if}
+                </form>
+            </div>
+            <div style="clear:both;"></div>
+
+            <div class="portlet-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th> ID </th>
+                            <th> 订单号 </th>
+                            <th> 微信商户订单 </th>
+                            <th> 下单人 </th>
+                            <th> 商品名称 </th>
+                            <th> 价格 </th>
+                            <th> 订单状态 </th>
+                            <th> 支付时间 </th>
+                            <th> 微信退款单号 </th>
+                            <th> 管理操作 </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {volist name="$lists" id="r" key="k"}
+                        {php}
+                        $nickname = db("member")->where("openid",$r['openid'])->value("nickname");
+                        if($state == 5) $array = db("order_collage_item")->where(["pid"=>$r["pid"],"collage_state"=>2])->select();
+                        $count = db("order_collage_item")->where(["pid"=>$r["pid"],"collage_state"=>["=",1]])->count();
+                        {/php}
+                        <tr class='del{$r.id}' style="{if $state == 5}border-top:3px solid #999;{/if}">
+                            <td width="50px">{$k}</td>
+                            <td width="130px">{$r.orderNo}|{$r.pid}|{$count}|
+							{if $r.collage_win == 1}成功
+							{else}
+							失败
+							{/if}
+							
+							{if $r.xin == 1}新
+							{else}
+							旧
+							{/if}
+							
+							</td>
+                            <td width="260px">{$r.transaction_id ?? 0}</td>
+                            <td width="250px">
+                                <p style="float:left;max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">{$nickname}</p>
+                                <p style="float:left;width:70px;">（第{$r.collage_count+1}单）</p>
+                            </td>
+                            <td width="220px" >
+                                <p style="width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap; ">{$r.title}</p>
+                            </td>
+                            <td width="80px">￥{$r.gg_money*$r.number}</td>
+                            <td width="{if $state == 5}80px{else}150px{/if}">
+                                {switch name="$r.collage_state"}
+                                    {case value="0"}未支付{/case}
+                                    {case value="1"}已支付{/case}
+                                    {case value="2"}拼团成功{/case}
+                                    {case value="3"}拼团失败{/case}
+                                    {case value="4"}商家退款{/case}
+                                    {case value="5"}商家退款（库存不足）{/case}
+                                    {case value="6"}商家退款（多余）{/case}
+                                    {case value="7"}商家退款（手动）{/case}
+                                {/switch}
+                                {$r.collage_state}
+                            </td>
+                            <td width="150px">{$r.ctime}</td>
+                            <th width="130px"> {$r.refund_no} </th>
+                            <td width="150px">
+                                <a href="{:url('show','id='.$r.id)}" class="btn btn-xs blue">查看信息</a>
+                                {if $r.collage_state == 2}
+                                <a href="{:url('fh','id='.$r.id)}" class="btn btn-xs yellow">发货</a>
+                                {/if}
+                                {if $r.collage_state == 1}
+                                <span onclick="refund({$r.id})" class="btn btn-xs red">微信退款</span>
+                                {/if}
+                            </td>
+                        </tr>
+
+                        {if $state == 5}
+						
+                            {volist name="$array" id="v"}
+                            {php}$nickname = db("member")->where("openid",$v['openid'])->value("nickname");{/php}
+                            <tr>
+                                <td></td>
+                                <td>{$v.orderNo}</td>
+                                <td>{$v.transaction_id ?? 0}</td>
+                                <td>
+                                    <p style="float:left;max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">{$nickname}</p>
+                                    <p style="float:left;width:70px;">（第{$v.collage_count+1}单）</p>
+                                </td>
+                                <td>
+                                    <p style="width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">{$v.title}</p>
+                                </td>
+                                <td>￥{$v.gg_money*$v.number}</td>
+                                <td>
+                                    {switch name="$v.collage_state"}
+                                        {case value="0"}未支付{/case}
+                                        {case value="1"}已支付{/case}
+                                        {case value="2"}拼团成功{/case}
+                                        {case value="3"}拼团失败{/case}
+                                        {case value="4"}商家退款{/case}
+                                        {case value="5"}商家退款{/case}
+                                        {case value="6"}商家退款{/case}
+                                    {/switch}
+                                    <br/>
+                                    {if $v.refund_err_code_des != ''}
+                                    失败原因:{$v.refund_err_code_des}
+                                    {/if}
+                                </td>
+                                <td>{$v.pay_time}</td>
+                                <td>{$v.refund_no}</td>
+                            </tr>
+                            {/volist}
+                        {/if}
+                        {/volist}
+                        </tbody>
+                    </table>
+                </div>
+                {$pages}
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="application/javascript">
+    $("#starttime").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'year',
+        language: 'zh-CN',
+        autoclose:true,
+        todayBtn: true,
+    }).on("click",function(){
+        $("#starttime").datetimepicker("setEndDate",$("#endtime").val())
+    });
+
+    $("#endtime").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'year',
+        language: 'zh-CN',
+        autoclose:true,
+        todayBtn: true,
+        startDate:$("#starttime").val()
+    }).on("click",function(){
+        $("#endtime").datetimepicker("setStartDate",$("#starttime").val())
+    });
+
+    function refund (id) {
+        if (confirm("退款到用户微信余额，确认退款？")) {
+            $.ajax({
+                url: "{:url('refund_a')}",
+                type: 'post',
+                data:{id:id},
+                success: function (res) {
+                    if(res == "success"){
+                        alert("退款成功")
+                        location.reload();
+                    } else {
+                        alert("退款失败："+res);
+                    }
+                }
+            })
+        }
+    }
+
+    function close_order(id){
+        if(confirm("确认要关闭？")){
+            $.ajax({
+                url: "{:url('close_order')}",
+                type: 'post',
+                data:{id:id},
+                success: function (res) {
+                    if(res == "success"){
+                        location.reload();
+                    }
+                }
+            })
+        }
+    }
+</script>

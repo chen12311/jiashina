@@ -1,0 +1,61 @@
+<link type="text/css" rel="stylesheet" href="__JS__/bootstrap-fileinput/fileinput.css" />
+<script type="text/javascript" src="__JS__/bootstrap-fileinput/fileinput.js"></script>
+<script type="text/javascript" src="__JS__/bootstrap-fileinput/fileinput_locale_zh.js"></script>
+
+<style>
+    .form-horizontal .control-label{width:86px;text-align: left;}
+    .col-md-offset-3{margin-left: 5%;}
+    .page-breadcrumb li:last-child i{display: none;}
+    .close{display: none;}
+</style>
+
+<div class="page-bar margin-bottom-20">
+    <ul class="page-breadcrumb">
+        <li>
+            <span>会员管理</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>会员列表</span>
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light bordered">
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold uppercase">封禁账号</span>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <form method="post" action="" id="myform" class="form-horizontal" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">是否封禁</label>
+                            <div class="col-md-9">
+                                <select name="is_ban" class="form-control" onchange="if($(this).val() == 1){$('.is_ban').show()}else{$('.is_ban').hide()}" style="width:150px;display:unset;">
+                                    <option value="0" {eq name='data.is_ban' value='0'}selected{/eq}>否</option>
+                                    <option value="1"  {eq name='data.is_ban' value='1'}selected{/eq}>是</option>
+                                </select>
+                            </div>
+                        </div>                 
+					<div class="form-body">
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">封停原因</label>
+                            <div class="col-md-9">
+                                <input type="text" name="ban_text" value="{$data.ban_text}" class="form-control input-medium">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <div class="row">
+                            <div class="col-md-offset-3 col-md-9">
+                                <button type="submit" class="btn blue">保存</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

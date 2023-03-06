@@ -1,0 +1,94 @@
+<html>
+    <head>
+
+        <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <title>支付</title>
+
+        <script type="text/javascript">
+            callpay();
+            function callpay()
+            {
+                if (typeof WeixinJSBridge == "undefined"){
+                    if( document.addEventListener ){
+                        document.addEventListener('WeixinJSBridgeReady', jsApiCall, false);
+                    }else if (document.attachEvent){
+                        document.attachEvent('WeixinJSBridgeReady', jsApiCall);
+                        document.attachEvent('onWeixinJSBridgeReady', jsApiCall);
+                    }
+                }else{
+                    jsApiCall();
+                }
+            }
+
+            function jsApiCall() {
+                WeixinJSBridge.invoke('getBrandWCPayRequest', {$data},function(res){
+                    console.log(res);
+                    if(res.err_msg == "get_brand_wcpay_request:ok"){
+                        location.href = "http://www.jiajiazxgg.com/index.html#/order?state=5";
+                    }else if(res.err_msg == "get_brand_wcpay_request:cancel"){
+                        location.href = "http://www.jiajiazxgg.com/index.html#/";
+                    }else{
+                        location.href = "http://www.jiajiazxgg.com/index.html#/";
+    //                  alert("支付失败!");
+                    }
+                });
+            }
+        </script>
+
+        <style>
+            h1{
+                text-align:center;
+                font-size:16px;
+                margin-top:40px;
+            }
+            #money{
+                width: 75%;
+                height: 30px;
+                line-height: 30px;
+                margin: 10px auto;
+                font-size: 16px;
+            }
+            #a{
+                float: left;
+            }
+            #b{
+                float: right;
+            }
+            #b input{
+                width: 100px;
+                height: 30px;
+                border: 1px #ccc solid;
+                border-radius: 3px;
+                padding: 5px 0px;
+                text-align: center;
+            }
+            #button button{
+                width:75%;
+                height:40px;
+                border-radius:3px;
+                background-color:#44be15;
+                border:0px #FE6714 solid;
+                cursor:pointer;
+                color:white;
+                font-size:18px;
+                margin-top:10px;
+            }
+        </style>
+    </head>
+    <body style="background:#f0eff4;margin:0 auto;">
+    {php}$member = db("member")->where("id",$id)->find();{/php}
+    <h1>{$member.shopname}</h1>
+    <form action="{:url('pay')}" method="post">
+        <div id="money">
+            <div id="a">支付金额</div>
+            <div id="b">{:xiaoshu($money)}</div>
+        </div>
+    </form>
+    <div id="button" align="center">
+        <button>确定支付</button>
+    </div>
+
+    </body>
+</html>

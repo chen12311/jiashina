@@ -1,0 +1,153 @@
+@<script type="text/javascript" src="__JS__/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="__JS__/bootstrap-datetimepicker/js/bootstrap-datetimepicker.zh-CN.js"></script>
+<link href="__JS__/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet"/>
+
+<div class="page-bar margin-bottom-20">
+    <ul class="page-breadcrumb">
+        <li>
+            <a href="{:url('admin/index/index')}">后台首页</a>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>资金流水</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>流水列表</span>
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light bordered">
+
+            <div class="portlet-title">
+                <div class="caption">
+					<span class="caption-subject bold uppercase">
+            		流水列表
+          			</span>
+                </div>
+				
+				</br></br></br>
+				<div class="search">
+                <form method="POST"  style="float: left;">
+                    时间：<input type="text" class="form-control input-inline" id="time" name="time" value="{$time}" readonly>
+                    &nbsp;&nbsp;&nbsp;
+                    <input class="btn" name="search" type="submit" value="搜索" style="color:#fff;background:#217EBD;">
+                    <input class="btn" name="dc" type="submit" value="导出" style="color:#fff;background:#217EBD;">
+                </form>
+            </div>
+				
+            </div>
+
+            <div class="portlet-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th> ID </th>
+                            <th> 变动人 </th>
+                            <th> 金额 </th>
+                            <th> 类型 </th>
+                            <th> 下单时间 </th>
+                            <!--<th> 管理操作 </th>-->
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {volist name="$lists" id="r" key="i"}
+
+                        <tr class='del{$r.id}'>
+                            <td>{$i}</td>
+                            <td>{:getData("member",['openid'=>$r.openid],'nickname')}---{$r.openid}</td>
+                            <td>
+							
+					
+                            </td>
+                            <td>
+								                                <a href="{:url('member/collage_ordersss','id='. getData('member',['openid'=>$r.openid],'id'))}" class="btn btn-xs grey">成功失败订单</a>
+															                                <a href="{:url('member/collage_ordersss_liushui','id='. getData('member',['openid'=>$r.openid],'id'))}" class="btn btn-xs grey">删除流水</a>
+
+                               <!-- {if $r.state == 1}
+                                线上订单支付
+                                {elseif $r.state == 2}
+                                {if $r.type == '-'}线下订单支付{else}商铺收款{/if}
+                                {elseif $r.state == 5}
+                                分享满三人返现
+                                {else}
+                                提现
+                                {/if}-->
+                            </td>
+                            <td>
+							{if (strtotime($time) < strtotime('2022-07-08'))}
+							{$r.intime|date="Y-m-d H:i:s",###}
+							{else}
+														{$r.ctime}
+
+							{/if}
+							</td>
+                            <!--<td>-->
+
+                            <!--</td>-->
+                        </tr>
+                        {/volist}
+                        </tbody>
+                    </table>
+                </div>
+                {$pages}
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $("#starttime").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'year',
+        language: 'zh-CN',
+        autoclose:true,
+        todayBtn: true,
+    }).on("click",function(){
+        $("#starttime").datetimepicker("setEndDate",$("#endtime").val())
+    });
+
+    $("#endtime").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'year',
+        language: 'zh-CN',
+        autoclose:true,
+        todayBtn: true,
+        startDate:$("#starttime").val()
+    }).on("click",function(){
+        $("#endtime").datetimepicker("setStartDate",$("#starttime").val())
+    });
+
+    function del(id){
+        if(confirm("确认要删除？")){
+            $.ajax({
+                url: "{:url('order_del')}",
+                type: 'post',
+                data:{
+                    id:id
+                },
+                success: function (x) {
+                    if(x == "succ"){
+                        $(".del"+id).fadeOut(500);
+                    }
+                }
+            })
+        }
+    }
+</script>
+
+<script type="application/javascript">
+    $("#time").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'year',
+        language: 'zh-CN',
+        autoclose:true,
+        todayBtn: true,
+    });
+	
+	setTimeout(function (){
+		window.location.reload();
+	}, 500000000);
+</script>

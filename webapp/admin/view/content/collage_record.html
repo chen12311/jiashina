@@ -1,0 +1,135 @@
+<script type="text/javascript" src="__JS__/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="__JS__/bootstrap-datetimepicker/js/bootstrap-datetimepicker.zh-CN.js"></script>
+<link href="__JS__/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet"/>
+
+<style>
+    .table>tbody>tr>td{
+        line-height: 36px;
+    }
+</style>
+{php}$arr = [];{/php}
+<div class="page-bar margin-bottom-20">
+    <ul class="page-breadcrumb">
+        <li>
+            <a href="{:url('admin/index/index')}">后台首页</a>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>内容管理</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>商城商品</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>拼团统计</span>
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light bordered">
+
+            <div style="line-height:35px;margin-left:50px;margin-bottom:10px;">
+                多返金额：{$money}
+            </div>
+
+            <div class="search">
+                <form method="POST"  style="float: left;">
+                    时间：<input type="text" class="form-control input-inline" id="time" name="time" value="{$time}" readonly>
+                    &nbsp;&nbsp;&nbsp;
+                    <input class="btn" name="search" type="submit" value="搜索" style="color:#fff;background:#217EBD;">
+                </form>
+            </div>
+            <div style="clear:both;"></div>
+
+            <div class="portlet-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th> ID </th>
+                            <th> 订单号 </th>
+                            <th> 拼团号 </th>
+                            <th> 下单人 </th>
+                            <th> 红包 </th>
+                            <th> 订单状态 </th>
+                            <th> 支付时间 </th>
+                        </tr>
+                        </thead>
+                        {volist name="$lists" id="r" key="k"}
+                        <tbody style="border-top: 5px solid red;">
+                            {php}$nickname = db("member")->where("openid",$r['openid'])->value("nickname");{/php}
+                            <tr class='del'>
+                                <td width="50px">{$k}</td>
+                                <td width="130px">{$r.orderNo}</td>
+                                <td width="130px">{$r.collageNo}</td>
+                                <td width="250px">{$nickname}</td>
+                                <td width="250px">0</td>
+                                <td width="150px">拼团成功</td>
+                                <td width="150px">{$r.paytime|date="Y-m-d H:i",###}</td>
+                            </tr>
+                        </tbody>
+
+                        {volist name="$r.id_arr" id="v" key="i"}
+                        {php}$nickname = db("member")->where("openid",$v['openid'])->value("nickname");{/php}
+                        <tr class='del' style="background: {if $i > 3}#ccc{/if};">
+                            <td></td>
+                            <td>{$v.orderNo}</td>
+                            <td>{$v.collageNo}</td>
+                            <td>{$nickname}</td>
+                            <td>{$v.collage_red_bag}</td>
+                            <td>拼团失败</td>
+                            <td>{$v.paytime|date="Y-m-d H:i",###}</td>
+                        </tr>
+                        {if $i > 3}
+                           {php}
+                                if(isset($arr[$v["openid"]])) {
+                                    $arr[$v["openid"]] = $arr[$v["openid"]] + $v["collage_red_bag"];
+                                } else {
+                                    $arr[$v["openid"]] = $v["collage_red_bag"];
+                                }
+                            {/php}
+                        {/if}
+                        {/volist}
+                        {/volist}
+
+
+                    </table>
+
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th> OPENID </th>
+                            <th> 下单人 </th>
+                            <th> 多反金额 </th>
+                        </tr>
+                        </thead>
+                        {php}
+                        foreach($arr as $ci=>$cv){
+                        $nickname = db("member")->where("openid",$ci)->value("nickname");
+                        {/php}
+                        <tr class='del' style="background: #ff8917;">
+                            <td>{$ci}</td>
+                            <td>{$nickname}</td>
+                            <td>{$cv}</td>
+
+                        </tr>
+                        {php}}{/php}
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="application/javascript">
+    $("#time").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'year',
+        language: 'zh-CN',
+        autoclose:true,
+        todayBtn: true,
+    });
+</script>

@@ -1,0 +1,200 @@
+<div class="page-bar margin-bottom-20">
+    <ul class="page-breadcrumb">
+        <li>
+            <span>会员管理</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>会员列表</span>
+        </li>
+        <li>
+            <span>拼团订单</span>
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light bordered">
+            <div class="portlet-title">
+                <div class="caption">
+					<span class="caption-subject bold uppercase">
+            		{$data['nickname']}-------拼团订单
+          			</span>
+                </div>
+            </div>
+
+            <div class="portlet-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th width="10"> ID </th>
+                            <th width="120"> 订单号 </th>
+                            <th width="300"> 商品名称 </th>
+                            <th width="100"> 订单次数 </th>
+                            <th width="100"> 订单金额 </th>
+                            <th width="200"> 退款金额 </th>
+                            <th width="120"> 订单状态 </th>
+							<th width="300"> 操作 </th>
+                            <th width="150"> 支付时间 </th>
+                            <th width="150"> 成团时间 </th>
+                            <th width="150"> 删除订单 </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {volist name="$lists" id="r" key="i"}
+                        {php}
+                            $info = db("order")->field("orderNo,paytime")->where(["collageNo"=>$r["collageNo"],"state"=>[">",2]])->order("paytime desc")->find();
+                            $time = "";
+                            if($r["state"] == 3) $time = $r["paytime"];
+                            if($r["state"] == 7) $time = $info["paytime"];
+
+                            $money = db("record_pay")->where(["openid"=>$r["openid"],"orderId"=>$info["orderNo"],"state"=>18])->value("money");
+                        {/php}
+                        <tr class='del{$r.id}'>
+                            <td> {$i} </td>
+                            <td> {$r.orderNo} </td>
+                            <td> {$r.title} </td>
+                            <td>
+                                {if $r.collage == 4}
+                                未成团
+                                {else}
+                                    {if $r.collage_error == 1}
+                                    特殊订单
+                                    {else}
+                                    第{$r.collage_count+1}次
+                                    {/if}
+                                {/if}
+                            </td>
+                            <td> ￥{:xiaoshu($r.ggmoney)} </td>
+                            <td>
+                                {if $r.refund_id > 2}
+                                退款：￥{:xiaoshu($r.ggmoney)}
+                                <br/>
+                                    {if $r.collage == 4}
+                                    红包：￥0
+                                    {else}
+                                    红包：￥{$r.collage_red_bag}{if $r.refund_id} 已发送{/if}
+                                    {/if}
+                                {else}
+                                    退款：￥0
+                                    <br/>
+                                    红包：￥0
+                                {/if}
+                            </td>
+                            <td>
+                                {if $r.collage == 4}
+                                商家退款
+                                {else}
+								{if $r.collage_error >= 1}
+                                    <div style="color:red">特殊订单</div>
+                                    {elseif $r.collage == 1}
+                                    <div style="color:Blue">已支付,待拼团</div>
+                                    {elseif $r.collage == 2}
+                                    <div style="color:Green">拼团成功{$r.collage}</div>
+                                    {elseif $r.collage == 3}
+                                    <div style="color:red">拼团失败{$r.collage}</div>
+                                    {/if}
+                                {/if}
+                            </td>
+							<td>
+							    <span onclick="refund({$r.id})" class="btn btn-xs red">拼团失败</span>
+															    <span onclick="refunds({$r.id})" class="btn btn-xs red">拼团失败不退款</span>
+
+								<a href="{:url('shunxu_edits','id='.$r.id)}" class="btn btn-xs purple">修改顺序</a>
+
+							</td>
+							
+                            <td> {$r.paytime|date='Y-m-d H:i',###} </td>
+                            <td>
+                                {if $r.collage == 4}
+                                未成团
+                                {else}
+                                    {if $time}
+                                    {$time|date='Y-m-d H:i',###}
+                                    {else}
+                                    {/if}
+                                {/if}
+                            </td>
+							<td>
+							<span onclick="del({$r.id})" class="btn btn-xs red">删除订单</span>
+							</td>
+                        </tr>
+                        {/volist}
+                        </tbody>
+                    </table>
+                </div>
+                {$pages}
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function del(id){
+        if(confirm("删除后不可恢复！！！！确认要删除？")){
+            $.ajax({
+                url: "{:url('order_del')}",
+                type: 'post',
+                data:{
+                    id:id
+                },
+                success: function (x) {
+                    if(x == "success"){
+                        alert("删除成功")
+                        location.reload();
+                    }
+                }
+            })
+        }
+    }
+		    function refund (id) {
+        if (confirm("原路退回并改变订单为拼团失败？"+id)) {
+            $.ajax({
+                url: "{:url('refund_aaaa')}",
+                type: 'post',
+                data:{id:id},
+                success: function (res) {
+                    if(res == "success"){
+                        alert("退款成功")
+                        location.reload();
+                    } else {
+                        alert("退款失败："+res);
+                    }
+                }
+            })
+        }
+    }  
+	function refunds (id) {
+        if (confirm("改变订单为拼团失败？"+id)) {
+            $.ajax({
+                url: "{:url('refund_aaaaa')}",
+                type: 'post',
+                data:{id:id},
+                success: function (res) {
+                    if(res == "success"){
+                        alert("退款成功")
+                        location.reload();
+                    } else {
+                        alert("退款失败："+res);
+                    }
+                }
+            })
+        }
+    }
+    function fx(id,fx){
+        var title = (fx == 1) ? '关闭返现' : '开启返现';
+        if(confirm("确认要"+title+"？")) {
+            $.ajax({
+                url: "{:url('fxChange')}",
+                type: 'post',
+                data: {
+                    id: id,
+                    fx: fx
+                },
+                success: function (x) {
+                    location.reload();
+                }
+            })
+        }
+    }
+</script>

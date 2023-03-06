@@ -1,0 +1,13 @@
+transaction_id:8888001657271224
+<xml><return_code><![CDATA[SUCCESS]]></return_code>
+<return_msg><![CDATA[OK]]></return_msg>
+<appid><![CDATA[wxcd685d02ba1ce202]]></appid>
+<mch_id><![CDATA[1550831061]]></mch_id>
+<nonce_str><![CDATA[MiaJPO3ZyxmHMGtF]]></nonce_str>
+<sign><![CDATA[C426F5D7A6E2C7B64DBD7AB06F127821]]></sign>
+<result_code><![CDATA[FAIL]]></result_code>
+<err_code><![CDATA[PARAM_ERROR]]></err_code>
+<err_code_des><![CDATA[微信订单号非法]]></err_code_des>
+</xml>
+
+

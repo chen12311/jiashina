@@ -1,0 +1,197 @@
+<script type="text/javascript" src="__JS__/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="__JS__/bootstrap-datetimepicker/js/bootstrap-datetimepicker.zh-CN.js"></script>
+<link href="__JS__/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet"/>
+
+<style>
+    .table>tbody>tr>td{
+        line-height: 36px;
+    }
+</style>
+{php}$arr = [];$money_all = 0;{/php}
+<div class="page-bar margin-bottom-20">
+    <ul class="page-breadcrumb">
+        <li>
+            <a href="{:url('admin/index/index')}">后台首页</a>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>内容管理</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>商城商品</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>{$title|html_entity_decode} - 拼团统计</span>
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light bordered">
+            <div class="search">
+                <form method="POST"  style="float: left;">
+                    时间：<input type="text" class="form-control input-inline" id="time" name="time" value="{$time}" readonly>
+                    &nbsp;&nbsp;&nbsp;
+                    <input class="btn" name="search" type="submit" value="搜索" style="color:#fff;background:#217EBD;">
+                </form>
+            </div>
+            <div style="clear:both;"></div>
+
+            <div class="portlet-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th> ID </th>
+                            <th> 订单号 </th>
+                            <th> 拼团号 </th>
+                            <th> 下单人 </th>
+                            <th> 红包 </th>
+                            <th> 订单状态 </th>
+                            <th> 支付时间 </th>
+                            <th> 错误标记 </th>
+                        </tr>
+                        </thead>
+                        {volist name="$lists" id="r" key="k"}
+                        <tbody style="border-top: 5px solid red;">
+                        {php}
+                            $number = $r["out_refund_no"] ? 1 : 0;
+                            $nickname = db("member")->where("openid",$r['openid'])->value("nickname");
+                        {/php}
+                        <tr class='del'>
+                            <td width="50px">{$k}</td>
+                            <td width="130px">{$r.orderNo}</td>
+                            <td width="130px">{$r.collageNo}</td>
+                            <td width="150px">{$nickname}</td>
+                            <td width="100px">{$r.collage_red_bag}</td>
+                            <td width="200px">
+                                out_refund_no：{$r.out_refund_no}
+                            </td>
+                            <td width="120px">{$r.paytime|date="Y-m-d H:i:s",###}</td>
+                            <td width="50px">0</td>
+                        </tr>
+                        </tbody>
+                        {volist name="$r.id_arr" id="v" key="i"}
+                        {php}
+                            $number = $number + ($v["out_refund_no"] ? 1 : 0);
+                            $nickname = db("member")->where("openid",$v['openid'])->value("nickname");
+                        {/php}
+                        <tr class='del' style="background: {if $i > 3}#ccc{/if};">
+                            <td></td>
+                            <td>{$v.orderNo}</td>
+                            <td>{$v.collageNo}</td>
+                            <td>{$nickname}</td>
+                            <td>{$v.collage_red_bag}</td>
+                            <td>
+                                out_refund_no：{$v.out_refund_no}
+                            </td>
+                            <td>{$v.paytime|date="Y-m-d H:i:s",###}</td>
+                            <td>{$v.collage_error_many}</td>
+                        </tr>
+                        {if $number > 3}
+<!--                        + $v["ggmoney"];-->
+<!--                        db("order")->where("id",$v["id"])->update(["state"=>3,"collage_error_many"=>1]);-->
+                        {php}
+                            if ($i < 4) {
+                                if ($number > 3) {
+                                    if(isset($arr[$v["openid"]])) {
+                                        $arr[$v["openid"]] = $arr[$v["openid"]] + $v["collage_red_bag"] * 100 + $v["ggmoney"] - $v["collage_red_bag"];
+                                    } else {
+                                        $arr[$v["openid"]] = $v["collage_red_bag"] * 100 + $v["ggmoney"] - $v["collage_red_bag"];
+                                    }
+
+                                    $money_all = $money_all + $v["collage_red_bag"] * 100 + $v["ggmoney"] - $v["collage_red_bag"];
+                                }
+                            } else {
+                                if(isset($arr[$v["openid"]])) {
+                                    $arr[$v["openid"]] = $arr[$v["openid"]] + $v["collage_red_bag"] * 100;
+                                } else {
+                                    $arr[$v["openid"]] = $v["collage_red_bag"] * 100;
+                                }
+
+                                $money_all = $money_all + $v["collage_red_bag"] * 100;
+                            }
+                        {/php}
+                        {/if}
+                        {/volist}
+                        {/volist}
+
+
+                    </table>
+
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th> OPENID </th>
+                            <th> 下单人 </th>
+                            <th> 余额 </th>
+                            <th> 多反金额 </th>
+                            <th> 已减少 </th>
+                            <th> 操作 </th>
+                        </tr>
+                        </thead>
+                        {php}
+                        $money_all_a = 0;
+                        foreach($arr as $ci=>$cv){
+                            $data = db("member")->field("nickname,collage_money")->where("openid",$ci)->find();
+							
+
+                            $money = db("record_pay")->where("state",19)->value("money");
+                            if ($cv > 0) {
+                                $money_all_a = $money_all_a + $money;
+                        {/php}
+                        <tr class='del' style="background: #ff8917;">
+                            <td>{$ci}</td>
+                            <td>{$data.nickname}</td>
+                            <td>{:xiaoshu($data.collage_money)}</td>
+                            <td>{:xiaoshu($cv)}</td>
+                            <td>{:xiaoshu($money)}</td>
+                            <td>
+                                {if $cv - $money > 0}
+<!--                                <span onclick="money_edit('{$ci}','{$cv}',this)" class="btn btn-xs purple">修改余额</span>-->
+                                {else}
+                                已减少
+                                {/if}
+                            </td>
+                        </tr>
+                        {php}
+                            }
+                        }
+                        {/php}
+<!--                        $cmm_id = db("collage_many_money")->where("openid",$ci)->value("id");-->
+<!--                        if ($cmm_id) {-->
+<!--                        db("collage_many_money")->where("id",$cmm_id)->setInc("money",xiaoshu($cv));-->
+<!--                        } else {-->
+<!--                        db("collage_many_money")->insert(["openid"=>$ci,"money"=>xiaoshu($cv)]);-->
+<!--                        }-->
+                    </table>
+                </div>
+                多返金额：{:xiaoshu($money_all)}
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                手动减少金额：{:xiaoshu($money_all_a)}
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                未减少金额：{:xiaoshu($money_all-$money_all_a)}
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="application/javascript">
+    $("#time").datetimepicker({
+        format: 'yyyy-mm-dd',
+        minView:'year',
+        language: 'zh-CN',
+        autoclose:true,
+        todayBtn: true,
+    });
+
+    function money_edit (openid,money,_this) {
+        $.post("{:url('money_edit')}",{openid:openid,money:money},function(res){
+            if (res == "success") {
+                $(_this).parents("td").html("已减少");
+            }
+        })
+    }
+</script>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>{:getData("basic",['id'=>1],"title")}</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<link rel="shortcut icon" href="__ROOT__/favicon.ico">
+<link href="__JS__/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="__JS__/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+<link href="__JS__/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="__JS__/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+<link href="__CSS__/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+<link href="__CSS__/plugins.min.css" rel="stylesheet" type="text/css" />
+<link href="__CSS__/layout.min.css" rel="stylesheet" type="text/css" />
+<link href="__CSS__/darkblue.min.css" rel="stylesheet" type="text/css" id="style_color" />
+<link href="__CSS__/custom.min.css" rel="stylesheet" type="text/css" />
+<!--[if lt IE 9]>
+<script src="__JS__/respond.min.js"></script>
+<script src="__JS__js/excanvas.min.js"></script> 
+<script src="__JS__js/ie8.fix.min.js"></script> 
+<![endif]-->
+<script src="__JS__/jquery.min.js" type="text/javascript"></script>
+<script src="__JS__/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="__JS__/js.cookie.min.js" type="text/javascript"></script>
+<script src="__JS__/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="__JS__/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="__JS__/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+<!-- 核心插件 结束 -->
+<!-- 全局脚本 开始 -->
+<script src="__JS__/app.min.js" type="text/javascript"></script>
+<!-- 全局脚本 结束 -->
+<!-- 布局脚本 开始 -->
+<script src="__JS__/layout/scripts/layout.min.js" type="text/javascript"></script>
+<script src="__JS__/layout/scripts/demo.min.js" type="text/javascript"></script>
+<script src="__JS__/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
+<script src="__JS__/global/scripts/quick-nav.min.js" type="text/javascript"></script>
+<script src="__JS__/formvalidator.js"></script>
+<script src="__JS__/formvalidatorregex.js"></script>
+
+</head>
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white">
+<div class="page-wrapper">
+    {include file="common/header" /}
+    <div class="clearfix"> </div>
+    <div class="page-container">
+    {include file="common/left" /}
+        <!-- 中间内容 开始 -->
+        <div class="page-content-wrapper">
+            <div class="page-content">
+                {__CONTENT__}
+            </div>
+        </div>
+        <!-- 中间内容 结束 -->
+    </div>
+    {include file="common/footer" /}
+</div>
+</body>
+</html>

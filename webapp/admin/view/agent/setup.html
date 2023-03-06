@@ -1,0 +1,140 @@
+<link type="text/css" rel="stylesheet" href="__JS__/bootstrap-fileinput/fileinput.css" />
+<script type="text/javascript" src="__JS__/bootstrap-fileinput/fileinput.js"></script>
+<script type="text/javascript" src="__JS__/bootstrap-fileinput/fileinput_locale_zh.js"></script>
+
+<style>
+    .form-horizontal .control-label {
+        width: 100px;
+        text-align: left;
+    }
+    .col-md-offset-3 {
+        margin-left: 5%;
+    }
+    .close{display: none;}
+</style>
+
+<div class="page-bar margin-bottom-20">
+    <ul class="page-breadcrumb">
+        <li>
+            <span>网站设置</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>基本设置</span>
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <div class="col-md-12 ">
+        <div class="portlet light bordered">
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject font-dark sbold uppercase">基本设置</span>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <form method="post" action="" enctype="multipart/form-data" class="form-horizontal" id="myform" method="post">
+                    <div class="form-body">
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" style="width:180px">黄金会员会员费</label>
+                            <div class="col-md-9">
+                                <input type="text" step="0.01" name="money_a" value="{$data.money_a > 0 ? $data.money_a : ''}" class="form-control input-inline" style="width:100px">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" style="width:180px">黄金会员成为白金会员<br/>所需数量</label>
+                            <div class="col-md-9">
+                                <input type="text" name="number_a" value="{$data.number_a > 0 ? $data.number_a : ''}" class="form-control input-inline" style="width:100px">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" style="width:180px">白金会员成为钻石会员<br/>所需数量</label>
+                            <div class="col-md-9">
+                                <input type="text" name="number_b" value="{$data.number_b}" class="form-control input-inline" style="width:100px">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" style="width:180px">会员费分佣<br/>给上级（比例）</label>
+                            <div class="col-md-9">
+                                <input type="text" name="scale_a" value="{$data.scale_a}" class="form-control input-inline" style="width:100px">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" style="width:180px">会员费分佣<br/>给上上级（比例）</label>
+                            <div class="col-md-9">
+                                <input type="text" name="scale_b" value="{$data.scale_b}" class="form-control input-inline" style="width:100px">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" style="width:180px">普通会员购买商品返佣<br/>给上级（比例）</label>
+                            <div class="col-md-9">
+                                <input type="text" name="scale_c" value="{$data.scale_c}" class="form-control input-inline" style="width:100px">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" style="width:180px">普通会员购买商品返佣<br/>给上上级（比例）</label>
+                            <div class="col-md-9">
+                                <input type="text" name="scale_d" value="{$data.scale_d}" class="form-control input-inline" style="width:100px">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" style="width:180px">黄金会员购买商品返佣<br/>给上级（比例）</label>
+                            <div class="col-md-9">
+                                <input type="text" name="scale_e" value="{$data.scale_c}" class="form-control input-inline" style="width:100px">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" style="width:180px">黄金会员购买商品返佣<br/>给上上级（比例）</label>
+                            <div class="col-md-9">
+                                <input type="text" name="scale_f" value="{$data.scale_d}" class="form-control input-inline" style="width:100px">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" style="width:180px">白金会员购买商品返佣<br/>给上级（比例）</label>
+                            <div class="col-md-9">
+                                <input type="text" name="scale_g" value="{$data.scale_c}" class="form-control input-inline" style="width:100px">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" style="width:180px">白金会员购买商品返佣<br/>给上上级（比例）</label>
+                            <div class="col-md-9">
+                                <input type="text" name="scale_h" value="{$data.scale_d}" class="form-control input-inline" style="width:100px">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" style="width:180px">钻石会员购买商品返佣<br/>给上级（比例）</label>
+                            <div class="col-md-9">
+                                <input type="text" name="scale_i" value="{$data.scale_c}" class="form-control input-inline" style="width:100px">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" style="width:180px">钻石会员购买商品返佣<br/>给上上级（比例）</label>
+                            <div class="col-md-9">
+                                <input type="text" name="scale_j" value="{$data.scale_d}" class="form-control input-inline" style="width:100px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <div class="row">
+                            <div class="col-md-offset-3 col-md-9">
+                                <button type="submit" class="btn green">保存</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

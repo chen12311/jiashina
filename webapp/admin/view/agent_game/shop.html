@@ -1,0 +1,122 @@
+<link type="text/css" rel="stylesheet" href="__JS__/bootstrap-fileinput/fileinput.css" />
+<script type="text/javascript" src="__JS__/bootstrap-fileinput/fileinput.js"></script>
+<script type="text/javascript" src="__JS__/bootstrap-fileinput/fileinput_locale_zh.js"></script>
+
+<style>
+    .form-horizontal .control-label {
+        width: 100px;
+        text-align: left;
+    }
+    .col-md-offset-3 {
+        margin-left: 5%;
+    }
+    .close{display: none;}
+</style>
+
+<div class="page-bar margin-bottom-20">
+    <ul class="page-breadcrumb">
+        <li>
+            <span>会员管理</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>成为代理商</span>
+        </li>
+    </ul>
+</div>
+
+<div class="row">
+    <div class="col-md-12 ">
+        <div class="portlet light bordered">
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject font-dark sbold uppercase">成为代理商</span>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <form method="post" action="" enctype="multipart/form-data" class="form-horizontal" id="myform" method="post">
+                    <div class="form-body">
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">姓名</label>
+                            <div class="col-md-3">
+                                <input type="text" name="agent_game_name" class="form-control" value="{$data.agent_game_name}" required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">手机号</label>
+                            <div class="col-md-3">
+                                <input type="text" name="agent_game_phone" class="form-control" value="{$data.agent_game_phone}" required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">地址</label>
+                            <div class="col-md-3">
+                                <input type="text" name="agent_game_address" class="form-control" value="{$data.agent_game_address}" required="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">身份证正面</label>
+                            <div class="col-md-2">
+                                <input type="file" id="agent_game_sfz_a" name="agent_game_sfz_a" accept="image/png,image/jpg,image/gif,image/JPEG">
+                            </div>
+                            <label class="col-md-3 control-label">身份证反面</label>
+                            <div class="col-md-2">
+                                <input type="file" id="agent_game_sfz_b" name="agent_game_sfz_b" accept="image/png,image/jpg,image/gif,image/JPEG">
+                            </div>
+                        </div>
+                        {if $data.agent_game != 0}
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">驳回理由</label>
+                            <div class="col-md-9">
+                                <textarea id="content" name="agent_game_content" class="form-control" style="width: 500px;height:100px;" {if $data.agent_game == 2}readonly{/if}>{$data.agent_game_content}</textarea>
+                            </div>
+                        </div>
+                        {/if}
+                    </div>
+                    <div class="form-actions">
+                        <div class="row">
+                            <div class="col-md-offset-3 col-md-9">
+                                <button type="submit" name="agent_game" value="1" class="btn green">通过</button>
+                                {if $data.agent != 2 && $data.agent_game != 0}
+                                <button type="submit" name="agent_game" value="2" class="btn yellow">驳回</button>
+                                {/if}
+                                <a href="javascript:history.back(-1);" class="btn red">返回</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    $('#agent_game_sfz_a').fileinput({
+        showUpload: false,
+        showRemove: false,
+        language: 'zh',
+        maxFileCount: 1,
+        showCaption: false,
+        allowedFileExtensions: ['jpg', 'png', 'gif', 'jpeg'],
+        maxFileSize: 261120,
+    {if $data.agent_game_sfz_a}
+    initialPreview:['<a href="{$data.agent_game_sfz_a}" target="_blank"><img src="{$data.agent_game_sfz_a}" style="width:200px;"></a>'],
+        {/if}
+    previewFileIcon: "<i class='glyphicon glyphicon-king'></i>"
+    });
+
+    $('#agent_game_sfz_b').fileinput({
+        showUpload: false,
+        showRemove: false,
+        language: 'zh',
+        maxFileCount: 1,
+        showCaption: false,
+        allowedFileExtensions: ['jpg', 'png', 'gif', 'jpeg'],
+        maxFileSize: 261120,
+    {if $data.agent_game_sfz_b}
+    initialPreview:['<a href="{$data.agent_game_sfz_b}" target="_blank"><img src="{$data.agent_game_sfz_b}" style="width:200px;"></a>'],
+        {/if}
+    previewFileIcon: "<i class='glyphicon glyphicon-king'></i>"
+    });
+</script>

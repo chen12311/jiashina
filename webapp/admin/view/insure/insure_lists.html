@@ -1,0 +1,81 @@
+<style>
+    .form-horizontal .control-label {
+        width: 100px;
+        text-align: left;
+    }
+    .col-md-offset-3 {
+        margin-left: 5%;
+    }
+    .close{display: none;}
+</style>
+
+<div class="page-bar margin-bottom-20">
+    <ul class="page-breadcrumb">
+        <li>
+            <span>保险管理</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>保险记录</span>
+            <i class="fa fa-circle"></i>
+        </li>
+        <li>
+            <span>被保人信息</span>
+        </li>
+    </ul>
+</div>
+
+<div class="row">
+    <div class="col-md-12 ">
+        <div class="portlet light bordered">
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject font-dark sbold uppercase">被保人信息</span>
+                </div>
+            </div>
+            <div class="portlet-body form">
+                <form method="post" action="" enctype="multipart/form-data" class="form-horizontal" id="myform" method="post">
+                    <div class="form-body">
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">身份</label>
+                            <div class="col-md-3">
+                                <input type="text" class="form-control" value="{$data.status}" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">姓名</label>
+                            <div class="col-md-3">
+                                <input type="text" class="form-control" value="{$data.name}" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">手机号</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" value="{$data.phone}" readonly>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">身份证反面</label>
+                            <div class="col-md-9">
+                                <a href="{data.sfz_a}" target="_blank"><img src="{$data.sfz_a}" style="width:150px;"></a>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">营业执照</label>
+                            <div class="col-md-9">
+                                <a href="{data.sfz_b}" target="_blank"><img src="{$data.sfz_b}" style="width:150px;"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <div class="row">
+                            <div class="col-md-offset-3 col-md-9">
+                                <a href="javascript:history.back(-1);" class="btn red">返回</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
